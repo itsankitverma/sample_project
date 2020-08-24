@@ -1,0 +1,12 @@
+#LOMBOZ BUILD FILE PROPERTIES- UPDATED:Mon Feb 16 10:30:06 VET 2004
+#Mon Feb 16 10:30:06 VET 2004
+module=EntitySrc
+adminToolPath=
+project.dir = ../..
+ejb=CashControlEJBX
+ejbsrc.dir=ejbsrc
+deploy.dir=../../
+bin.dir=build/classes
+antHomePath=C:/Users/942194/Software/apache-ant-1.9.2
+sharedLib=C:/Users/942194/Workspace_SC/GCCS 1.6/APP-INF
+hudsonJob=C:/Users/942194/.hudson/jobs

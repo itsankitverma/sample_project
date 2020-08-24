@@ -1,0 +1,115 @@
+<%@page contentType="text/html;charset=UTF-8" %>
+<%@ page buffer="64kb"%>
+<%@ taglib uri="/WEB-INF/struts-tiles.tld" prefix="tiles" %>
+<%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
+<%
+  response.setHeader("Cache-Control","no-store"); 
+  response.setHeader("Pragma","no-cache");
+  response.setDateHeader ("Expires", 0); 
+%>
+<html:html locale="true">
+<tiles:useAttribute id="title" name="title" classname="java.lang.String" />
+<head>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+<title><bean:message key="<%=title%>" /></title></head>
+
+<style type="text/css">
+#idletimeout { background:#CC5100; border:3px solid #FF6500; color:#fff; font-family:arial, sans-serif; text-align:center; font-size:24px; padding:20px; position:relative; top:0px; left:0; right:0; z-index:100000; display:none; }
+#idletimeout a { color:#fff; font-weight:bold }
+#idletimeout span { font-weight:bold }
+
+#cover {background-color: #FFFFFF;position:absolute;height:100%;width:100%}
+
+</style>
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="<html:rewrite page="/styles/stylesheet.css" />" TITLE="Style">
+<LINK REL ="stylesheet" TYPE="text/css" HREF="<html:rewrite page="/styles/jquery-ui.css" />" TITLE="Style">
+
+<script src="<html:rewrite page="/scripts/jquery.min.js" />"></script>
+<script src="<html:rewrite page="/scripts/jquery-ui.min.js" />"></script>
+<script src="<html:rewrite page="/scripts/jquery.idletimer.js" />"></script>
+<script src="<html:rewrite page="/scripts/jquery.idletimeout.js" />"></script>
+<script src="<html:rewrite page="/scripts/loadingoverlay.js" />"></script>
+
+</head>
+<body>
+<div id="idletimeout">
+	You will be logged off in <span><!-- countdown place holder --></span>&nbsp;seconds due to inactivity. 
+	<a id="idletimeout-resume" href="#">Click here to continue using GCCS</a>.
+</div>
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" height="36" width="100%">
+  <tr> 
+    <td valign="bottom" height="36"><img src="<%=request.getContextPath()%>/images/express.gif?" width="150" height="35"></td>
+    <td colspan="-6" height="36"> 
+      <div align="right"><img src="<%=request.getContextPath()%>/images/express1.jpg" width="500" height="35"></div>
+    </td>
+  </tr> 
+</table>
+<table border="0" width="100%" cellspacing="1" cellpadding="0" bgcolor="#808080">
+  <tr>
+    <td colspan="8" bgcolor="#73148C" width="974"><b><font color="#FFFFFF" face="Arial" size="3">&nbsp;<bean:message key="app.title" /></font></b></td>
+  </tr>
+</table>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <tiles:insert attribute="header" flush="false">
+                <tiles:put name="title" value="<%=title%>" />    
+            </tiles:insert>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <tiles:insert attribute="body" flush="false">
+                <tiles:put name="title" value="<%=title%>" />                    
+            </tiles:insert>
+        </td>
+    </tr>
+</table>
+</body>
+<head>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+<script type="text/javascript">
+$.idleTimeout('#idletimeout', '#idletimeout a', {
+	warningLength:120,
+	idleAfter: 1700,
+	pollingInterval: 1700,
+	keepAliveURL: 'Menu.do',
+	serverResponseEquals: 'OK',
+	onTimeout: function(){
+		$(this).slideUp();
+		window.location = "/GCCS/tiles/Logout.jsp";
+	},
+	onIdle: function(){
+		$(this).slideDown(); // show the warning bar
+	},
+	onCountdown: function( counter ){
+		$(this).find("span").html( counter ); // update the counter
+	},
+	onResume: function(){
+		$(this).slideUp(); // hide the warning bar
+	}
+});
+
+$.LoadingOverlay("hide");
+
+</script>
+
+<!--END  this is for checking the session timeout and keeping session alive -->
+</head>
+
+<!-- this is for checking the session timeout and keeping session alive -->
+
+
+
+
+<!-- dialog window markup -->
+  <div id="sessionTimeoutWarning" style="display: none"></div>
+
+
+</html:html>

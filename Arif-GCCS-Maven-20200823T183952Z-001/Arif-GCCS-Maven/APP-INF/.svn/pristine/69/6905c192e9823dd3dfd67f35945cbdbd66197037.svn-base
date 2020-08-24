@@ -1,0 +1,46 @@
+<?xml version="1.0" ?> 
+<ruleset name="Custom ruleset" xmlns="http://pmd.sf.net/ruleset/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd" xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+  <description>Customized PMD Plugin preferences rule set</description> 
+  <!-- Code Analytics Version 2.2 -->
+
+  <!--  Basic Rules (6) --> 
+  <rule ref="rulesets/java/basic.xml/AvoidDecimalLiteralsInBigDecimalConstructor"><priority>3</priority></rule> 
+  <rule ref="rulesets/java/basic.xml/AvoidUsingHardCodedIP"><priority>1</priority></rule>
+  <rule ref="rulesets/java/basic.xml/CheckResultSet"><priority>1</priority></rule> 
+  <rule ref="rulesets/java/basic.xml/ClassCastExceptionWithToArray"><priority>3</priority></rule> 
+  <rule ref="rulesets/java/basic.xml/EmptyCatchBlock"><priority>1</priority></rule> 
+  <rule ref="rulesets/java/basic.xml/UselessOperationOnImmutable"><priority>3</priority></rule> 
+
+  <!--  Code Size Rules (1) --> 
+  <rule ref="rulesets/java/codesize.xml/CyclomaticComplexity"><priority>3</priority></rule> 
+
+  <!--  Coupling Rules (1) --> 
+  <rule ref="rulesets/java/coupling.xml/LooseCoupling"><priority>3</priority></rule> 
+
+  <!--  Design Rules (5) --> 
+  <rule ref="rulesets/java/design.xml/AvoidConstantsInterface"><priority>3</priority></rule> 
+  <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts"><priority>3</priority></rule> 
+  <rule ref="rulesets/java/design.xml/BadComparison"><priority>2</priority></rule> 
+  <rule ref="rulesets/java/design.xml/CloseResource"><priority>1</priority></rule> 
+  <rule ref="rulesets/java/design.xml/ConstructorCallsOverridableMethod"><priority>1</priority></rule> 
+
+  <!--  Import Statement Rules (1) --> 
+  <rule ref="rulesets/java/imports.xml/TooManyStaticImports"><priority>3</priority></rule> 
+
+  <!--  J2EE Rules (1) --> 
+  <rule ref="rulesets/java/j2ee.xml/UseProperClassLoader"><priority>3</priority></rule>
+ 
+  <!--  Java Logging Rules (3) --> 
+  <rule ref="rulesets/java/logging-java.xml/AvoidPrintStackTrace"><priority>2</priority></rule> 
+  <rule ref="rulesets/java/logging-java.xml/MoreThanOneLogger"><priority>2</priority></rule> 
+  <rule ref="rulesets/java/logging-java.xml/SystemPrintln"><priority>2</priority></rule> 
+
+  <!--  Optimization Rules (1) --> 
+  <rule ref="rulesets/java/optimizations.xml/UseStringBufferForStringAppends"><priority>2</priority></rule>
+ 
+  <!--  Strings Rules (2) --> 
+  <rule ref="rulesets/java/strings.xml/AvoidDuplicateLiterals"><priority>3</priority></rule> 
+  <rule ref="rulesets/java/strings.xml/UseEqualsToCompareStrings"><priority>2</priority></rule> 
+
+   
+  </ruleset>

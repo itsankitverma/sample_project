@@ -1,0 +1,14 @@
+package com.fedex.lacitd.cashcontrol.datatier.common;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ServiceLocatorTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

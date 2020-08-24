@@ -1,0 +1,417 @@
+package com.fedex.lacitd.cashcontrol.prestier.helper;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StringReader;
+import java.math.BigInteger;
+import java.util.Iterator;
+import java.util.Properties;
+
+import com.fedex.lacitd.cashcontrol.biztier.exception.BizDelegateException;
+import com.fedex.lacitd.cashcontrol.common.Utils;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.soap.MessageFactory;
+import javax.xml.soap.Name;
+
+
+import javax.xml.soap.SOAPConnection;
+import javax.xml.soap.SOAPConnectionFactory;
+import javax.xml.soap.SOAPElement;
+import javax.xml.soap.SOAPBodyElement;
+import javax.xml.soap.SOAPEnvelope;
+import javax.xml.soap.SOAPException;
+import javax.xml.soap.SOAPFactory;
+import javax.xml.soap.SOAPHeader;
+
+import javax.xml.transform.Source;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.dom.DOMSource;
+
+
+import javax.xml.soap.SOAPMessage;
+import javax.xml.soap.SOAPBody;
+import javax.xml.soap.SOAPPart;
+
+
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.xml.sax.InputSource;
+
+import weblogic.webservice.core.soap.SOAPBodyImpl;
+
+import com.bea.xml.XmlObject;
+import com.bea.xml.XmlOptions;
+
+
+import com.fedex.xmlns.enterpriseCustomer.AccountIdForInquiry;
+import com.fedex.xmlns.enterpriseCustomer.AccountInquiryDocument;
+import com.fedex.xmlns.enterpriseCustomer.AccountInquiryResponseDocument;
+import com.fedex.xmlns.enterpriseCustomer.DataSource;
+import com.fedex.xmlns.enterpriseCustomer.ErrorDescriptor;
+import com.fedex.xmlns.enterpriseCustomer.OpcoCode;
+import com.fedex.xmlns.enterpriseCustomer.ReplyHeader;
+import com.fedex.xmlns.enterpriseCustomer.SearchWindow;
+import com.fedex.xmlns.enterpriseCustomer.AccountInquiryDocument.AccountInquiry;
+import com.fedex.xmlns.enterpriseCustomer.AccountInquiryDocument.AccountInquiry.ResultOptions;
+import com.fedex.xmlns.enterpriseCustomer.AccountInquiryResponseDocument.AccountInquiryResponse;
+
+public class CiamWebService2 {
+	
+	
+	public boolean getResponse(String BillToAcct) throws Exception
+    {					    
+		    
+		    System.out.println("Calling getResponse! ");	  		    		    
+		    		  		    
+		    String messageBody = null;
+		    boolean isSubmittedSuccessfully = false;
+		    boolean returnValue = true;	    
+		    File file = null;  
+            String inputFileName = null;
+            String requestMethod = null;
+            String responseMethod = null;
+            String namespace = null;
+            String cfamWSDL = null;
+            Properties prop=null;		
+            String empId = null;
+            String empOpCo = null;
+            String srcSystem = null;
+            XmlObject outputResponse = null;
+            XmlOptions options = new XmlOptions();                                                                    
+            requestMethod = "accountInquiry";    
+            responseMethod = "accountInquiryResponse";
+            
+            empId = "GCCSFusionUser";
+            empOpCo = "FDSV";
+            srcSystem = "CFAM";
+            
+            prop= Utils.getProperties("P");
+            
+            namespace = prop.getProperty("ciam.namespace");
+            //namespace = "http://xmlns.fedex.com/EnterpriseCustomer";
+            System.out.println("ciam.namespace from database=="+namespace);
+            
+            cfamWSDL = prop.getProperty("ciam.url");
+            //cfamWSDL = "https://fajaxdevtest.idev.fedex.com/cfcore/EnterpriseService?WSDL";               
+            System.out.println("ciam.url from database=="+cfamWSDL);
+		    try
+		    {
+
+			    messageBody = createNewXml(BillToAcct);			    
+			  
+				XmlObject xmlObject = getXmlObject(messageBody);
+				System.out.println("xmlObject of string=="+xmlObject);
+												
+				SOAPElement headerElement = createSOAPHeaderElement(empId, empOpCo, srcSystem, namespace);
+				//System.out.println("headerElement==="+headerElement);
+				
+				String TextBody = constructSOAPBody(xmlObject,headerElement);
+				
+				System.out.println("Entire Soap Message===="+TextBody);
+				
+				SOAPMessage request = convertXmlObject2SOAPMsg(XmlObject.Factory.parse(TextBody));
+						
+	            printsoapMessage(request);
+	           	           
+				SOAPMessage response = submitRequest(request, cfamWSDL);
+				//System.out.println("Response=="+response);
+
+	            if (response != null){
+					isSubmittedSuccessfully = true;				
+			    }		
+				
+				if (isSubmittedSuccessfully){	
+					//getResponseForClient(response);		
+					//Document docs = getResponseForClient(response);			
+					String strd = getResponseForClient(response);	
+					
+					AccountInquiryResponseDocument accountInquiryResponseDocument = (AccountInquiryResponseDocument) XmlObject.Factory.parse(strd);
+														    
+				    AccountInquiryResponse accountInquiryResponse = accountInquiryResponseDocument.getAccountInquiryResponse();
+				    
+				    System.out.println("OUTPUT : \n " + accountInquiryResponse.xmlText( options));	     
+				    
+				    ReplyHeader replyHeader = accountInquiryResponse.getHeader();
+				    if (replyHeader.sizeOfErrorStatusArray()>0)
+		            {
+		                System.out.println("something went wrong..");
+		            	System.out.println("Size of error array is <" + replyHeader.sizeOfErrorStatusArray() + ">");
+
+		    	        // something went wrong ....    	        
+			        	for(int i = 0;
+			        	     i < replyHeader.sizeOfErrorStatusArray();
+			        	     i++)
+			        	{
+			        		ErrorDescriptor ed = replyHeader.getErrorStatusArray( i);
+			        		
+			        		System.out.println("ed.getCode() " + ed.getCode());
+			        		System.out.println("ed.getDescription() " + ed.getDescription());
+			        	}
+			        	
+			        	return false;
+		            }
+									
+			    }
+				else {
+					System.out.println("no response!!");
+				}
+		    }	
+			catch(Exception ex){
+					System.out.println(" Exception");
+					ex.printStackTrace();
+					throw ex;
+			}
+			return isSubmittedSuccessfully;
+			
+    }
+	
+		 
+	 
+	 public static String createNewXml(String billToAcctnumber)
+		{
+		 try{
+		    System.out.println("in createXmlNew");		
+		 		
+		 	AccountInquiryDocument accountInquiryDocument = AccountInquiryDocument.Factory.newInstance();		 		
+	     	AccountInquiry accountInquiry = accountInquiryDocument.addNewAccountInquiry();	     	
+	     	accountInquiry.setSchemaVersion("4.4.15");	     	
+	        ResultOptions resultOptions = accountInquiry.addNewResultOptions();
+	        resultOptions.addNewContacts();
+
+	        DataSource dataSource = accountInquiry.addNewDataSourceOptions();
+	        
+	        dataSource.setActiveDatabase(true);
+	        dataSource.setArchiveDatabase(false);
+
+	        AccountIdForInquiry accountId = accountInquiry.addNewAccountId();
+	        accountId.setOpco(OpcoCode.Enum.forString("FDSV"));
+	        accountId.setNumber( billToAcctnumber);	       	        
+	        SearchWindow window = accountInquiry.addNewWindow();
+	        window.setMaxResults(BigInteger.ZERO);
+	 
+	        Document requestDoc = (Document) accountInquiryDocument.newDomNode();
+	        
+	        requestDoc.getDocumentElement().removeAttribute("schemaVersion");
+
+	        requestDoc.getDocumentElement().setAttribute("schemaVersion", "4.4.15");
+	        
+	        accountInquiryDocument.setAccountInquiry(accountInquiry);
+	        return accountInquiryDocument.toString();	     
+		 }
+		 catch(Exception ex)
+		    {
+		       ex.printStackTrace();
+		       return null;
+		    }
+		
+		}
+	 
+	 public static XmlObject getXmlObject(String str) throws Exception{
+		 XmlObject xmlobject=null;
+		 try{   			
+	        xmlobject=XmlObject.Factory.parse(str);	     	       	
+		 }
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return xmlobject;
+	 }
+
+
+	 public static SOAPElement createSOAPHeaderElement(String employeeId,
+              String employeeOpCo,
+              String callingAppSourceSystemCode,
+              String namespace) throws Exception {
+
+		 		
+		 		
+		 	//========= Token thing ============================///////
+				  String token_code="";
+				  String token_filepath = null;
+				  String str="";
+				  Properties prop=null;
+				  prop= Utils.getProperties("P");
+				  token_filepath= prop.getProperty("ciam.token.filepath");
+				  System.out.println("ciam.token.filepath from database=="+token_filepath);
+
+				  try {
+			
+					  BufferedReader in = new BufferedReader(new FileReader(token_filepath));
+					  while ((str = in.readLine()) != null) {
+						  token_code = str;
+					  }//end while
+					  in.close();
+				 } catch (IOException e) {
+					 e.printStackTrace();
+				 }//end try
+			//================= End Token Code ================/////////
+
+				String prefix = "cfam";
+				SOAPMessage message = null;
+				SOAPElement cfamHeader = null;
+				try{
+				System.out.println("in createSoapHeader Element..");
+					MessageFactory msgFactory = MessageFactory.newInstance();
+					message = msgFactory.createMessage();
+					System.out.println("message=="+message);
+					javax.xml.soap.SOAPPart soapPart = message.getSOAPPart();
+					SOAPEnvelope se = soapPart.getEnvelope();
+					//System.out.println("se=="+se);
+
+					SOAPHeader header = se.getHeader();					
+
+					cfamHeader = header.addHeaderElement(se.createName("header", prefix, namespace));
+					System.out.println("header=="+header);
+					SOAPElement security = cfamHeader.addChildElement(se.createName("security", prefix, namespace));
+					System.out.println("security=="+security);
+					SOAPElement employee = security.addChildElement(se.createName("employee", prefix, namespace));
+					System.out.println("employee=="+employee);
+					employee.addAttribute(se.createName("opco"), employeeOpCo);
+					employee.addAttribute(se.createName("number"), employeeId);
+					SOAPElement sourceSystem = security.addChildElement(se.createName("sourceSystem", prefix, namespace));
+					sourceSystem.addTextNode(callingAppSourceSystemCode);
+					SOAPElement token = security.addChildElement(se.createName("token", prefix, namespace));
+					token.addTextNode(token_code);
+				}
+
+				catch(Exception e){
+					e.printStackTrace();
+				}
+				return cfamHeader;
+			}
+
+	 
+	 public static String constructSOAPBody(XmlObject xmlobject, SOAPElement headerElement) {
+		    System.out.println("in constructSOAPBody ");		    
+			String topPart = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+			"<SOAP-ENV:Envelope xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"> " +
+			"<SOAP-ENV:Header> ";
+
+			System.out.println("topPart== "+topPart);
+			String header = headerElement.toString();
+			System.out.println("header== "+header);
+			String bottomPart = "</SOAP-ENV:Body></SOAP-ENV:Envelope>";			                           		
+
+			String messageString = topPart + header+ "</SOAP-ENV:Header>" + "<SOAP-ENV:Body>" +xmlobject.toString() + bottomPart;			
+			//System.out.println("messageString== "+messageString);
+			return messageString;
+		}
+	   
+	 
+	 
+	 public static SOAPMessage convertXmlObject2SOAPMsg(XmlObject xmlObjectSoapBody) throws SOAPException
+		{
+	        System.out.println("ENTERED INTO CONVERTXMLOBJECT2SOAPMsg ");
+			Node node = xmlObjectSoapBody.newDomNode();
+
+			MessageFactory msgFactory = MessageFactory.newInstance();
+			SOAPMessage message = msgFactory.createMessage();
+
+			SOAPPart soapPart = message.getSOAPPart();
+
+			DOMSource domSource = new DOMSource(node);
+			soapPart.setContent(domSource);
+//	        SOAPEnvelope msgEnv = soapPart.getEnvelope();
+			soapPart = message.getSOAPPart () ;
+
+			return message;
+	}
+	 
+	   
+	    
+	    public static void printsoapMessage(SOAPMessage request) throws Exception
+		{
+	        System.out.println("---------- START OF SOAP MESSAGE --------------------------");	        
+			request.writeTo(System.out) ;			
+			System.out.println("----------END OF SOAP MESSAGE--------------------------");
+			
+
+		}
+	    
+	   	    
+
+		
+		
+		
+		public static String getResponseForClient(SOAPMessage response)   
+        		throws   SOAPException, IOException, TransformerException {
+			//Document d = null;
+			String str = null;
+			try{
+				
+			System.out.println("SOAPMessage response=="+response);
+			SOAPPart sp = response.getSOAPPart();
+		    SOAPEnvelope se = sp.getEnvelope();
+		    SOAPBody soapBody = se.getBody();
+		    System.out.println("==============================================");
+		    System.out.println("soapBody="+soapBody);				
+		 
+
+		    Iterator iter1 =soapBody.getChildElements();
+		    str= iter1.next().toString();		    
+		    System.out.println("str==="+str);
+		    
+		    //DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		    //DocumentBuilder builder = factory.newDocumentBuilder();
+		    //InputSource is = new InputSource( new StringReader( str ) );
+		     //d = builder.parse( is );
+		   
+		    //System.out.println("ddddd=="+d);
+		    	    
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+					
+			 return str;
+			
+			
+              
+		}
+		
+		
+	
+		 public static javax.xml.soap.SOAPMessage submitRequest(SOAPMessage request, String url) throws Exception
+	      {
+			String endpoint = null;
+			javax.xml.soap.SOAPMessage response = null;		
+           try{           	
+           	
+				endpoint = new String(url);
+				System.out.println("URL: <" + endpoint +">");	
+				
+				SOAPConnectionFactory soapConnectionFactory = SOAPConnectionFactory.newInstance();
+				SOAPConnection connection = soapConnectionFactory.createConnection();
+				System.out.println("Connection created.." + connection);	
+				
+				if(connection == null) {
+					System.out.println("Connection is null........");
+				}
+				response = connection.call(request, endpoint);
+				System.out.println("Getting response---");			
+				//response.writeTo(System.out);
+				
+           }					 
+			catch (Exception exception) {
+				System.out.println("Problem in connecting to the web service.  Error:" +	exception);
+				
+				exception.printStackTrace();
+			}
+			if (response == null) {
+				System.out.println("submitRequest() found request return value is null");
+				
+			}
+			
+			return response;
+		  }
+
+
+}

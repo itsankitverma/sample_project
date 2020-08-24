@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="GCCS">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="CashControlEJBX.jar" deploy-path="/" handle="module:/resource/CashControlEJBX/CashControlEJBX">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="CCS.war" deploy-path="/" handle="module:/resource/CCS/CCS">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Daemon.war" deploy-path="/" handle="module:/resource/Daemon/Daemon">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="CashControlSessionBeans.jar" deploy-path="/" handle="module:/resource/CashControlSessionBeans/CashControlSessionBeans">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

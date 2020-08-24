@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="WTC-808660-W1" name="com.fedex.lacitd.cashcontrol.datatier.manager.GlExchRateManagerBeanTest" skipped="0" tests="1" time="0.0" timestamp="2014-04-24T22:16:01">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0_38\jre" />
+    <property name="env.CSAM_SOCKADAPTER" value="C:\Program Files (x86)\CA\SC\Csam\SockAdapter\" />
+    <property name="env.PROCESSOR_ARCHITEW6432" value="AMD64" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\endorsed" />
+    <property name="env.USERNAME" value="942194" />
+    <property name="env.HUDSON_HOME" value="C:\Users\942194\.hudson" />
+    <property name="test-resources" value="src/test/resources" />
+    <property name="env.CAI_MSQ" value="C:\Program Files (x86)\CA\SC\CAM" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.COMPUTERNAME" value="WTC-808660-W1" />
+    <property name="env.=C:" value="C:\Users\942194\Workspace_SC\GCCS 1.6\CashControlEJBX\EntitySrc\META-INF" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.version" value="1.6.0_38" />
+    <property name="classes" value="../../build/classes" />
+    <property name="env.NODE_LABELS" value="master" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.USERPROFILE" value="C:\Users\942194" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="ant.file.GCCS Common Build - PMD JUNIT EMMA" value="C:\Users\942194\Workspace_SC\GCCS 1.6\CashControlEJBX\EntitySrc\META-INF\build-test.xml" />
+    <property name="user.name" value="942194" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\942194\AppData\Local" />
+    <property name="reports" value="target/surefire-reports" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="user.timezone" value="" />
+    <property name="generated-src" value="target/generated-src" />
+    <property name="path.separator" value=";" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 23 Stepping 10, GenuineIntel" />
+    <property name="env._JAVACMD" value="C:\Program Files (x86)\Java\jdk1.6.0_38\bin\java.exe" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="test-src" value="../../Test" />
+    <property name="ant.project.default-target" value="testAll" />
+    <property name="lib" value="target" />
+    <property name="sun.java.command" value="org.apache.tools.ant.launch.Launcher -file build-test.xml" />
+    <property name="env.NUMBER_OF_PROCESSORS" value="2" />
+    <property name="env.APPDATA" value="C:\Users\942194\AppData\Roaming" />
+    <property name="ant.file" value="C:\Users\942194\Workspace_SC\GCCS 1.6\CashControlEJBX\EntitySrc\META-INF\build-test.xml" />
+    <property name="env.BUILD_TAG" value="hudson-CashControlEJBX-New-8" />
+    <property name="java.io.tmpdir" value="C:\Users\942194\AppData\Local\Temp\" />
+    <property name="user.language" value="en" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="resources" value="src/main/resources" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="target" value="target" />
+    <property name="emma.enabled" value="true" />
+    <property name="config" value="src/main/config" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.JOB_NAME" value="CashControlEJBX-New" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="env.DEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="build-lib" value="../../../APP-INF/lib" />
+    <property name="env.M2_HOME" value="C:\apache-maven-2.2.1" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.LOGONSERVER" value="\\PWN03555" />
+    <property name="env.SDROOT" value="C:\Program Files (x86)\CA\DSM\SD" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="out.instr.dir" value="target/instr-classes" />
+    <property name="env.HUDSON_SERVER_COOKIE" value="cb67d8d1c3be156829919fd32470971f" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
+    <property name="env.USERDOMAIN" value="CORP" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.BUILD_NUMBER" value="8" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="os.name" value="Windows 7" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.R_SHLIB_LD_LIBRARY_PATH" value="C:\PROGRA~2\CA\SC\ETPKI\lib" />
+    <property name="env.TMP" value="C:\Users\942194\AppData\Local\Temp" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_38\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\CA\SC\CAWIN\;C:\PROGRA~2\CA\SC\ETPKI\lib;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\CA\DSM\bin;C:\PROGRA~2\CA\SC\CAM\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin;C:\Program Files (x86)\CA\SC\CBB\;C:\PROGRA~2\Java\jdk1.6.0_38\bin;C:\apache-maven-2.2.1\bin;C:\Program Files (x86)\Java\jdk1.6.0_38\bin;C:\Users\942194\Software\apache-ant-1.9.2\bin;." />
+    <property name="ant.java.version" value="1.6" />
+    <property name="basedir" value="C:\Users\942194\Workspace_SC\GCCS 1.6\CashControlEJBX\EntitySrc\META-INF" />
+    <property name="java.class.version" value="50.0" />
+    <property name="ant.home" value="C:\Users\942194\Software\apache-ant-1.9.2" />
+    <property name="env.CAI_CAFT" value="C:\Program Files (x86)\CA\SC\CAM" />
+    <property name="env.Path" value="C:\Program Files (x86)\CA\SC\CAWIN\;C:\PROGRA~2\CA\SC\ETPKI\lib;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\CA\DSM\bin;C:\PROGRA~2\CA\SC\CAM\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin;C:\Program Files (x86)\CA\SC\CBB\;C:\PROGRA~2\Java\jdk1.6.0_38\bin;C:\apache-maven-2.2.1\bin;C:\Program Files (x86)\Java\jdk1.6.0_38\bin;C:\Users\942194\Software\apache-ant-1.9.2\bin" />
+    <property name="ANT_HOME" value="C:/Users/942194/Software/apache-ant-1.9.2" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0_38\jre\bin" />
+    <property name="env.PROCESSOR_REVISION" value="170a" />
+    <property name="env.VSEDEFLOGDIR" value="C:\ProgramData\McAfee\DesktopProtection" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="test-config" value="src/test/config" />
+    <property name="hudsonTarget" value="C:/Users/942194/.hudson/jobs/CashControlEJBX-New/workspace" />
+    <property name="ant.project.name" value="GCCS Common Build - PMD JUNIT EMMA" />
+    <property name="env.CSAM_LOGGER_CONF" value="C:\Program Files (x86)\CA\SC\Csam\SockAdapter\\cfg\logger.cfg" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.ETPKIHOME" value="C:\PROGRA~2\CA\SC\ETPKI" />
+    <property name="JAVA_HOME" value="/opt/java/sun/64_bit/jdk1.6.0_26" />
+    <property name="test-classes" value="target/test/classes" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="os.version" value="6.1" />
+    <property name="user.home" value="C:\Users\942194" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.USERDNSDOMAIN" value="CORP.DS.FEDEX.COM" />
+    <property name="env.JAVA_HOME" value="C:\Program Files (x86)\Java\jdk1.6.0_38" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="user.dir" value="C:\Users\942194\Workspace_SC\GCCS 1.6\CashControlEJBX\EntitySrc\META-INF" />
+    <property name="env.M2" value="C:\apache-maven-2.2.1\bin" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env._USE_CLASSPATH" value="no" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+    <property name="java.vm.version" value="20.13-b02" />
+    <property name="java.class.path" value="C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-launcher.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-antlr.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-bcel.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-bsf.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-log4j.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-oro.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-regexp.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-resolver.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-apache-xalan2.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-commons-logging.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-commons-net.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-jai.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-javamail.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-jdepend.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-jmf.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-jsch.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-junit.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-junit4.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-launcher.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-netrexx.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-swing.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant-testutil.jar;C:\Users\942194\Software\apache-ant-1.9.2\lib\ant.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\lib\tools.jar" />
+    <property name="env.HOMEPATH" value="\Users\942194" />
+    <property name="ant.library.dir" value="C:\Users\942194\Software\apache-ant-1.9.2\lib" />
+    <property name="os.arch" value="x86" />
+    <property name="weblogic.lib.modules" value="/opt/weblogic/wl10.3.2/modules" />
+    <property name="wsdl" value="src/main/resources/wsdl" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="schemas" value="src/main/resources/schemas" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files (x86)\Common Files" />
+    <property name="weblogic.home" value="/opt/weblogic/wl10.3.2" />
+    <property name="env.BUILD_ID" value="2014-04-24_17-14-25" />
+    <property name="ant.core.lib" value="C:\Users\942194\Software\apache-ant-1.9.2\lib\ant.jar" />
+    <property name="env.ProgramFiles" value="C:\Program Files (x86)" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="file.separator" value="\" />
+    <property name="env.ANT_CMD_LINE_ARGS" value=" -file build-test.xml" />
+    <property name="java.runtime.version" value="1.6.0_38-b05" />
+    <property name="coverage.dir" value="target/emma" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\lib\modules\jdk.boot.jar;C:\Program Files (x86)\Java\jdk1.6.0_38\jre\classes" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.WORKSPACE" value="C:\Users\942194\.hudson\jobs\CashControlEJBX-New\workspace" />
+    <property name="env.TEMP" value="C:\Users\942194\AppData\Local\Temp" />
+    <property name="env.ANT_HOME" value="C:\Users\942194\Software\apache-ant-1.9.2" />
+    <property name="user.country" value="US" />
+    <property name="env.EXECUTOR_NUMBER" value="1" />
+    <property name="src" value="../../EntitySrc" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.type.GCCS Common Build - PMD JUNIT EMMA" value="file" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.HUDSON_COOKIE" value="71d77359-077b-4c7d-b25b-e62aecd0916f" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="generated-classes" value="target/generated-classes" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="env.=ExitCode" value="00000082" />
+  </properties>
+  <testcase classname="com.fedex.lacitd.cashcontrol.datatier.manager.GlExchRateManagerBeanTest" name="BeforeFirstTest" time="0.0">
+    <error message="Forked Java VM exited abnormally. Please note the time in the report does not reflect the time until the VM exit." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Forked Java VM exited abnormally. Please note the time in the report does not reflect the time until the VM exit.
+</error>
+  </testcase>
+</testsuite>

@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!-- @(#)$URL$$Rev$$Date$$Author$ -->
+
+<!-- ############################################################################### 
+	# $HeadURL$ # $Revision$ # Tab Setting: 4 # Author: sg672802 # Create Date: 
+	2011/02/17 04:11:53 # # Copyright (c) 2011 Federal Express Corporation. # 
+	All Rights Reserved. # This material is copyrighted as an unpublished work 
+	under sections 104 and # 408 of title 17 of the United States Code. It contains 
+	trade secret data # which is the property of Federal Express Corporation. 
+	It is submitted to # the recipient in confidence and information contained 
+	herein may not be # used, copied or disclosed in whole or in part except 
+	as permitted by a # written agreement signed by an officer of Federal Express 
+	Corporation. ############################################################################### -->
+
+<project name="GCCS Common Build - PMD JUNIT EMMA" basedir="." default="testAll">
+
+	<!-- Build property file -->
+	<property file="build-test.properties" />
+
+	<!-- Source in environment variables -->
+	<property environment="env" />
+
+	<path id="test.classpath">
+		<fileset dir="${build-lib}">
+			<include name="**/*.jar" />
+			<exclude name="dynamic/CashControlEjbxTest.jar" />
+		</fileset>
+	</path>
+
+	<path id="emma.lib">
+		<fileset dir="${build-lib}/code-analytics">
+			<include name="emma*.jar" />
+		</fileset>
+	</path>
+	<taskdef resource="emma_ant.properties" classpathref="emma.lib" />
+
+	<!-- PMD Configuration -->
+	<path id="pmd.classpath">
+		<fileset dir="${ANT_HOME}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${build-lib}/code-analytics">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"	classpathref="pmd.classpath" />
+
+	<target name="pmd">
+		<pmd rulesetfiles="../../../APP-INF/fedexruleset.xml" failonerror="false">
+			<formatter type="xml" toFile="${hudsonTarget}/pmd.xml" />
+			<fileset dir="../">
+				<include name="**/*.java" />
+			</fileset>
+		</pmd>
+		<chmod dir="${hudsonTarget}" perm="744" includes="pmd.xml" />
+	</target>
+
+	<target name="testAll" >
+		<echo>********************</echo>
+		<echo>GCCS_COMMON</echo>
+		<echo>********************</echo>
+		<antcall target="pmd" />
+		<antcall target="test-compile" />
+		<antcall target="instrument" />
+		<antcall target="test" />
+		<antcall target="report" />
+	</target>
+
+	<target name="instrument">
+		<emma enabled="${emma.enabled}" verbosity="verbose">
+			<instr instrpath="${classes}" mode="fullcopy" outdir="${out.instr.dir}"
+				metadatafile="${coverage.dir}/coverage.em" merge="no">
+			</instr>
+		</emma>
+	</target>
+
+	<target name="report">
+		<emma enabled="${emma.enabled}">
+			<report sourcepath="${src}" depth="method" sort="+block,+name,+method,+class" metrics="method:70,block:80,line:80,class:100">
+				<infileset dir="${coverage.dir}" includes="*.em, *.ec" />
+				<xml outfile="${coverage.dir}/coverage.xml" depth="package"/>
+				<html outfile="${target}/index.html" depth="package"/>
+			</report>
+		</emma>
+	</target>
+
+	<target name="test" depends="test-jar">
+		<delete file="${coverage.dir}/coverage.ec"/>
+		  <antcall target="instrument" />
+		<!-- 
+			MUST be fork="true"; otherwise coverage.ec file will not be available until current executing jvm completes.
+			Without fork="true", the first time you run (or delete) the coverage.ec file, reporting will fail on missing .ec file 
+		-->
+		<junit printsummary="on" fork="true">
+			<classpath>
+				<pathelement location="${test-classes}" />
+				<pathelement location="${out.instr.dir}/classes" />
+				<path refid="test.classpath" />
+			</classpath>
+			<formatter type="xml" />
+			<jvmarg value="-Demma.coverage.out.file=${coverage.dir}/coverage.ec" />
+			<batchtest todir="${reports}">
+				<fileset dir="${test-src}">
+					<include name="**/*Test*.java" />
+				</fileset>
+			</batchtest>
+		</junit>
+		<junitreport todir="${reports}">
+			<fileset dir="${reports}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<fileset dir="${hudsonTarget}/reports">
+				<include name="TEST-*.xml" />
+			</fileset>
+			
+			
+			<report format="noframes" todir="${reports}/site" />
+		</junitreport>
+		<move file="${reports}/site/junit-noframes.html" tofile="${reports}/site/index.html" />
+	</target>
+
+	<target name="test-jar" depends="test-compile">
+		<jar destfile="${build-lib}/dynamic/cpg_common_test.jar">
+			<fileset dir="${test-classes}" />
+		</jar>
+	</target>
+
+	<!-- <target name="test-compile" depends="test.check, test-init, copy-test-resources" -->
+	<target name="test-compile" depends="test.check, test-init">
+		<javac srcdir="${test-src}" destdir="${test-classes}" debug="true">
+			<classpath>
+				<pathelement location="${test-classes}" />
+				<pathelement location="${classes}" />
+				<path refid="test.classpath" />
+			</classpath>
+		</javac>
+	</target>
+	
+
+	<target name="test-init">
+		<mkdir dir="${test-classes}" />
+		<mkdir dir="${reports}" />
+		<mkdir dir="${coverage.dir}" />
+	</target>
+
+	<target name="test-clean-generated">
+		<delete dir="${test}" />
+	</target>
+
+	<target name="copy-test-resources">
+		<copy todir="${test-classes}">
+			<fileset dir="${test-resources}" />
+		</copy>
+	</target>
+
+	<target name="test.check">
+		<sequential>
+			<fail message="The directory '${test-src}' was expected to be available and is not">
+				<condition>
+					<not>
+						<available file="${test-src}" type="dir" />
+					</not>
+				</condition>
+			</fail>
+		</sequential>
+	</target>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<project name="GCCS Session EjbModuleBuilder" default="deploy" basedir=".">
+
+    <!-- Init -->
+    <target name="init">
+        <property file="build.properties"/>
+    </target>
+
+    <!-- Create EJB-JAR file -->
+    <target name="ejb-jar" depends="init">
+        <delete file="${ejb}.jar"/>
+        <jar jarfile="${ejb}.jar">
+            <fileset dir="${project.dir}/${bin.dir}">
+                <include name="**/*.*"/>
+            	<exclude name="META-INF/beans.xml"/>
+            	<exclude name="META-INF/build.xml"/>
+            	<exclude name="META-INF/deploy.xml"/>
+            	<exclude name="META-INF/undeploy.xml"/>
+            	<exclude name="META-INF/build.properties"/>
+            	<exclude name="META-INF/ejbs.xml"/>
+            	<exclude name="META-INF/xdoclet.xml"/>
+            	<exclude name="META-INF/servers.xml"/>
+            	<exclude name="META-INF/targets.xml"/>
+            </fileset>
+        </jar>
+    </target>
+
+
+    <!-- Deploy module to server ... -->
+    <target name="deploy" depends="ejb-jar">
+        <copy todir="${deploy.dir}">
+            <fileset dir="." includes="${ejb}.jar"/>
+        </copy>
+        <delete file="${ejb}.jar"/>
+    </target>
+
+</project>

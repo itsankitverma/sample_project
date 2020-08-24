@@ -1,0 +1,1249 @@
+errors.messages.AwbNoExist=La AWB N° '{0}' no existe.<br>
+errors.messages.AwbStatusshouldNotBeClear=La awb {0} ya esta cerrada en GCCS. Por favor, ingrese la transaccion como un nuevo receivable usando el boton 'Create New Recevable'.  
+app.messages.js.PoaAmountsNotMatch=Error: El monto total de las facturas no es igual al monto de pago. Por favor presione OK y corrija los montos.
+app.message.AdminMenu=Men\u00FA del Administrador
+
+
+app.messages.unexpectedError=Un error inesperado ha ocurrido en la aplicación.<BR><BR> Si el problema persiste, por favor contacte a su Administrador GCCS local. <BR><BR> Gracias.
+
+app.messages.js.HigherThanExpected=Advertencia: El monto ingresado es sustancialmente mayor al monto esperado.
+app.messages.js.AmountEqualAwb=Error: El monto ingresado es igual al número de AWB.
+app.messages.js.AmountEqualTrkNumber=Error: El monto ingresado es igual al número de Tracking.
+
+app.dateWrong.Message=La fecha no puede exceder de 3 días desde la fecha actual.
+
+app.PagesTitles.AccessDenied=Acceso Denegado
+app.messages.ErrorInsertingGrndTrk=Hubo un error tratando de insertar el número TRK {0}
+app.GCCSReportingMessage=GCCS Report
+app.operationalReportingMessage=Operational Reports
+
+app.DisabledStatusExplanation=Flag presente si el usuario ha sido desactivado por una inactividad de 90 d\u00EDas o m\u00E1s.
+app.DisabledStatus=Usuario Deshabilitado?
+errors.UserDisabled=Usted ha sido deshabilitado del sistema por inactividad. El Administrador del sistema ha sido notificado y respondera via email/fono.
+
+app.PagesTitles.LogoutPage=Logout Page
+app.messages.logout=Ha salido del sistema. Usted ha sido desconectado de todas las aplicaciones que utilizan Single Sing On.
+app.PagesTitles.FailurePage=Failure Page
+app.title.AwbsFromPrepaid=Seleccione AWBs de Prepaid:
+app.title.LinkAwbToOac=Relaciona ona o más AWB a los detalles de OAC
+app.title.NewAwbToOac=O ingrese un nuevo número de AWB:
+app.title.OacList=Lista de Cargos de Exportación Adicionales
+app.title.OacDetails=Detalles de OAC
+app.title.ReceiptDate=Fecha de Recibo
+app.message.AddOaclist=Agregar a la lista de OAC
+app.message.SaveOacList=Guardar la lista
+app.messages.LimitedShow=  Tipo de Pago CASH, CHECK, CREDIT CARD, COUPON AND DEPOSIT son valores por defecto para todas de las entidades y no es necesario agregarlas por cada ubicacion.
+
+
+app.messages.GroundPickupsCashCollectedbyCourier=Dinero de Pickups de Ground Recolectado por el Courier:
+app.messages.AddAccountNumber=Por favor ingrese el número de cuenta a facturar en el campo de comentario
+app.title.AddOAC=Agregar OAC
+
+app.messages.OutboundAncillaryCharges=OUTBOUND ANCILLARY CHARGES
+
+app.messages.ViewFreightValues=Ver valores Freight
+app.messages.ViewOACValues=Ver valores de Outbound Ancillary Charges
+
+app.messages.TRKNumber=Número Track
+
+app.location.parentLocation=Código Localidad Padre
+app.messages.js.DepositBankDatesProblem=Bank Date must be >= Deposit Date
+app.messages.js.DepositDatesProblem=Fecha Dep\u00F3sito no pueden estar en el futuro.
+
+
+app.messages.cosmosScansEnabled=¿Procesar COSMOS scans?
+app.messages.ReopenDay=Reabrir día
+app.messages.ReopenDeposits=REABRIR ÚLTIMOS DEPÓSITOS
+app.messages.ConfirmReopen=INGRESAR NUEVOS DEPÓSITOS
+
+
+
+errors.messages.InvAwbNotFound=La factura/AWB número {0} no pudo ser encontrada.<br>
+app.title.EntitiesAdmin=Administrar Entidades
+app.messages.label.Table=Tabla
+app.messages.label.Column=Columna
+errors.messages.select.required=Seleccionar {0} es requerido
+app.messages.removeTable=Eliminar Tabla
+app.messages.createTable=Insertar Tabla
+app.messages.createColumn=Insertar Columna
+app.messages.saveTable=Grabar Tabla
+app.messages.removeColumn=Eliminar Columna
+app.messages.save=Grabar
+app.messages.cancel=Cancelar
+app.messages.addTable=Agregar Tabla
+app.messages.addColumn=Agregar Columna
+app.messages.selectTable=Seleccione Tabla
+app.location.rih=Proceso de RIH
+app.title.AdminTablesManager=Administrador de Tablas Principales
+app.message.Time=Hora
+errors.messages.CouldNotSaveTask=No se pudo guardar el calendario de tarea.
+errors.messages.CouldNotGetTask=No se pudo traer el calendario de tarea.
+app.location.InCageExceptions=Proceso de In-Cage 
+
+errors.messages.LocationIsRequired=Localidad es requerida
+errors.messages.CouldNotSaveLocation=No pudo grabar Localidad
+app.messages.baseLocationCode=Basado en
+app.messages.locationName=Nombre
+app.messages.addLocation=Agregar Localidad
+
+app.messages.AmountToChange=Cantidad para cambiar la moneda
+app.title.MultiInvoicePayment=Pago para múltiples facturas
+app.messages.MustSelectSplitCurrency=Debe seleccionar al menos una AWB antes de dividir la moneda.
+app.location.DualCurrency=Doble Moneda
+app.messages.ReceivablesReport=Reporte de Facturas Faltantes
+app.message.orderByColumn=Ordene por columna:
+app.messages.selectColumn=Seleccione columna
+app.title.PSUpload=People Soft Upload
+app.title.MustBeFINContAdmin=Debe ser un Controlador de Finanzas o un Administrador del sistema para realizar la operación
+app.title.PSCashInBankUpload=People Soft Cash in Bank Upload.
+app.title.PSWoffUpload=People Soft Write-Off Upload.
+app.messages.PSCashInBankSuccessful=People Soft Cash in Bank Upload fue exitosa.
+app.messages.PSWOffSuccessful=People Soft Write Off Upload fue exitosa.
+
+app.location.HoldLocation=Localidad Contenedora
+app.messages.js.CannotSetBillAccountStatus=El usuario no puede seleccionar Bill Account a menos que AWB sea VISA Inserted.
+app.title.UpdateMainTablesAdmin=Actualizar Tabla
+errors.messages.CouldNotGetTableInformation = No se pudo traer información de la Tabla.
+errors.messages.CouldNotGetDataInformation  = No se pudo traer información de los datos de esta Tabla.
+errors.messages.CouldNotSaveDataInformation  = No se pudo guardar información. Por favor revise el formato de los datos.
+
+app.message.js.WantToReopenEOD=Está seguro de reabrir el EOD seleccionado?
+app.message.StartDate=Fecha Inicio:
+app.message.EndDate=Fecha Fin:
+app.message.Get=Consultar
+app.message.js.EnterNewEODDate=Ingrese una nueva fecha para el EOD seleccionado
+app.message.js.EnterNewDepDate=Ingrese una nueva fecha para el depósito
+errors.messages.EnteredDateInvalid=The entered date is invalid
+app.title.BatchPaymentsAdmin=Payment Batches Admin
+
+app.title.MainTablesAdmin = Administración de Tablas principales
+app.messages.UserCannotBeCountryAdmin=Un Administrador no puede tener el rol Country Admin.
+app.messages.editRole=Editar Rol
+
+app.message.ExternalCustomer=Cliente Externo ?
+app.messages.MustConfigureCurrency=Debe configurar la moneda del país.
+
+app.messages.AWBCount=Número AWBs
+app.messages.ExchRate=Tipo de Cambio
+app.messages.MustSelectAPaymentType=Debe seleccionar un tipo de cambio.
+app.messages.New=Nuevo
+app.title.OtherPaymentsCategAdmin=Administrador de Categorías de Other Payments
+app.messages.Categories=Categorías
+app.messages.MustSelectACategory=Debe seleccionar un categoría
+app.messages.CouldNotDeleteCategory=No se pudo eliminar la categoría. Debe tener pagos asociados.
+
+app.messages.LocationsOfThisCountryOnly=Las localidades escritas en el campo + Locs deben pertenecer a un país asignado a ud.
+app.messages.js.WantDeleteBank=¿Está seguro que desea eliminar este banco?
+app.messages.js.DeleteBankOnlyAdmin=Para borrar un banco usted necesita role de Administrador.
+app.mesagge.js.SelectUserForRevoke=Para revocar usuarios debe seleccionar al menos uno.
+app.mesagge.js.SelectRoleForLocation=Para borra roles debe seleccionar al menos un role para la localidad {0} y el usuario {1}.
+app.mesagge.js.SelectLocationForUser=Para borra localidades debe seleccionar al menos una localidad para el usuario {0}.
+errrors.messages.CouldNotRevokeUser=Could not revoke the user.
+app.messages.Revoke=Revocar
+app.message.js.QuestionRevokeUser=\u00BFQuiere revocar este usuario de GCCS?
+app.messages.CorrectLocation=Las localidades en el campo 'Others Locs' debe estar formada de 4 a 6 letras solamente.
+app.quicklyLocations=Otras Locs
+
+app.messages.ReassignPayments=Reasignar Pagos
+app.messages.MustSelectSource=-Debe seleccionar al menos un tipo de pago (ROD, Prepaid, POA).
+app.messages.MustSelectCourierReassign=-Debe seleccionar al menos un courier para reasignar
+app.messages.MustSelectPaymentReassign=-Debe seleccionar al menos un pago para reasignar
+app.messages.CourierDoesNotExist=El courier especificado no existe en GCCS.
+
+errors.messages.CouldNotDeleteAccount=No se pudo borra la Cuenta Bancaria.<br>
+app.js.messages.EnterCountry=Debes seleccionar un pa\u00EDs primero.
+errors.messages.CouldNotShowAccountBank=No se pudo mostrar la Cuenta Bancaria.<br>
+errors.messages.CouldNotSaveAccountBank=No se pudo guardar la Cuenta Bancaria.<br>
+app.messages.SetLocations=Asignar Localidad
+app.messages.brach Rama
+app.messages.accountNbr=N\u00FAmero de Cuenta
+app.messages.AccountConf=Configuraci\u00F3n de Cuenta
+errors.messages.BankNameNotEntered=El nombre de banco debe ser ingresado.<br>
+errors.messages.CouldNotDeleteBank= No se pudo borrar el banco.<br>
+errors.messages.CouldNotSaveBank= No se pudo guardar el banco.<br>
+errors.messages.CouldNotGetBank= No se puede obtener el banco de la base de datos.<br>
+app.message.BankCode=C\u00F3digo Banco
+app.message.ShortDesc=Descripci\u00F3n Corta
+app.message.BankNm= Nombre del Banco
+app.title.AdminBank=Banco Admin 
+app.messages.addAccount= Agregar Cuenta
+app.messages.addBank= Agregar Banco
+app.messages.showAccount= Mostrar Cuentas
+app.all= Todos
+app.bank Banco
+app.country Pa\u00EDs
+app.messages.BankAccountList=Lista de Cuentas Bancarias
+app.title.AdminBankAccount=Administrador de Cuentas de Bancos
+
+
+app.messages.NoEODForToday=Hoy no hay ning\u00FAna operaci\u00F3n de fin del d\u00EDa para reabrir.
+app.messages.RefreshStopped=El refrescado de la p\u00E1gina se ha detenido. Para reiniciarlo comience el proceso de nuevo.
+app.messages.RefreshEnabled=Refrescado activado
+app.messages.RefreshInterval=Intervalo de refresco (minutos)\:
+app.messages.ExchRateOutRange=El tipo de cambio ingresado excede el l\u00EDmite de tolerancia para este pa\u00EDs. Ajuste el tipo de cambio o contacte al administrador del sistema por mayores detalles.
+app.messages.PageWillRefresh=Esta p\u00E1gina se refrescara en (minutos)\:
+app.messages.js.ConfirmReopen=Est\u00E1 seguro de deshacer la \u00FAltima operaci\u00F3n de Cierre del D\u00EDa?
+app.messages.CouldNotReopenLastEOD=El usuario intentando reabrir el \u00FAltimo Cierre del D\u00EDa es distinto del que cerr\u00F3 el d\u00EDa. Ud. debe ser ese mismo usuario o ser Manager de Operaciones para ejecutar esta operaci\u00F3n.
+
+app.messages.ScanType=Tipo de Scan
+app.messages.Location=Localidad
+app.messages.Details=Detalle
+
+app.messages.ShowScans=Detalle de Scans
+
+errors.UserLocked=El usuario est\u00E1 bloqueado. El Administrador del Sistema ha sido notificado y le respondera via email/phone.
+
+errors.GeneratingPassword=Error al generar la nueva clave.<br>
+
+app.message.CouldChangePassword=\u00A1Clave enviada\!. Procure cambiarla lo m\u00E1s pronto posible.<br>
+
+app.message.RecoverPassword=Recibir\u00E1s tu clave en esta direcci\u00F3n de correo.
+
+app.ForgotPassword=Recupere su clave desde este \u00EDtem de men\u00FA.
+
+app.title.ForgotPassword=Olvid\u00F3 su clave?
+
+app.title.RecoverPassword=Recuperar nueva Clave.
+
+errors.messages.CouldNotSaveTheData=Hubo un error tratando de guardar los datos.
+
+errors.UserNotFound=Id. de Usuario no existe. Int\u00E9ntelo nuevamente.
+
+errors.NotLocationTaskDefined=No existen tareas de importaci\u00F3n de facturas definidas.
+
+errors.NotColumnMappingsDefinedForTask=No existen mapeos de columnas para importar las facturas.
+
+errors.CouldNotImportInvoices=No se pudo importar las facturas
+app.messages.ReceiptNbr=N\u00BA Recibo
+
+app.title=Sistema de Control de Dinero Global
+
+app.title.ProcessLastCosmosScans=Procesar Scans de Cosmos
+
+app.PagesTitles.LoginPage=P\u00E1gina de acceso
+
+app.LoginScreen=P\u00E1gina de acceso
+
+app.EmployeeNumber=N\u00FAmero de empleado
+
+app.Password=Clave
+
+app.userName=Nombre de Usuario
+
+app.location=Localidad
+
+app.date=Fecha
+
+app.submit=Aceptar
+
+app.openDepositSlip=Abrir boleta de dep\u00F3sito
+
+app.opsManagerMenu=Men\u00FA del Manager de Operaciones
+
+app.processCosmosScans=Procesar Scans de Cosmos
+
+app.receiveValidate=Recibir y validar dinero recolectado
+
+app.reporting=Reportes
+
+app.RODFileImportStatus=Estado de importaci\u00F3n de archivos de ROD
+
+app.mainMenu=Men\u00FA principal
+
+app.logout=Salir
+
+app.checkinAgentMenu=Men\u00FA del Agente de Recepci\u00F3n
+
+app.messages.CannotFindShipmentProfile=No se pudo encontrar el perfil del env\u00EDo para esta AWB
+
+app.messages.CannotFindDetailedScans=No se pudo encontrar informaci\u00F3n detallada para esta AWB
+
+app.messages.UnknownError1=Error desconocido recuperando informaci\u00F3n desde COSMOS\: {0}.  Igualmente, se intentar\u00E1 insertar la AWB.<br>
+
+app.messages.DecodingError=Hubo un error decodificando la informaci\u00F3n de Cosmos. Los pagos deber\u00E1n ser ingresados manualmente.
+
+errors.messages.EmployeeNonExist=El n\u00FAmero de empleado {0} no exist\u00EDa y fue insertado en la base de datos.
+app.messages.RetrieveScansFromCOSMOS=Consultar los Scans de COSMOS
+
+app.messages.AWBNumber=N\u00FAmero AWB
+
+app.messages.CreateNewReceivable=Crear Nueva Factura
+
+app.messages.NotProcessedYet=A\u00FAn no ha processado los scans
+
+app.messages.NotErrorsProcessingScans=No hubo errores al procesar los scans
+
+errors.messages.CouldNotGetDataFromDB=Hubo un error recuperando los datos de la base de datos
+
+app.title.CheckingAgentCashRecap=Pantalla de Resumen del Agente de Control
+
+app.format.NumberFormat=\#\#\#.\#\#\#.\#\#\#.\#\#0,00
+
+errors.messages.MustSelectCourierToClose=Debe seleccionar la menos un courier para cerrar
+
+app.messages.ProcessEndDay=Procesar fin del d\u00EDa
+
+app.messages.CloseCourier=Cerrar courier(s)
+
+errors.messages.CouldNotCloseCourier=Algunos couriers no pudieron cerrarse. Todas sus facturas deben tener unestado.
+
+errors.messages.MustSelectCourierToClose1=Debe seleccionar la menos un courier para cerrar
+
+app.title.CourierCashRecap=Recolecci\u00F3n de dinero del courier
+
+app.messages.CourierEmployeeID=ID Empleado Courier 
+
+app.messages.ExpectedAmountLocalCurrency=Dinero Esperado (En Moneda Local)
+
+app.messages.AppliedPaymentsLocalCurrency=Pagos Aplicados (En Moneda Local)
+
+app.messages.ExpectedAmountUSD=Dinero Esperado (En D\u00F3lares)
+
+app.messages.AppliedPaymentsUSD=Pagos Aplicados (En D\u00F3lares)
+
+app.messages.Close=Cerrar?
+
+app.messages.Amount=Monto
+
+app.messages.InvoiceShipment=Factura/Env\u00EDo \#
+
+app.messages.GreenDeliveredAndCash=Verde - Paq. Entregado y Pagado
+
+app.messages.RedDeliveredWithoutCash=Rojo - Paq. entregado y no pagado
+
+app.messages.BlueOnVan=Azul - El paquete est\u00E1 en la VAN
+
+app.messages.AWBDetailsForEmployee=Detalles para el empleado\:
+
+app.messages.CustomerInvoice=Cliente/ Factura \#
+
+app.messages.ExpectedAmount=Dinero Esperado
+
+app.messages.SuperTrackerAmount=Monto Super Tracker
+
+app.messages.CheckInCash=Efectivo
+
+app.messages.CheckInCheck=Cheque
+
+app.messages.CheckNumber=Cheque \#
+
+app.messages.Comments=Comentarios
+
+app.messages.Status=Estado
+
+app.messages.AddReceivable=Agregar factura
+
+None=Ninguno
+
+Clear=Liberado
+
+Collect\ Late=Pago Futuro
+
+Credit=Cuenta FedEx
+
+In\ Cage=Jaula
+
+CA/GSP=CA/GSP
+
+app.format.Date=dd/MM/yyyy
+
+app.format.EditableNumberFormat=\#\#\#\#\#\#\#\#\#\#\#\#\#\#0.00
+
+app.messages.CashTotal=Total Efectivo ({0})
+
+app.messages.CheckTotal=Total Cheque ({0})
+
+app.messages.TotalPayments=Total de Pagos ({0})
+
+app.messages.CloseEmployee=Cerrar Empleado
+
+app.messages.UpdateReceivableInformation=Actualizar informaci\u00F3n de factura
+
+app.messages.ReturnSummaryRecap=Volver a p\u00E1gina resumen
+
+app.messages.TryToChangeRecPaymentCurrency=Ud. ha seleccionado cambiar la moneda del pago. Confirma la acci\u00F3n?
+
+app.messages.TryToChangeRecCurrency=Ud. ha seleccionado cambiar la moneda de la factura. Confirma la acci\u00F3n?
+
+app.messages.UpdateInformation=Ud. ha seleccionado actualizar la informaci\u00F3n de la pantalla. Confirma la acci\u00F3n?
+
+app.messages.ConfirmCloseCourier=Ud. ha seleccionado cerrar al courier. Confirma la acci\u00F3n?
+
+errors.messages.AllInvoicesStateToClose=No se puede cerrar un courier hasta que no todas sus facturas tengan un estado.
+
+errors.header=<b><font color\="red">
+
+errors.footer=</font></b>
+
+app.messages.BadMontos=Los montos ingresados no son v\u00E1lidos.
+
+app.messages.CommentsNotEntered=Debe ingresar comentarios cuando los montos no coinciden.
+
+app.messages.DocNumberNotEntered=El n\u00FAmero del documento de pago debe ser ingresado
+
+errors.messages.ThereAreNotClosedCouriers=No se puede procesar el fin del d\u00EDa. Hay couriers que no han sido cerrados.
+
+app.messages.EmptyBecauseClosedDay=No hay informaci\u00F3n para mostrar. Esto sucede cuando no hay facturas pendientes o cuando se ha procesado el fin del d\u00EDa actual.
+
+errors.messages.ThereWereErrors=Hubo errores\:
+
+app.messages.CustomerName=Nombre del Cliente
+
+app.messages.InvoiceNumber=N\u00FAmero Fact.
+
+app.messages.InvoiceDate=Fecha Fact.
+
+app.messages.InvoiceAmt=Monto Fact.
+
+app.messages.ListOfReceivables=Lista de Facturas
+
+app.messages.FindReceivable=Buscar Factura
+
+errors.messages.CouldNotReassingReceivableToCourier=No se pudo reasignar la factura al courier.
+
+errors.messages.CouldNotCreateInvoice=No se pudo crear la factura. Posiblemente ya se encuentra en la base de datos.
+
+app.messages.ExchangeRate=Tipo de Cambio
+
+errors.messages.AWBRequired=El n\u00FAmero de AWB es obligatorio.
+
+errors.messages.AWBInvalid=El n\u00FAmero de AWB es inv\u00E1lido.
+
+errors.messages.RecAmountRequired=El monto es obligatorio.
+
+errors.messages.RecAmountInvalid=El monto es  inv\u00E1lido.
+
+errors.messages.CustomerNameRequired=El nombre del cliente es obligatorio.
+
+errors.messages.ExchangeRateUsedRequired=El tipo de cambio es obligatorio.
+
+errors.messages.ExchangeRateUsedInvalid=El tipo de cambio es inv\u00E1lido.
+
+app.messages.PODNoPaymentReport=POD sin Scans de Pago
+
+app.messages.DailyExceptionReport=Excepciones diarias
+
+app.messages.DailyCashRecapReport=Recolecci\u00F3n diaria de dinero
+
+app.messages.BillAccountReport=Cargos Cta. Cte.
+
+app.messages.CreateReport=Generar Reporte
+
+app.messages.SelectReport=Seleccionar reporte
+
+app.title.CashRecapReport=Reporte de Recolecci\u00F3n de Dinero
+
+app.title.CreditPaymentsReport=Reporte de Pagos a Cr\u00E9dito
+
+app.title.DepositSlipGeneration=Generaci\u00F3n de la Boleta de Dep\u00F3sito
+
+app.title.ExceptionReceivablesReport=Reporte de Excepciones Diarias
+
+app.title.PODNoPaymentReport=Reporte de POD sin Pagos
+
+app.title.ReportSelector=Seleccionar un Reporte
+
+app.title.ViewReceivableDetails=Detalles de la Factura
+
+app.message.MustSelectAReport=Debe seleccionar un reporte.
+
+app.message.MustEnterAValidDate=Debe seleccionar una fecha v\u00E1lida. <br>
+
+app.messages.AvailableReports=Reportes
+
+errors.messages.CouldNotSaveDepositsNumber=No se pudo salvar los datos de dep\u00F3sito.
+
+app.messages.ExceptionClosedReceivablesReport=Reporte de Facturas Cerradas con Excepciones
+
+app.messages.PODNoCashScanRODReport=Reporte de Facturas con POD sin Pagos
+
+app.messages.CollectionStatus=Estado de Recolec.
+
+app.messages.CheckInAgent=Enc. Control
+
+app.messages.ClearDate=Fecha Cierre
+
+app.messages.ScanAmount=Monto Scan
+
+app.messages.Currency=Moneda
+
+app.messages.CreditPaymentsFor=Pagos a cr\u00E9dito para
+
+app.messages.CashRecapDate=Fecha de recolecci\u00F3n
+
+app.messages.CheckInAgentId=Enc. de Control
+
+app.messages.CashRecapAmount=Monto recolectado
+
+app.messages.DepositSlipNumber=N\u00FAmero de boleta de dep\u00F3sito
+
+app.messages.submit=Aceptar
+
+app.messages.SubmitSelected=Ha seleccionado guardar los datos. Confirma la acci\u00F3n?
+
+app.messages.CashRecapFor=Dinero recolectado para
+
+app.messages.Cash=Efectivo
+
+app.messages.Check=Cheque
+
+app.messages.TotalPayment=Total de Pagos
+
+app.messages.AssignReceivable=Asignar Factura
+
+app.messages.LocationRequired=La localidad es obligatoria
+
+app.messages.CourierRequired=El n\u00FAmero de courier es obligatorio.
+
+errors.messages.NotExistsEmployeeByLocation=El Courier no existe para la localidad especificada.
+
+errors.messages.InvalidDate=La fecha no es v\u00E1lida
+
+errors.messages.CouldNotShowInvoiceToAssign=No se puede mostrar la factura a reasignar.
+
+app.messages.NoDataToShow=No hay datos para mostrar.
+
+app.messages.PendentReceivables=Facturas Pendientes Courier
+
+app.PagesTitles.SelectLocation=Seleccione una localidad
+
+app.messages.ChangeLocation=Cambiar Localidad
+
+app.messages.Select=Seleccionar
+
+app.messages.MustSelectALocation=Debe seleccionar una localidad<br>
+
+app.messages.EmployeeName=Nombre Courier
+
+app.messages.Name\:=Name:
+
+app.urls.processing=ProcessingSpanish.gif
+
+app.message.ScansAreProcessing=Los scans est\u00E1n siendo procesados.
+
+app.messages.InCageExceptions=Excepciones In Cage
+
+app.title.RodFilesImpStatus=Estado de los archivos importados de ROD
+
+app.messages.ExternalRODFilesImport=Estado de importaci\u00F3n de los archivos de ROD
+
+app.messages.FileName=Nombre Archivo
+
+app.messages.DateProcessed=Fecha Proceso
+
+app.messages.Message=Mensaje
+
+app.format.DatePrecise=MM/dd/yyyy HH\:mm\:ss z
+
+app.messages.ImportStatusOk=Importado
+
+app.messages.ImportStatusErrors=No importado
+
+app.messages.PaymentDocument=Doc. de Pago
+
+app.messages.Number=N\u00FAmero
+
+app.messages.ChequeOrigin=Cheque Origin
+app.messages.ChequeDt=Cheque Date
+app.messages.CustomerBankName=Customer Bank Name
+
+app.messages.Type=Tipo
+
+app.messages.Totals=Totales
+
+app.messages.CreditCardTotal=Total Tarj. de Cr\u00E9dito ({0})
+
+app.messages.DepositTotal=Total Dep\u00F3sito ({0})
+
+app.messages.CreditCard=Tarj. de Cr\u00E9dito
+
+app.messages.Deposit=Dep\u00F3sito
+
+app.messages.LocalCurrencyAmount=Monto Moneda Local
+
+app.messages.USDAmount=Monto en d\u00F3lares
+
+app.messages.Expected=Esperado
+
+app.messages.Received=Recibido
+
+app.messages.AddPrepaidAwb=Agregar AWBs de Prepaid
+
+app.receiveValidateMessage=Recibir, validar, agregar, ajustar dinero recolectado de ROD, Pre-Paid y POA
+
+app.reportingMessage=Reportes varios relativos a dinero recibido, facturas pendientes, etc.
+
+app.processCosmosScansMessage=Obtener los Scan de Cosmos para las facturas marcadas como ROD en esta localidad.
+
+app.RODFileImportStatusMessage=Revisar el estado de la importaci\u00F3n de archivos XML de ROD.
+
+app.openDepositSlipMessage= Revisar dinero recolectado y crear boletas de dep\u00F3sito.
+
+app.messages.MenuWelcome=Bienvenido al Sistema Global de Control de Dinero...
+
+app.messages.EmployeeNonExist=El n\u00FAmero de empleado {0} no exist\u00EDa y fue insertado en la base de datos.
+
+errors.messages.LocationNonExist=La localidad especificada no existe.
+
+app.messages.ScanAmount1=Monto<br>Scan
+
+app.messages.Coupon=Cup\u00F3n
+
+app.messages.CouponTotal=Total Cupones ({0})
+
+app.messages.PUX16CourierDoesNotMatch=El courier que ingreso el PUP/PUX16 para la AWB {0}  ({1}) no corresponde con el courier actual ({2})<br>
+
+app.messages.PickupsCashCollectedbyCourier\:=Dinero de Pickups Recolectado por el Courier:
+
+app.messages.UseGun=Use un scanner para ingresar las AWBs.<br>&nbsp;Si necesita procesar m\u00E1s de 25 AWBs salve este formulario y continue.
+
+app.messages.CannotFindDetailedScans1=No se pudo encontrar informaci\u00F3n detallada para la AWB {0}.  Igualmente, se intentar\u00E1 insertar la AWB.<br>
+
+app.messages.CannotFindShipmentProfile1=No se pudo encontrar el perfil del env\u00EDo para la AWB {0}. Igualmente, se intentar\u00E1 insertar la AWB.<br>
+
+app.messages.DecodingError1=Hubo un error decodificando la informaci\u00F3n de Cosmos para la AWB {0}.  Igualmente, se intentar\u00E1 insertar la AWB.<br>
+
+errors.ScansProcessingError=Hubo errores procesando los scans.
+
+app.messages.UnknownError=Error desconocido recuperando informaci\u00F3n desde COSMOS\: {0}.
+
+app.messages.ErrorInsertingAwb=Hubo un error tratando de insertar la  AWB {0}
+
+app.messages.AWBExists=La AWB {0} ya existe en la base de datos.<br>
+
+app.messages.MustEnterAtLeastOneAwb=Debe ingresar al menos un n\u00FAmero de AWB.
+app.messages.js.MustEnterAtLeastOneTrakNbr=Debe ingresar al menos un n\u00FAmero de tracking.
+
+app.messages.MustSelectOtherPaymentType=Debe seleccionar la forma de pago.
+
+app.messages.MustEnterOtherPayment=El monto del documento de pago es obligatorio si se selecciona la forma de pago.
+
+app.messages.ControllerMenu=Men\u00FA del Controlador
+
+app.messages.AcrobatReader=Baje Acrobat Reader aqu\u00ED
+
+app.Language=Es
+
+app.messages.PoaSummaryTitle=Pantalla de Res\u00FAmen de POA
+
+app.messages.PoaAddPayment=Agregar pago de POA
+
+app.messages.PaymentReception=Recepci\u00F3n de pagos del Courier
+
+app.messages.Payment=Pago
+
+app.messages.FedExAccount=Cuenta FedEx
+
+app.messages.Customer=Cliente
+
+app.messages.Name=Nombre
+
+app.messages.Detail=Detalle
+
+app.messages.InvoicesReceivingPayment=Facturas a pagar
+
+app.messages.Action=Acci\u00F3n
+
+app.messages.Delete=Borrar
+
+app.messages.CloseSave=Desea guardar los cambios antes de cerrar la ventana?
+
+app.messages.MustEnterInvoiceNumber=Debe ingresar un n\u00FAmero de factura v\u00E1lido (9 caracteres).
+
+app.messages.MustEnterAnAmount=Debe ingresar un monto.
+
+app.messages.MustEnterAValidAccountNbr=Debe ingresar un n\u00FAmero de cuenta v\u00E1lido<br>
+
+app.messages.MustEnterCustomerName=Debe ingresar el nombre del cliente <br>
+
+app.messages.MustSelectCurrency=Debe seleccionar la moneda
+
+app.messages.MustEnterAtLeastOneInvoice=Debe ingresar al menos una factura
+
+app.messages.PaymentDeletionConfirmation=Ha seleccionado eliminar el pago. Confirma la acci\u00F3n? 
+
+app.messages.OpenReceivables=Facturas no Saldadas
+
+errors.messages.ErrorGeneratingXML=Hubo un error generando el archivo XML de salida
+
+app.AddRODAwbs=Ingreso Manual de AWB de ROD
+
+app.AddRODAwbsMessage=Ingreso de informaci\u00F3n de AWB y consulta de informaci\u00F3n de Cosmos
+
+app.messages.RodAddAwb=Agregar AWBs
+
+app.messages.AwbsReceived=AWBs a guardar
+
+app.messages.MustEnterAwbNumber=Debe ingresar un n\u00FAmero de AWB
+
+errors.messages.AwbInvalid=N\u00FAmero de Awb inv\u00E1lido
+
+app.messages.BadMonto=El monto ingresado no es v\u00E1lido
+
+app.messages.ValidExchRate=El tipo de cambio deber ser mayor a 0
+
+app.messages.DuplicateAWB=\# La factura para la AWB {0} ya existe en la base de datos.<br>
+
+app.messages.Account=Cuenta
+
+app.messages.ExternalId=ID Ext.
+
+app.messages.Source=Origen
+
+app.messages.ActualAmount=Monto Real
+
+app.messages.BankAmount=Monto Banco
+
+app.messages.ancillaryChargeAmount=Cargo Adicional
+
+app.messages.rodAmount=Monto ROD
+
+app.messages.BadRODAmt=El monto ROD es invalido
+
+app.messages.BadAncChargeAmt=El monto para el cargo adicional es invalido
+
+app.title.UserListByCountry=Administrar Lista de Usuarios
+
+app.messages.UserListByCountry=Lista de Usuarios por Pa\u00EDs
+
+app.title.AdminUserListByCountry=Administrador de Usuarios
+
+app.title.AdminUserListByCountryMessage=Administraci\u00F3n de Perfiles de Usuario Seg\u00FAn el Pa\u00EDs
+
+app.RolByLocation=Roles por Localidad
+
+app.messages.addUser=Agregar Usuario
+
+app.messages.addLocationRole=Agregar Localidad/Rol
+
+app.messages.deleteUser=Borrar Usuario
+
+app.messages.deleteLocation=Borrar Localidad
+
+app.messages.deleteRole=Borrar Rol
+
+app.messages.PreviousComments=Comentarios anteriores
+
+app.messages.MustEnterAComment=Debe ingresar un comentario
+
+errors.messages.CouldNotSaveComment=No se pudo grabar el comentario<br>
+
+app.messages.ViewAdd=Ver/Agregar
+
+app.messages.ViewAddComment=Ver/Agregar Comentario
+
+app.messages.MustEnterAmounts=Debe ingresar los montos antes de seleccionar el estado Depositado
+
+app.message.MustSelectACountry=Debe seleccionar un pa\u00EDs<br>
+
+app.title.CreditCardPymtGeneration=Pagos en tarjeta de cr\u00E9dito
+
+app.openCreditCard=Pagos en Tarjeta de Cr\u00E9dito
+
+app.openCreditCardMessage=Permite revisar pagos en tarjeta de Cr\u00E9dito
+
+errros.messages.CouldNotDeleteData=No se pueden borrar estos datos de la base de datos
+
+app.title.AdminNewEditUser=Agregar / Actualizar Usuario
+
+app.message.description=Descripci\u00F3n
+
+app.message.FedexId=Fedex Id.
+
+app.message.AdminUser=Informaci\u00F3n del Usuario ({0})
+
+app.Role=Rol
+
+errors.messages.CouldNotSaveCCInformation=No se pudo grabar la informaci\u00F3n de los lotes de pagos en tarjeta.
+
+app.messages.ReimbursedAmount=Monto recibido
+
+errors.messages.CouldNotGetLocationsFromDB=No se pudo traer las localidades desde la Base de Datos
+
+errors.messages.CouldNotGetRolesFromDB=No se pudo traer roles desde la Base de Datos
+
+error.messages.NotValidUser=Usuario no v\u00E1lido, {0}
+
+app.messages.NotValidPassword=La validaci\u00F3n de la clave fallida <br>
+
+app.messages.MustSelectARole=Debe seleccionar un  rol<br>
+
+app.messages.MustEnterFedexId=Debe ingresar un n\u00FAmero de empleado de FedEx <br>
+
+errors.messages.CouldNotGetUser=El usuario no existe en la base de datos  de CashControl, ni en el directorio de Fedex. Este es un usuario nuevo.
+
+app.title.AdminNewLocationRole=Agregar  Localidad/Rol
+
+app.message.AdminLocationRole=Informaci\u00F3n de Localidad y Rol del Usuario ({0})
+
+errors.messages.CouldNotSaveLocationRole=No se pudo grabar la Localidad y el Role
+
+app.title.AdminEnterEmployeeId=Ingresar Fedex Id
+
+app.messages.UserHasLocationRoleDefault=El usuario ya tiene Localidad y Rol predeterminados
+
+app.title.PrepaidDiscrepancies=Discrepancias en Prepaid
+
+app.messages.PrepaidDiscrepanciesMessage=Permite ver las discrepancias en las AWBs de Prepaid
+
+app.messages.PrepaidDiscrepancies=Discrepancias en Prepaid
+
+app.messages.Reason=Motivo
+
+app.messages.PUX16Amount=Monto PUX16
+
+app.messages.CouponAmount=Monto Cup\u00F3n
+
+app.messages.Discrepancy=Discrepancia
+
+app.messages.MustEnterCommentsToClose=Debe ingresar comentarios para cerrar la discrepancia
+
+app.messages.SavedUser=Usuario Grabado
+
+app_messages.MustEnterOnlyNumbers=Debe ingresar s\u00F3lo n\u00FAmeros para el Fedex Id. <br>
+
+app.Password2=Re-Ing. Clave
+
+app.messages.MustEnterUserName=Debe ingresar el nombre del usuario <br>
+
+app.messages.MustEnterPassword=Debe ingresar la clave <br>
+
+app.messages.EmailInvalid=Formato de e-mail inv\u00E1lido <br>
+
+app.title.Administration=Administraci\u00F3n
+
+app.Email=Email
+
+app.messages.PoaDetailBadMontos=Debe ingresar montos validos para la factura especificada
+
+app.message.QuestionDeleteUser=\u00BFQuiere borrar este usuario para este Pa\u00EDs?
+
+app.message.QuestionDeleteLocation=\u00BFQuiere borrar esta localidad y todos sus roles para este usuario?
+
+app.message.QuestionDeleteRole=\u00BFQuiere borrar este rol para este usuario?
+
+app.AdminMenu=Men\u00FA de Administraci\u00F3n
+
+app.title.AdminLocation=Administrador de Localidades
+
+errors.messages.CouldNotSave\ =No se pudo guardar la Localidad <br>
+
+errors.messages.CouldNotGetLocation=No se pudo traer la Localidad
+
+app.title.LocationSetupElements=Elementos de configuraci\u00F3n de localidades
+
+app.tittle.ElementsDetails=Detalles de elementos
+
+app.message.GeneralInformation=Informaci\u00F3n General
+
+app.CountryConfig=Configuración del país
+
+app.BankAccount=Cuentas Bancarias
+
+app.Code=C\u00F3digo
+
+app.location.VISAActive=Activar VISA Feed
+
+app.message.TimeZone=Zona - Tiempo
+
+app.title.AdminLocationSetup=Administrador de Configuraci\u00F3n de Localidades
+
+app.messages.Symbol=S\u00EDmbolo
+
+app.Warning=Advertencia
+
+app.messages.currencyWarning=Al cambiar la informaci\u00F3n de Pa\u00EDs-Moneda, todas las <br> localidades del pa\u00EDs ser\u00E1n afectadas
+
+app.title.AdminCountryCurrency=Administrador de Pa\u00EDs-Moneda
+
+errors.messages.CouldNotSaveCountryCurrency=No se pudo guardar la moneda del pa\u00EDs
+
+errors.messages.CouldNotGetCountryCurrency=No se pudo traer la moneda del pa\u00EDs
+
+app.messages.CurrencyCdInvalid=Debe ingresar un C\u00F3digo de Moneda v\u00E1lido<br>
+
+app.messages.CurrecyNmInvalid=Debe ingresar un Nombre de Moneda v\u00E1lido<br>
+
+app.messages.CurrencySymbolInvalid=Debe ingresar un S\u00EDmbolo de Moneda v\u00E1lido<br>
+
+app.DepositsSplitting=Separaci\u00F3n de Dep\u00F3sitos
+
+app.splitting.BySource=Por Origen
+
+app.splitting.ByCurrency=Por Moneda
+
+app.splitting.ByPaymentType=Por Tipo de Pago
+
+app.Prepaid=Prepago
+
+app.prepaid.DelayDays=D\u00EDas de Retraso Permitidos
+
+app.creditCard.ControlledGCCS=Controlado por GCCS
+
+app.creditCard.PaymentType=Tipo de Pago
+
+app.messages.adminLocationSpecific=(Espec\u00EDfico de Localidad)
+
+app.messages.adminLocationAllCountry=(Todas las localidades del Pa\u00EDs)
+
+app.title.OtherPaymentsReceived=Otros Pagos Recibidos
+
+app.messages.OtherPaymentsDataEntering=Ingreso Datos Otros Pagos
+
+app.messages.Description=Descripci\u00F3n
+
+app.messages.LocalCurrency=Moneda Local
+
+app.messages.TodayOthersPaymentsReceived=Otros Pagos Recibidos Hoy
+
+app.messages.CreditCardNumberDigits=Debe ingresar s\u00F3lo los \u00FAltimos 4 d\u00EDgitos de la Tarjeta de Cr\u00E9dito
+
+app.messages.DepositDatesProblem=Fecha Banco debe ser >\= Fecha Deposito. No pueden estar en el futuro. Deben ser >\= Fecha de generaci\u00F3n.
+
+app.messages.MustEnterDepositDates=Debe ingresar las fechas para cerrar el dep\u00F3sito.
+
+app.messages.DepositDate=Fecha Dep
+
+app.messages.BankDate=Fecha Bco
+
+app.messages.CurrencyAbbrv=Mon.
+
+app.messages.CommentsAbbrv=Comnt.
+
+app.messages.SourceAbbrv=Orig
+
+app.title.AdminSQLStatement=Gatillador de sentencias SQL 
+
+app.messages.LocationNonExist=La localidad no existe.
+
+app.title.ChangePassword=Cambiar Clave
+
+app.ChangePassword=Cambie su clave desde este \u00EDtem de men\u00FA.
+
+app.NewPassword=Nueva Clave
+
+app.OldPassword=Clave Antigua
+
+errors.messages.OldPasswordInvalid=Clave antigua inv\u00E1lida <br>
+
+app.messages.PasswordChanged=Clave Cambiada Exitosamente
+
+app.messages.MustEnterNewInvalid=Debe ingresar la nueva Clave <br>
+
+app.messages.MustEnterNewAgainInvalid=Debe re-ingresar la nueva clave <br>
+
+app.messages.NewPasswordsEquals=La nueva clave y el re ingreso de clave deben ser iguales <br>
+
+app.messages.NoPUXForAWB=No hay PUP/PUX16 para la AWB {0}. Se debe proveer el correspondiente Courier ID.
+
+app.messages.DefaultPage=P\u00E1gina por Defecto
+
+app.messages.CannotSetStatusVISA-Inserted=Status VISA-Inserted cannot be selected by the user.
+
+errors.messages.CourierRequired=El Courier es obligatorio
+
+errors.messages.LocationRequired=La localidad es requerida
+
+
+app.message.js.MustEnterAValidDate=Debe seleccionar una fecha v\u00E1lida. <br> 
+app.message.js.MustSelectACountry=Debe seleccionar un pa\u00EDs<br> 
+app.messages.js.MustEnterAValidAccountNbr=Debe ingresar un n\u00FAmero de cuenta v\u00E1lido<br> 
+app.messages.js.MustSelectALocation=Debe seleccionar una localidad
+app.message.js.MustSelectAReport=Debe seleccionar un reporte. 
+app.message.js.QuestionDeleteLocation=\u00BFQuiere borrar esta localidad y todos sus roles para este usuario? 
+app.message.js.QuestionDeleteRole=\u00BFQuiere borrar este rol para este usuario? 
+app.message.js.QuestionDeleteUser=\u00BFQuiere borrar este usuario para este Pa\u00EDs? 
+app.messages.js.BadAncChargeAmt=El monto para el cargo adicional es invalido 
+app.messages.js.BadMonto=El monto ingresado no es v\u00E1lido 
+app.messages.js.BadMontos=Los montos ingresados no son v\u00E1lidos. 
+app.messages.js.BadRODAmt=El monto ROD es invalido 
+app.messages.js.CannotSetStatusVISA-Inserted=Status VISA-Inserted cannot be selected by the user. 
+app.messages.js.CloseSave=Desea guardar los cambios antes de cerrar la ventana? 
+app.messages.js.CommentsNotEntered=Debe ingresar comentarios, al menos uno distinto de OTRO, cuando los montos no coinciden. 
+app.messages.js.ConfirmCloseCourier=Ud. ha seleccionado cerrar al courier. Confirma la acci\u00F3n? 
+app.messages.js.CourierRequired=El n\u00FAmero de courier es obligatorio. 
+app.messages.js.CreditCardNumberDigits=Debe ingresar s\u00F3lo los \u00FAltimos 4 d\u00EDgitos de la Tarjeta de Cr\u00E9dito 
+app.messages.js.DocNumberNotEntered=El n\u00FAmero del documento de pago debe ser ingresado 
+app.messages.js.TryToChangeRecCurrency=Ud. ha seleccionado cambiar la moneda de la factura. Confirma la acci\u00F3n? 
+app.messages.js.TryToChangeRecPaymentCurrency=Ud. ha seleccionado cambiar la moneda del pago. Confirma la acci\u00F3n? 
+app.messages.js.MustEnterAComment=Debe ingresar un comentario 
+app.messages.js.MustEnterAmounts=Debe ingresar los montos antes de seleccionar el estado Depositado 
+app.messages.js.MustEnterAnAmount=Debe ingresar un monto. 
+app.messages.js.MustEnterAtLeastOneAwb=Debe ingresar al menos un n\u00FAmero de AWB. 
+app.messages.js.MustEnterAtLeastOneInvoice=Debe ingresar al menos una factura 
+app.messages.js.MustEnterAwbNumber=Debe ingresar un n\u00FAmero de AWB 
+app.messages.js.MustEnterCommentsToClose=Debe ingresar comentarios para cerrar la discrepancia 
+app.messages.js.MustEnterDepositDates=Debe ingresar las fechas para cerrar el dep\u00F3sito. 
+app.messages.js.MustEnterFedexId=Debe ingresar un n\u00FAmero de empleado de FedEx 
+app.messages.js.MustEnterInvoiceNumber=Debe ingresar un n\u00FAmero de factura v\u00E1lido (9 caracteres). 
+app.messages.js.MustEnterOtherPayment=El monto del documento de pago es obligatorio si se selecciona la forma de pago. 
+app.messages.js.MustSelectCurrency=Debe seleccionar la moneda 
+app.messages.js.MustSelectOtherPaymentType=Debe seleccionar la forma de pago. 
+app.messages.js.PaymentDeletionConfirmation=Ha seleccionado eliminar el pago. Confirma la acci\u00F3n?  
+app.messages.js.PoaDetailBadMontos=Debe ingresar montos validos para la factura especificada 
+app.messages.js.UpdateInformation=Ud. ha seleccionado actualizar la informaci\u00F3n de la pantalla. Confirma la acci\u00F3n? 
+app.messages.js.ValidExchRate=El tipo de cambio deber ser mayor a 0 
+app_messages.js.MustEnterOnlyNumbers=Debe ingresar s\u00F3lo n\u00FAmeros para el Fedex Id. 
+errors.messages.js.AllInvoicesStateToClose=No se puede cerrar un courier hasta que no todas sus facturas tengan un estado. 
+errors.messages.js.AwbInvalid=N\u00FAmero de Awb inv\u00E1lido 
+errors.messages.js.AWBInvalid=El n\u00FAmero de AWB es inv\u00E1lido. 
+errors.messages.js.AWBRequired=El n\u00FAmero de AWB es obligatorio. 
+errors.messages.js.CourierRequired=El Courier es obligatorio
+errors.messages.js.CustomerNameRequired=El nombre del cliente es obligatorio. 
+errors.messages.js.ExchangeRateUsedInvalid=El tipo de cambio es inv\u00E1lido. 
+errors.messages.js.ExchangeRateUsedRequired=El tipo de cambio es obligatorio. 
+errors.messages.js.LocationRequired=La localidad es requerida
+errors.messages.js.MustSelectCourierToClose1=Debe seleccionar la menos un courier para cerrar
+errors.messages.js.MustSelectNewCourierToClose=Debe seleccionar un nuevo courier antes de cerrar
+errors.messages.js.AllCouriersAreClosed=Todos los couriers ya estan cerrados
+errors.messages.js.RecAmountInvalid=El monto es inv\u00E1lido. 
+errors.messages.js.RecAmountRequired=El monto es obligatorio. 
+errors.messages.js.ThereAreNotClosedCouriers=No se puede procesar el fin del d\u00EDa. Hay couriers que no han sido cerrados. 
+errors.messages.js.ThereWereErrors=Hubo errores\: 
+
+app.newLocation=Nueva Localidad
+
+app.newRole=Nuevo Rol
+
+app.locationDefault=Localidad Predeterminada
+
+app.role=Rol Predeterminado
+
+errors.UserFoundWithException=Su password expirar\u00E1 en  {0} d\u00EDas. Por favor cambiela lo antes posible.
+
+errors.WrongPassword= Password Err\u00F3nea. Recuerde que ud. tiene s\u00F3lo tres intentos de login.
+
+errors.LoginError=Error de Sistema al validar login. Por favor int\u00E9ntelo mas tarde.
+
+app.title.PaymentTypesAdmin=Administraci\u00F3n de tipos de pagos
+
+app.messages.ShortDescription=Descripci\u00F3n Corta
+
+app.messages.PaymentCategory=Payment Category
+
+app.messages.Code=C\u00F3digo
+
+app.title.LockedUser=Usuario Bloqueado
+
+app.passwordExpired=\u00A1Su password ha expirado\! <br> Por favor, cambiela ahora. <br>
+
+app.messages.js.UnSavedChanges=Hay cambios no grabados. Desea continuar y perder los cambios?
+
+app.messages.js.MustEnterAllField=Todos los datos son obligatorios.
+
+app.messages.CouldNotSavePaymentType=No se pudo salvar el tipo de pago. Verifique que el c\u00F3digo sea \u00FAnico.
+
+app.messages.CouldNotDeletePaymentType=No se pudo eliminar el tipo de pago.
+
+errors.messages.CouldNotSendMessage=No se pudo enviar el email notificador.
+
+app.message.Yes=Si
+
+app.message.No=No
+
+app.messages.js.AddAllLocations=Est\u00E1 seguro de agregar todas las localidades?
+
+app.messages.js.RemoveAllLocations=Est\u00E1 seguro de eliminar todas las localidades?
+
+app.title.DepoTemplatesAdmin=Administraci\u00F3n de Plantillas de Dep\u00F3sitos
+
+app.messages.ROD=ROD
+
+app.messages.PREPAID=PREPAID
+
+app.messages.POA=POA
+
+app.messages.OTHER=OTHER
+
+app.messages.Stations=Estaciones
+
+app.messages.Payments=Payments
+
+app.SendEmail=Notificar el Usuario
+
+app.messages.CouldNotSaveTemplate=No se pudo guardar el template. Verifique que el c\u00F3digo sea \u00FAnico.
+
+app.messages.CouldNotDeleteTemplate=Could not delete template
+
+app.messages.CreditCardReimbType=Forma de reembolso de Cred. Card
+
+app.messages.PaymentTypes=Tipos de pago
+
+app.messages.Edit=Editar
+
+app.messages.js.AddAllPaymentTypes=Est\u00E1 seguro de agregar todos los tipos de pago?
+
+app.messages.js.RemoveAllPaymentTypes=Est\u00E1 seguro de eliminar todos los tipos de pago?
+
+app.messages.js.TemplatePaymentCtgRules=The payments cannot be added.\\n Remember that the only payment types that can be mixed\\n in the same template are cash and check. 
+
+app.ExternalFilesImportStatus=Estado de Importaci\u00F3n de Archivos Externos
+
+app.messages.TemplOverlapError=Hubo los siguientes errores de superposici\u00F3n en el template\:<br>{0}
+
+app.messages.CouldNotSaveTheChanges=El sistema no pudo salvar los cambios
+
+app.ExternalFilesImportStatusMessage=Revisar estado de importaci\u00F3n de archivos externos.
+
+app.messages.js.MustSelectASource=Debe seleccionar al menos un or\u00EDgen de pago para la plantilla
+
+app.messages.js.MustSelectACurrency=Debe seleccionar un tipo de moneda para la plantilla 
+
+app.title.PymtImportStatus=Estados de los Archivos Externos Importados
+
+app.messages.ExternalFilesImport=Estado de importaci\u00F3n de archivos externos
+
+app.messages.ExternalFilesImportDetails=Detalles de Error de Importaci\u00F3n  Externa
+
+app.messages.UserMustBeAdded=El usuario no est\u00E1 agregado al sistema. Comun\u00EDquese con el Administrador.
+
+app.title.RODBreakout=Desglose del Pago de ROD
+
+app.title.PrepaidBreakout=Desglose del Prepago
+
+app.title.PoaBreakout=Desglose del POA
+
+app.messages.InvoicePaymentBreakout=Detalles del Pago
+
+app.messages.Charge=Cargo
+
+app.messages.CollectedAmt=Monto Recolectado
+
+app.messages.Done=Aceptar
+
+app.messages.FreightPaymentBreakout=Detalle Pago Flete
+
+app.messages.TotalSurchNotMatch=El total del detalle de pagos no coincide con el total pagado. Desea proseguir de cualquier manera?
+
+app.messages.FindBy=Buscar por
+
+app.messages.Invoice#=N° Factura
+
+app.messages.Account#=N° Cuenta
+
+app.messages.TooManyInvoices=La consulta retorn\u00F3 demasiadas facturas.<br>Deber\u00EDa buscar por n\u00FAmero de factura.
+
+app.title.PoaFindInvoices=Buscar Facturas
+
+app.messages.Save=Guardar
+
+app.messages.DuplicateInvoices= ya existe. No puede ser agregada otra vez.
+
+app.messages.USDAmount1=Monto USD
+
+app.messages.js.DuplicateInvoices= ya existe. No puede ser agregada otra vez.
+
+app.messages.js.TotalSurchNotMatch=El total del detalle de pagos no coincide con el total pagado. Desea proseguir de cualquier manera?
+
+app.messages.js.Invoice#=N° Factura
+
+app.messages.js.ViewAddComment=Ver/Agregar Comentario
+
+app.messages.js.PrepyRecAmount=Ingrese una cantidad de prepago de factura.
+
+app.messages.js.PrepyRecWindow=Prepago de factura.
+
+app.messages.js.PrepyNumberNotZero=Este no es un n\u00FAmero > 0\! Ingrese un n\u00FAmero > 0
+
+app.messages.js.EnterNewCust=Ingrese un nuevo nombre de cliente
+app.messages.js.ReEnterNewCust=Ingrese un nombre de cliente v\u00E1lido. Debe contener un valor de hasta 50 caracteres.
+
+app.messages.js.EnterNewAmount=Ingrese el monto de la factura
+app.messages.js.ReEnterNewAmount=Ingrese el monto de la factura. Debe ser mayor a cero.
+
+app.messages.js.EnterNewReceipt=Ingrese un n\u00FAmero de recibo
+app.messages.js.ReEnterNewReceipt=Ingrese un n\u00FAmero de recibo. Debe ser una letra, un n\u00FAmero o uno de los siguientes\: - \\\\ /
+
+app.js.mainMenu=Men\u00FA principal
+app.js.messages.AddPrepaidAwb=Agregar AWBs de Prepaid
+app.js.messages.AddReceivable=Agregar factura
+app.js.messages.AssignReceivable=Asignar Factura
+app.js.messages.FindReceivable=Buscar Factura
+app.js.messages.ListOfReceivables=Lista de Facturas
+app.js.messages.PoaAddPayment=Agregar pago de POA
+app.js.messages.PoaSummaryTitle=Pantalla de Res\u00FAmen de POA
+app.js.messages.RodAddAwb=Agregar AWBs
+app.js.messages.ViewAddComment=Ver/Agregar Comentario
+app.js.PagesTitles.LoginPage=P\u00E1gina de acceso
+app.js.PagesTitles.SelectLocation=Seleccione una localidad
+app.js.title.AdminCountryCurrency=Administrador de Pa\u00EDs-Moneda
+app.js.title.AdminEnterEmployeeId=Ingresar Fedex Id
+app.js.title.Administration=Administraci\u00F3n
+app.js.title.AdminLocationSetup=Administrador de Configuraci\u00F3n de Localidades
+app.js.title.AdminNewEditUser=Agregar / Actualizar Usuario
+app.js.title.AdminNewLocationRole=Agregar Localidad/Rol
+app.js.title.AdminUserListByCountry=Administrador de Usuarios
+app.js.title.CashRecapReport=Reporte de Recolecci\u00F3n de Dinero
+app.js.title.ChangePassword=Cambiar Clave
+app.js.title.CheckingAgentCashRecap=Pantalla de Resumen del Agente de Control
+app.js.title.CourierCashRecap=Recolecci\u00F3n de dinero del courier
+app.js.title.CreditCardPymtGeneration=Pagos en tarjeta de cr\u00E9dito
+app.js.title.CreditPaymentsReport=Reporte de Pagos a Cr\u00E9dito
+app.js.title.DepositSlipGeneration=Generaci\u00F3n de la Boleta de Dep\u00F3sito
+app.js.title.DepoTemplatesAdmin=Administraci\u00F3n de Plantillas de Dep\u00F3sitos
+app.js.title.ExceptionReceivablesReport=Reporte de Excepciones Diarias
+app.js.title.ForgotPassword=Olvid\u00F3 su clave?
+app.js.title.LockedUser=Usuario Bloqueado
+app.js.title.OtherPaymentsReceived=Otros Pagos Recibidos
+app.js.title.PaymentTypesAdmin=Administraci\u00F3n de tipos de pagos
+app.js.title.PoaBreakout=Desglose del POA
+app.js.title.PoaFindInvoices=Buscar Facturas
+app.js.title.PODNoPaymentReport=Reporte de POD sin Pagos
+app.js.title.PrepaidBreakout=Desglose del Prepago
+app.js.title.PrepaidDiscrepancies=Discrepancias en Prepaid
+app.js.title.ProcessLastCosmosScans=Procesar Scans de Cosmos
+app.js.title.PymtImportStatus=Estados de los Archivos Externos Importados
+app.js.title.ReportSelector=Seleccionar un Reporte
+app.js.title.RODBreakout=Desglose del Pago de ROD
+app.js.title.RodFilesImpStatus=Estado de los archivos importados de ROD
+app.js.title.ViewReceivableDetails=Detalles de la Factura
+
+app.messages.FreightAmt=Monto Flete
+app.roleDefault=Rol por Defecto
+app.messages.Balance=Saldo
+app.messages.ExpirationDate=Fecha Expiración
+?app.messages.baseLocationCode=Base code
+?app.location.InCageExceptions=In-Cage Process
+app.messages.js.BankDateProblem=Bank Date must be >= deposit generation date and <= one year after deposit generation date
+app.messages.js.DepositDateProblem=Deposit Date must be >= deposit generation date - 1 and <= one year after deposit generation date
+app.messages.entityCd=Código Entidad
+app.js.message.EnterNewDepDate=Enter new date for batch number
+app.js.message.EnterNewEODDate=Enter new date for End of Day number
+app.js.message.WantToReopenEOD=Are you sure to reopen selected EOD?
+app.messages.AddGrndTrakNbr=Add Ground Tracking Numbers
+app.messages.BatchID=Batch ID
+app.messages.CloseDate=Close Date
+app.messages.Comment=Comment
+app.messages.CreditCardNumber=Credit Card Number
+app.messages.CreditCardPymtReport=Credit Card Payments Report
+app.messages.GroundTkNbr=Ground Tracking Number
+app.messages.js.MustEnterAValidGroundTrakingNumber=Must enter a valid Ground Tracking Number
+app.messages.OtherNumber=Other Number
+app.messages.PaymentAmount=app.messages.PaymentAmount
+app.messages.PaymentType=Payment Type
+app.messages.StatusId=Status ID
+app.title.CreditCardPymtReport=Credit Card Payments Report
+app.title.GroundPayments=Ground Payments
+app.title.OACPayments=OAC Payments
+app.title.OtherPayments=Other Payments
+app.title.POAPayments=POA Payments
+app.title.PrepaidPayments=Prepaid Payments
+app.title.PropietaryAndconfidential=Proprietary and Confidential Information
+app.title.RODPayments=ROD Payments
+
+wl.error.noValidChars= Forbidden Characters.
+wl.error.noValidCharsN= Forbidden characters on input value '{0}'.
+
+global.error.message=UnExpectedError
+
+errors.messages.InvalidInvoice= Warning: '{0}' is not an outstanding Invoice for the indicated Fedex Account number.
+
+app.messages.RODUploadActivation=ROD Upload Activation
+app.messages.PRPUploadActivation=PRP Upload Activation
+app.messages.GRDUploadActivation=GRD Upload Activation
+app.messages.OTHUploadActivation=OTH Upload Activation
+app.messages.FTCUploadActivation=FTC Upload Activation
+app.messages.paymentAccountNumber=GCCS Payment Account Number
+
+app.messages.OriginationNumber=Origination Number
+app.AdminMenuOPSManager = Administration Menu

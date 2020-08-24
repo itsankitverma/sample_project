@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="deploy" name="EJBXBuildPH2">
+  <property name="ejbxClasspath" value=".;C:\bea\weblogic81\server\lib\weblogic.jar;K:\CashControl\Tools\EJBX\lib\xerces.jar;K:\CashControl\Tools\EJBX\lib\jdom.jar;K:\CashControl\Tools\EJBX\lib\ejbx.jar;C:\bea\jdk142_05\lib\tools.jar;C:\bea\weblogic81\server\ext\jdbc\oracle\920\ojdbc14.jar"/>
+  <property file="./EJBXbuild.properties"/>
+  <target name="genSchema">
+     <java classname="com.htg.tools.ejbx.bo.ejbx" fork="yes" classpath="${ejbxClasspath}">
+         <arg value="DBtoXML"/> 
+         <arg value="../schema/schema.xml"/> 
+         <arg value="../config/config.xml"/>                  
+     </java>
+  </target>  
+  
+  <target name="genEJBs" >
+    <delete file="./ejb-jar.xml" quiet="true" />
+    <delete file="./weblogic-cmp-rdbms-jar.xml" quiet="true" />
+    <delete file="./weblogic-ejb-jar.xml" quiet="true" /> 
+    <delete dir="com" quiet="true" /> 
+      
+    <java classname="com.htg.tools.ejbx.bo.ejbx" fork="yes" classpath="${ejbxClasspath}">
+        <arg value="XMLtoEJB"/> 
+        <arg value="../schema/schema.xml"/> 
+        <arg value="../config/config.xml"/>                  
+    </java>
+	<replaceregexp file="./weblogic-ejb-jar.xml"
+ 	                match="${DefaultCache}"
+ 	                replace="${NewGeneralCache}"
+ 	                byline="true"/>
+ 	
+	<replaceregexp file="./weblogic-ejb-jar.xml"
+ 	 	           match="${OldCache}"
+ 	 	           replace="${SpecialCache}"
+ 	 	           flags="m"/>              
+    <move file="./ejb-jar.xml" todir="./META-INF/"/>
+    <move file="./weblogic-cmp-rdbms-jar.xml" todir="./META-INF/"/>
+    <move file="./weblogic-ejb-jar.xml" todir="./META-INF/"/>
+    
+    <echo> ********* EJBX PROCESS **********
+Changed the max-beans-in-cache value from 100 to 5000.
+And changed max-beans-in-cache value to 50000 only for RecExpSrchgEJB.
+*********************************************************************
+    </echo>     
+  </target>  
+  
+   
+  <target name="compileEJBs">      
+    <property name="src" value="."/>
+    <property name="build" value="../build"/>
+    <delete dir="${build}/com" quiet="true" />
+    <delete dir="${build}/META-INF" quiet="true" />    
+  
+    <javac destdir="${build}"
+           srcdir="${src}"
+           classpath="${ejbxClasspath}"               
+           debug="on" />
+    <copy file="${src}/ejb-jar.xml" todir="${build}/META-INF/"/>
+    <copy file="${src}/weblogic-cmp-rdbms-jar.xml" todir="${build}/META-INF/"/>
+    <copy file="${src}/weblogic-ejb-jar.xml" todir="${build}/META-INF/"/>    
+  </target>    
+  
+  <target name="createJar">
+      <jar jarfile="../CashControlEJBX.jar"
+           basedir="../build/"
+      />  
+  </target>    
+  
+  <target name="deploy">
+     <property name="dirSrc" value=".."/>
+     <property name="dirTrg" value="J:/"/>        
+     <!--property name="wljar" value="L:/beaTEST/wlserver6.1/lib/weblogic.jar"/>     
+     <java classname="weblogic.ejbc" fork="yes" classpath="${wljar}" output="${dirSrc}/src/deploy.log">
+         <arg value="${dirSrc}/CashControlEJBX.jar"/> 
+         <arg value="${dirSrc}/../CashControlEJBXCOMP.jar"/> 
+     </java-->
+     <copy file="${dirSrc}/CashControlEJBX.jar" tofile="${dirTrg}/CashControlEJBX.jar"/>     
+     <!--delete file="${dirSrc}/../CashControlEJBXCOMP.jar"/-->
+     <touch file="${dirTrg}/META-INF/REDEPLOY"/>      
+  </target>  
+</project>

@@ -1,0 +1,317 @@
+/**
+ * AdminBankAccountAction.java
+ *
+ * Created on April 17, 2003, 4:54 PM
+ */
+
+package com.fedex.lacitd.cashcontrol.prestier.struts.action;
+
+import org.apache.struts.action.*;
+
+import com.fedex.lacitd.cashcontrol.common.*;
+import com.fedex.lacitd.cashcontrol.common.monitoring.*;
+
+import com.fedex.lacitd.cashcontrol.biztier.common.*;
+import com.fedex.lacitd.cashcontrol.biztier.bizdelegates.AdminBizDelegate;
+import com.fedex.lacitd.cashcontrol.biztier.bizdelegates.SystemUtilsBizDelegate;
+import com.fedex.lacitd.cashcontrol.biztier.exception.*;
+import com.fedex.lacitd.cashcontrol.prestier.helper.*;
+import com.fedex.lacitd.cashcontrol.prestier.struts.form.*;
+import com.fedex.lacitd.cashcontrol.datatier.valueobject.*;
+import com.fedex.lacitd.cashcontrol.datatier.controller.*;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ArrayList;
+import javax.servlet.http.*;
+
+/**
+ * @author  Arturo Gonzalez
+ */
+public class AdminBankAccountAction extends Action implements Serializable{
+
+    AdminBizDelegate  abd       = new AdminBizDelegate();
+    SystemUtilsBizDelegate subd = new SystemUtilsBizDelegate();
+    ActionErrors      ae        = new ActionErrors();
+    
+    /** Creates a new instance of AdminUserListAction */
+    public AdminBankAccountAction() {
+    }
+    
+    
+    public ActionForward execute (ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response)
+    {     Collection countries  = null;
+          
+          //Clear Errors
+          ae.clear();
+         
+          String action  = request.getParameter("action");
+          
+          if(action==null)
+             action=(String)request.getAttribute("action");
+          
+          
+          
+          //Here is checks the Session to know if there is an userProfile to follow the workflow
+          //If there is not an user Profile return to logout page
+            EmployeeProfile ep=(EmployeeProfile)request.getSession().getAttribute("userProfile");
+            if(ep==null) return mapping.findForward("logout");
+            
+            
+            AdminBankAccountForm frm = (AdminBankAccountForm)form;
+            if("selectBanks".equals(action))
+            {	getBanksLocations(frm, request);
+            }else if("showAccounts".equals(action))
+            	{     getBankAccounts(mapping, form, request);
+            	}else if("deleteBank".equals(action))
+            		  	   {   deleteBank(frm, request);
+            		  	   	   getBankAccounts(mapping, form, request);
+            		  	   }else if("addAccount".equals(action) || "modAccount".equals(action))
+            		  	   		{	return addModAccount(mapping, frm, request);}
+            		  	   		else if("deleteAccount".equals(action))
+            		  	   		     {   deleteAccount( frm, request);
+            		  	   		     	 getBankAccounts(mapping, form, request);}
+            		
+            //Check if is country available, if not get countries from database
+              this.checkCountriesInSession(request, ep);
+            //Go to show the window
+            return mapping.findForward("showWindow");
+    }
+    
+    /**
+     * Method used to delete an account and delete the location account association
+     * @param request
+     */
+    private void deleteAccount(AdminBankAccountForm frm, HttpServletRequest request)
+    {	Integer accountCd= new Integer(request.getParameter("accountCd"));
+
+        try{
+
+            BankAccController bankAcc=new BankAccController();
+            BankAccVO acc = bankAcc.getBankAcc(frm.getAccountCd());
+
+            LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_DELETE, "AdminBankAccountAction deleteAccount() bank: " +
+                    acc.getBankId(), "" + acc.getAccountNbr(), true);
+
+            abd.deleteAccount(accountCd);
+
+        }catch(Exception e)
+    	 {	Constants.logger.debug(Utils.stackTraceToString(e));
+    	 	ae.add(ActionErrors.GLOBAL_ERROR, new ActionError("errors.messages.CouldNotDeleteAccount"));
+    	 	saveErrors(request,ae);
+
+            LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_DELETE, "AdminBankAccountAction deleteAccount()", "" + accountCd, false);
+    	 }
+    }
+    
+    /**
+     * Get Data about Bank Accounts 
+     * @param mapping
+     * @param form
+     * @param request
+     */
+    private void getBankAccounts(ActionMapping mapping, ActionForm form, HttpServletRequest request)
+    {
+        try{
+            
+            AdminBankAccountForm frm = (AdminBankAccountForm)form;
+            
+            String country	= frm.getCountry();
+            Integer bank	= frm.getBank();
+            String location	= frm.getLocation();
+            getBanksLocations(frm, request);
+            
+            bank=(bank==null)?bank=new Integer(0):bank;
+            location=(location==null)?"all":location;
+            
+            frm.setBankAccounts((List)abd.getBankAccounts(country, bank, location));
+            
+            request.setAttribute("AdminBankAccountForm",frm);
+         }catch(Exception e)
+          { Constants.logger.debug(Utils.stackTraceToString(e));
+            ae.add(ActionErrors.GLOBAL_ERROR,new ActionError("errors.messages.CouldNotGetDataFromDB"));
+            saveErrors(request,ae);
+          }
+    }
+    
+    /**
+     * This method get loactions by the country code selected 
+     * @param country
+     * @param request
+     * @return locationsByCountry
+     */
+    public Collection getLocationsByCountry(String country, HttpServletRequest request)
+    {   
+         ArrayList locationsByCountry=new ArrayList();
+         try{
+            locationsByCountry = (ArrayList)abd.getLocationsByCountry(country);
+        }catch(BizDelegateException bde)
+         { Constants.logger.debug(Utils.stackTraceToString(bde));
+           ae.add(ActionErrors.GLOBAL_ERROR,new ActionError("errors.messages.CouldNotGetLocationsFromDB"));
+           saveErrors(request,ae);
+         }
+         return locationsByCountry;
+    }
+    
+    /**
+     * Method to check that the country list exist in the Session
+     * @param request
+     */
+    public void checkCountriesInSession(HttpServletRequest request, EmployeeProfile ep) 
+    {	Collection countries = null;
+        try{
+            
+	        if(request.getSession().getAttribute("countries") == null)
+	        {  if(ep.isCountryAdmin()){
+                  countries = abd.getCountriesForAdminCountryRole(ep.getEmployeeId(),Constants.COUNTRYADMIN);
+        		}else{
+        		      countries = abd.getAllCountry();
+        			 }
+	           ArrayList countr=new ArrayList();
+	           int large = 0;
+	           if(countries.size()>0)
+	           {  
+	              Iterator itCont = countries.iterator();
+	              while(itCont.hasNext())
+	              { CountryVO con=(CountryVO)itCont.next();
+	                if(con.getCountryNm()!=null)
+	                {   large = con.getCountryNm().length();
+	                   if(large>14)
+	                      con.setCountryNm(con.getCountryNm().substring(0, 13));
+	                }else
+	                    con.setCountryNm("");
+	
+	                CountryToCompare comp = new CountryToCompare();
+	                Collections.sort((ArrayList)countries, comp);
+	              }
+	           }
+	           request.getSession().setAttribute("countries", countries);
+	        }
+	    }catch(Exception e)
+	     {Constants.logger.debug(Utils.stackTraceToString(e));
+	      ae.add(ActionErrors.GLOBAL_ERROR,new ActionError("errors.messages.CouldNotGetDataFromDB"));
+	      saveErrors(request,ae);
+	    }
+    }
+
+    private void getBanksLocations(AdminBankAccountForm frm, HttpServletRequest request)
+    {	BankController ctrlBank  = new BankController();
+		try{
+		    frm.setBanks((List)ctrlBank.getBankByCountryCd(frm.getCountry()));
+		    frm.setLocations((List)abd.getLocationsByCountry(frm.getCountry()));
+		}catch(Exception e)
+		{ Constants.logger.debug(Utils.stackTraceToString(e));
+		  ae.add(ActionErrors.GLOBAL_ERROR,new ActionError("errors.messages.CouldNotGetLocationsFromDB"));
+		  saveErrors(request,ae);
+		}
+	}
+
+    private void deleteBank(AdminBankAccountForm frm, HttpServletRequest request)
+    {
+        Integer bankId = null;
+
+        try{
+            bankId=new Integer(request.getParameter("bankMod"));
+
+            BankController ctrlBank = new BankController();
+
+            if(bankId != null && bankId.intValue() > 0)
+                LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_DELETE, "AdminBankAccountAction deleteBank() cntry: " + frm.getCountry(), ctrlBank.getBank( bankId).getBankNm(), true);
+
+            ctrlBank.removeBank(bankId);
+        }catch(Exception e)
+		{	Constants.logger.debug(Utils.stackTraceToString(e));
+			ae.add(ActionErrors.GLOBAL_ERROR, new ActionError("errors.messages.CouldNotDeleteBank"));
+			saveErrors(request,ae);
+
+            if(bankId != null && bankId.intValue() > 0)
+                LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_DELETE, "AdminBankAccountAction deleteBank() cntry: " + frm.getCountry(), bankId.toString(), false);
+		}
+    }
+    
+    /**
+     * This method is used to get necessary data to populate AdminAccountForm and go to the AdminBankAccount.jsp page 
+     * @param mapping
+     * @param form
+     * @param request
+     * @return ActionForward
+     */
+    private ActionForward addModAccount(ActionMapping mapping, AdminBankAccountForm frm, HttpServletRequest request)
+    {		
+        	//Instantiate AdminAccountForm and put data in it, to show the account screen
+        	AdminAccountForm accountForm=new AdminAccountForm();
+        	
+        	getBanksLocations(frm,request);
+        	
+        	accountForm.setCountry(frm.getCountry());
+        	accountForm.setBankId(frm.getBank());
+        	accountForm.setLocationsByCountry(frm.getLocations().toArray());
+        	accountForm.setBankByCountry(frm.getBanks());
+        	
+        	CountryController ctrlCountry = new CountryController();
+        	
+        	try{
+        	    accountForm.setSupportedCurrencies((List)subd.getCountryCurrencies(frm.getCountry()));
+        	    
+        	}catch(Exception e)
+        	{	Constants.logger.debug(Utils.stackTraceToString(e));
+				ae.add(ActionErrors.GLOBAL_ERROR, new ActionError("errors.messages.CouldNotShowAccountBank"));
+				saveErrors(request,ae);
+        	}
+        	
+        	//Check if is modification  of an account
+        	if(frm.getAccountCd().intValue()!=0)
+        	{  BankAccController bankAcc=new BankAccController();
+        	   try{	 
+        	       BankAccVO acc = bankAcc.getBankAcc(frm.getAccountCd());
+        	       accountForm.setAccountCd(acc.getBankAccountCd());
+        	       accountForm.setAccountNbr(acc.getAccountNbr());
+        	       accountForm.setBankId(new Integer(request.getParameter("bankMod")));
+        	       accountForm.setBrach(acc.getBankBranchId());
+        	       accountForm.setCurrency(acc.getCurrencyType());
+        	       /*
+        	        * Introduced a new field Orgination Number
+        	        * Changes Done By : Kapil R
+        	        */
+        	       accountForm.setOriginationNbr(acc.getOriginationNbr());
+        	       //Ended here
+        	       
+        	       //Get locations and compare
+                   LocationToCompare comp=new LocationToCompare();
+                   List locSelected  = (List)bankAcc.getLocations(frm.getAccountCd());
+                   Collections.sort(locSelected, comp); //Order the list
+                   List locByCountry = (List)frm.getLocations(); //Order the list
+                   Collections.sort((List)locByCountry,comp);
+                   Iterator it=locByCountry.iterator();
+                                      
+                   while(it.hasNext())
+               	   {   if((Collections.binarySearch(locSelected,it.next(),comp)>=0))
+               	   		 {	it.remove();}
+               	   }
+                   //
+                   
+        	       accountForm.setLocationsSelected(locSelected.toArray());
+        	       accountForm.setLocationsByCountry(locByCountry.toArray());
+
+                    LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_INSERT, "AdminBankAccountAction addModAccount() bank: "
+                            + accountForm.getBankId(),
+                            acc.getAccountNbr(), true);
+
+               }catch(Exception e)
+        	   {	Constants.logger.debug(Utils.stackTraceToString(e));
+   					ae.add(ActionErrors.GLOBAL_ERROR, new ActionError("errors.messages.CouldNotShowAccountBank"));
+   					saveErrors(request,ae);
+
+                    LogEventHelper.logEvent(request, Monitoring.MONITORING_EVENT_INSERT, "AdminBankAccountAction addModAccount() bank: "
+                            + frm.getBank(),
+                            "", false);
+               }
+        	}   	
+        	request.setAttribute("AdminAccountForm",accountForm);
+        	return mapping.findForward("addAccount");
+    }
+}//Close AdminUserListAction class
+

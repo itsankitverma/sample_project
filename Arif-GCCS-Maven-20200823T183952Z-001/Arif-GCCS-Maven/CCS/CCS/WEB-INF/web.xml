@@ -1,0 +1,316 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+    <filter>
+       <filter-name>SecurityFilter</filter-name>
+       <filter-class>com.fedex.lacitd.cashcontrol.prestier.helper.SecurityFilter</filter-class>
+       <init-param>
+            <param-name>error_page</param-name>
+            <param-value>/GCCS/pages/AccessDenied.jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+       <filter-name>SecurityFilter</filter-name>
+       <url-pattern>*.do</url-pattern>
+
+    </filter-mapping>
+
+ 	<servlet>
+	    <servlet-name>SecurityServlet</servlet-name>
+	    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.helper.SecurityFilter</servlet-class>
+	    <load-on-startup>11</load-on-startup>
+    </servlet>
+
+  <servlet>
+    <servlet-name>CourierReceiptReport</servlet-name>
+    <display-name>CourierReceiptReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.CourierReceiptReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CreditPaymentsReport</servlet-name>
+    <display-name>CreditPaymentsReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.CreditPaymentsReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>GroundPrepaidReport</servlet-name>
+    <display-name>GroundPrepaidReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.GroundPrepaidReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>CurrentCashRecapReport</servlet-name>
+    <display-name>CurrentCashRecapReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.CurrentCashRecapReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>DailyCashRecapReport</servlet-name>
+    <display-name>DailyCashRecapReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.DailyCashRecapReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>DailyExceptionReport</servlet-name>
+    <display-name>DailyExceptionReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.DailyExceptionReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>InCageExceptionsReport</servlet-name>
+    <display-name>InCageExceptionsReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.InCageExceptionsReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>OpenReceivablesReport</servlet-name>
+    <display-name>OpenReceivablesReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.OpenReceivablesReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>PODWithoutPaymentReport</servlet-name>
+    <display-name>PODWithoutPaymentReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.PODWithoutPaymentReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>PendingRecByCourierReport</servlet-name>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.PendingRecByCourierReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PendingCODByCourierReport</servlet-name>
+    <display-name>PendingCODByCourierReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.PendingCODByCourierReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  
+    <servlet>
+    <servlet-name>PendingFTCByCourierReport</servlet-name>
+    <display-name>PendingFTCByCourierReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.PendingFTCByCourierReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>PrepaidReconcReport</servlet-name>
+    <display-name>PrepaidReconcReport</display-name>
+    <description>Default configuration created for servlet.</description>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.PrepaidReconcReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>ReceivablesReport</servlet-name>
+    <display-name>ReceivablesReport</display-name>
+    <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.reporting.ReceivablesReport</servlet-class>
+    <init-param>
+      <param-name>wl-dispatch-policy</param-name>
+      <param-value>ReportingQueue</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>4</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>4</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+
+  <!--
+    Medium1 - 3.6.1
+    Jorge Quiroz
+    -->
+
+        <servlet>
+            <servlet-name>UnHandledExceptionServlet</servlet-name>
+            <servlet-class>com.fedex.lacitd.cashcontrol.prestier.servlets.error.UnHandledExceptionServlet</servlet-class>
+            <load-on-startup>1</load-on-startup>
+        </servlet>
+
+        <servlet-mapping>
+            <servlet-name>UnHandledExceptionServlet</servlet-name>
+            <url-pattern>/UnHandledException</url-pattern>
+        </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PendingRecByCourierReport</servlet-name>
+    <url-pattern>/servlet/PendingRecByCourierReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PendingCODByCourierReport</servlet-name>
+    <url-pattern>/servlet/PendingCODByCourierReport</url-pattern>
+  </servlet-mapping>  
+  <servlet-mapping>
+    <servlet-name>PendingFTCByCourierReport</servlet-name>
+    <url-pattern>/servlet/PendingFTCByCourierReport</url-pattern>
+  </servlet-mapping>    
+  <servlet-mapping>
+    <servlet-name>InCageExceptionsReport</servlet-name>
+    <url-pattern>/servlet/InCageExceptionsReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DailyCashRecapReport</servlet-name>
+    <url-pattern>/servlet/DailyCashRecapReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PODWithoutPaymentReport</servlet-name>
+    <url-pattern>/servlet/PODWithoutPaymentReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DailyExceptionReport</servlet-name>
+    <url-pattern>/servlet/DailyExceptionReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreditPaymentsReport</servlet-name>
+    <url-pattern>/servlet/CreditPaymentsReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GroundPrepaidReport</servlet-name>
+    <url-pattern>/servlet/GroundPrepaidReport</url-pattern>
+  </servlet-mapping>    
+
+  <servlet-mapping>
+    <servlet-name>OpenReceivablesReport</servlet-name>
+    <url-pattern>/servlet/OpenReceivablesReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CurrentCashRecapReport</servlet-name>
+    <url-pattern>/servlet/CurrentCashRecapReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrepaidReconcReport</servlet-name>
+    <url-pattern>/servlet/PrepaidReconcReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CourierReceiptReport</servlet-name>
+    <url-pattern>/servlet/CourierReceiptReport</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+      <servlet-name>ReceivablesReport</servlet-name>
+      <url-pattern>/servlet/ReceivablesReport</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>/LoginWSSO.do</welcome-file>
+  </welcome-file-list>
+
+
+    <!--
+      Medium1 - 3.6.1
+      Jorge Quiroz
+      -->
+
+    <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/UnHandledException</location>
+    </error-page>
+
+
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/paging.tld</taglib-uri>
+    <taglib-location>/WEB-INF/paging.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-nested.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-nested.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/struts-tiles.tld</taglib-uri>
+    <taglib-location>/WEB-INF/struts-tiles.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/pager-taglib.tld</taglib-uri>
+    <taglib-location>/WEB-INF/paging.tld</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/pager-taglib</taglib-uri>
+    <taglib-location>/WEB-INF/lib/pager-taglib.jar</taglib-location>
+  </taglib>
+  <taglib>
+    <taglib-uri>/WEB-INF/gccs-util.tld</taglib-uri>
+    <taglib-location>/WEB-INF/gccs-util.tld</taglib-location>
+  </taglib>
+</web-app>

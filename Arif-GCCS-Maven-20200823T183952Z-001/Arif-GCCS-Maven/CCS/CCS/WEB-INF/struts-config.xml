@@ -1,0 +1,522 @@
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="LoginForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.LoginForm" />
+        <form-bean name="CheckInAgentCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.CheckInAgentCashRecapForm" />
+        <form-bean name="RODCourierCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.RODCourierCashRecapForm" />
+        <form-bean name="CODCourierCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.CODCourierCashRecapForm" />
+        <form-bean name="FTCCourierCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.FTCCourierCashRecapForm" />
+       
+        <form-bean name="PRPCourierCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PRPCourierCashRecapForm" />
+        <form-bean name="AddReceivableForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddReceivableForm" />
+        <form-bean name="AddCODReceivableForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddCODReceivableForm"/>
+        <form-bean name="AddFTCReceivableForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddFTCReceivableForm"/>
+
+        <form-bean name="DepositSlipForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.DepositSlipForm" />
+        <form-bean name="DepSlipAddCommentForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.DepSlipAddCommentForm" />
+        <form-bean name="CreditCardPymtForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.CreditCardPymtForm" />
+        <form-bean name="CreditCardPymtCommForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.CreditCardPymtCommForm" />
+        <form-bean name="AddPrepaidAwbsForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddPrepaidAwbsForm"/>
+        <form-bean name="AddGrndTrakNbrsForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddGrndTrakNbrsForm"/>
+        <form-bean name="PoaSummaryForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PoaSummaryForm" />
+        <form-bean name="PoaAddPaymentForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PoaAddPaymentForm" />
+        <form-bean name="RODAddAwbsForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.RODAddAwbsForm" />
+        <form-bean name="CODAddAwbsForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.CODAddAwbsForm" />
+        <form-bean name="FTCAddAwbsForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.FTCAddAwbsForm" />
+
+        <form-bean name="AdminUserListForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminUserListForm" />
+        <form-bean name="PrepaidDiscrepanciesForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PrepaidDiscrepanciesForm" />
+        <form-bean name="AdminLocationForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminLocationForm" />
+        <form-bean name="AdminCountryCurrencyForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminCountryCurrencyForm" />
+        <form-bean name="OtherPaymentAddForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.OtherPaymentAddForm" />
+        <form-bean name="ChangePasswordForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.ChangePasswordForm" />
+        <form-bean name="PaymentsAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PaymentsAdminForm" />
+        <form-bean name="OtherPaymentsCategAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.OtherPaymentsCategAdminForm" />
+        <form-bean name="DepoTemplatesAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.DepoTemplatesAdminForm" />
+        <!-- Miscellaneous enhancements -->
+        <form-bean name="StationsAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.StationsAdminForm" />
+        <form-bean name="RODBreakoutForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.RODBreakoutForm" />
+        <form-bean name="PrepaidBreakoutForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PrepaidBreakoutForm" />
+        <form-bean name="PoaBreakoutForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.PoaBreakoutForm" />
+        <form-bean name="AdminBankAccountForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminBankAccountForm" />
+        <form-bean name="AdminBankForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminBankForm" />
+        <form-bean name="AdminAccountForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminAccountForm" />
+        <form-bean name="AdminMainTablesForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminMainTablesForm"/>
+        <form-bean name="BatchPaymentsAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.BatchPaymentsAdminForm" />
+        <form-bean name="AdminTablesManagerForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminTablesManagerForm"/>
+        <form-bean name="AdminTasksForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AdminTasksForm"/>
+        <form-bean name="EntitiesAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.EntitiesAdminForm"/>
+        <form-bean name="EntitiesAcctAdminForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.EntitiesAcctAdminForm"/>
+        <form-bean name="GroundCashRecapForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.GroundCashRecapForm"/>
+        <form-bean name="AddOACForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.AddOACForm"/>
+        <form-bean name="ErrorForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.ErrorForm"/>
+        <form-bean name="BillToAccountForm" type="com.fedex.lacitd.cashcontrol.prestier.struts.form.BillToAccountForm" />
+    </form-beans>
+
+
+    <!--
+        Infosec Medium 3.6.2
+        Jorge Quiroz.
+    -->
+    <global-exceptions>
+      <exception
+        handler="com.fedex.lacitd.cashcontrol.prestier.servlets.error.UnHandledException"
+        key="global.error.message"
+        path="/pages/Error.jsp"
+        scope="request"
+        type="java.lang.Exception"/>
+    </global-exceptions>
+
+    
+    <global-forwards>
+		<forward name="login" path="/LoginWSSO.do" redirect="false" />
+        <forward name="logout" path="/Logout.do" redirect="false" />
+        <forward name="menu" path="/Menu.do" redirect="false" />
+        <forward name="selectLocation" path="/SelectLocation.do" redirect="false" />
+
+        <!--
+            Infosec Medium 3.6.2
+            Jorge Quiroz.
+        -->
+        <forward name="error" path="/Error.do" redirect="false" />
+
+
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/Error" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.ErrorAction"
+                name="ErrorForm" scope="request">
+            <forward name="show" path="/pages/Error.jsp" redirect="false" />
+        </action>
+
+
+        <action path="/LoginWSSO" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.LoginActionWSSO" name="LoginForm" scope="request">
+            <forward name="Success" path="/pages/Menu.jsp" redirect="false" />
+            <forward name="Failure" path="Failure" redirect="false" />
+            <forward name="logout"  path="/Logout.do" redirect="false" />
+        </action>
+
+		<action path="/Logout" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.LogoutActionWSSO">
+			<forward name="logout" path="Logout" redirect="false" />
+		</action>
+		
+         <action path="/ROD/BillToAccount" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.BillToAccountAction" name="BillToAccountForm" scope="request">
+			<forward name="Success" path="/tiles/validAccount.jsp" redirect="false" />
+			<forward name="Failure" path="/tiles/InValidAccount.jsp" redirect="false" />
+		</action>
+
+         <action path="/COD/COD_BillToAccount" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.COD_BillToAccountAction" name="BillToAccountForm" scope="request">
+			<forward name="Success" path="/tiles/COD_validAccount.jsp" redirect="false" />
+			<forward name="Failure" path="/tiles/COD_InValidAccount.jsp" redirect="false" />
+		</action>
+
+         <action path="/FTC/FTC_BillToAccount" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.FTC_BillToAccountAction" name="BillToAccountForm" scope="request">
+			<forward name="Success" path="/tiles/FTC_validAccount.jsp" redirect="false" />
+			<forward name="Failure" path="/tiles/FTC_InValidAccount.jsp" redirect="false" />
+		</action>
+								
+        <action path="/Admin/AdminIndex" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/Admin/AdminIndex.jsp" redirect="false" />
+        </action>
+        <action path="/Admin/PSUpload" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/Admin/PSUpload.jsp" redirect="false" />
+        </action>
+        <action path="/ROD/ProcessScansPage" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/ROD/ProcessScans.jsp" redirect="false" />
+        </action>
+        <action path="/COD/COD_ProcessScansPage" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/COD/COD_ProcessScans.jsp" redirect="false" />
+        </action>
+        <action path="/FTC/FTC_ProcessScansPage" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/FTC/FTC_ProcessScans.jsp" redirect="false" />
+        </action>
+        <action path="/Menu" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/Menu.jsp" redirect="false" />
+        </action>
+        <action path="/SelectLocation" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/SelectLocation.jsp" redirect="false" />
+        </action>
+        <action path="/ReassignPayments" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminIndexAction">
+            <forward name="Success" path="/pages/ReassignPayments.jsp" redirect="false" />
+        </action>
+        <action path="/LoadInvoices" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.LoadInvoicesAction">
+			<forward name="Success" path="/pages/ROD/LoadInvoices.jsp" redirect="false" />
+		</action>
+        <action path="/CreditCardPymtReport" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreditCardPymtReportAction">
+            <forward name="Success" path="/tiles/CreditCardPymtReport.jsp" redirect="false" />
+        </action>
+		<action path="/ROD/ProcessScans" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.ProcessLastScansAction">
+			<forward name="Success" path="/pages/ROD/ProcessScans.jsp" redirect="false" />
+		</action>	
+		<action path="/COD/COD_ProcessScans" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.COD_ProcessLastScansAction">
+			<forward name="Success" path="/pages/COD/COD_ProcessScans.jsp" redirect="false" />
+		</action>		
+		<action path="/FTC/FTC_ProcessScans" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.FTC_ProcessLastScansAction">
+			<forward name="Success" path="/pages/FTC/FTC_ProcessScans.jsp" redirect="false" />
+		</action>	
+			
+		<action path="/ROD/CourierCashRecap" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RODCourierCashRecapAction" name="RODCourierCashRecapForm" scope="session">
+				<forward name="Success" path="/pages/ROD/CourierCashRecap.jsp" redirect="false" />
+                <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />
+                <forward name="toPrepaid" path="/Prepaid/PrepaidDetails.do" redirect="false" />
+                <forward name="toPOA" path="/Poa/PoaSummary.do" redirect="false" />
+                <forward name="toGround" path="/Ground/GroundDetails.do" redirect="false"/>
+                <forward name="toCOD" path="/COD/COD_CourierCashRecap.do" redirect="false" />  
+                <forward name="toFTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />                
+                <forward name="showScans" path="/pages/ScanDetails.jsp" redirect="false" />
+		</action>
+
+		<action path="/COD/COD_CourierCashRecap" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CODCourierCashRecapAction" name="CODCourierCashRecapForm" scope="session">
+				<forward name="Success" path="/pages/COD/COD_CourierCashRecap.jsp" redirect="false" />
+                <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />
+		        <forward name="toROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+		        <forward name="toFTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />   
+                <forward name="toPrepaid" path="/Prepaid/PrepaidDetails.do" redirect="false" />
+                <forward name="toPOA" path="/Poa/PoaSummary.do" redirect="false" />
+                <forward name="toGround" path="/Ground/GroundDetails.do" redirect="false"/>
+                <forward name="showScans" path="/pages/ScanDetails.jsp" redirect="false" />
+		</action>
+
+		<action path="/FTC/FTC_CourierCashRecap" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.FTCCourierCashRecapAction" name="FTCCourierCashRecapForm" scope="session">
+				<forward name="Success" path="/pages/FTC/FTC_CourierCashRecap.jsp" redirect="false" />
+                <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />
+		        <forward name="toROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+		        <forward name="toCOD" path="/COD/COD_CourierCashRecap.do" redirect="false" />  
+                <forward name="toPrepaid" path="/Prepaid/PrepaidDetails.do" redirect="false" />
+                <forward name="toPOA" path="/Poa/PoaSummary.do" redirect="false" />
+                <forward name="toGround" path="/Ground/GroundDetails.do" redirect="false"/>
+                <forward name="showScans" path="/pages/ScanDetails.jsp" redirect="false" />
+		</action>
+		
+		<action path="/Prepaid/PrepaidDetails" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PRPCourierCashRecapAction" name="PRPCourierCashRecapForm" scope="session">
+			    <forward name="Success" path="/pages/Prepaid/PrepaidDetails.jsp" redirect="false" />
+                <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />
+                <forward name="toROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+                <forward name="toPOA" path="/Poa/PoaSummary.do" redirect="false" />
+                <forward name="toGround" path="/Ground/GroundDetails.do" redirect="false"/>
+                <forward name="toCOD" path="/COD/COD_CourierCashRecap.do" redirect="false" />   
+                <forward name="toFTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />                
+                <forward name="showScans" path="/pages/ScanDetails.jsp" redirect="false" />
+		</action>                	                	
+		<action path="/ROD/AddReceivable" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddRODReceivablesAction" name="AddReceivableForm" scope="request" validate="true" input="/pages/ROD/CreateNewReceivable.jsp" >
+			<forward name="ShowReceivables" path="/pages/ROD/ShowReceivables.jsp" redirect="false" />                
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+            <forward name="CreateNewReceivable" path="/pages/ROD/CreateNewReceivable.jsp" redirect="false" />
+            <forward name="EnterAWBToFind" path="/pages/ROD/FindReceivable.jsp" redirect="false" />
+            <forward name="ShowToAssign" path="/pages/ROD/AssignReceivable.jsp" redirect="false" /><forward name="ShowError" path="/pages/ROD/ShowError.jsp" redirect="false" />
+		</action>
+		<action path="/COD/AddCODReceivable" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddCODReceivablesAction" name="AddCODReceivableForm" scope="request" validate="true" input="/pages/COD/CreateNewReceivable.jsp" >
+			<forward name="ShowReceivables" path="/pages/COD/ShowReceivables.jsp" redirect="false" />                
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+            <forward name="CreateNewReceivable" path="/pages/COD/CreateNewReceivable.jsp" redirect="false" />
+            <forward name="EnterAWBToFind" path="/pages/COD/FindReceivable.jsp" redirect="false" />
+            <forward name="ShowToAssign" path="/pages/COD/AssignReceivable.jsp" redirect="false" /><forward name="ShowError" path="/pages/COD/ShowError.jsp" redirect="false" />
+		</action>	
+		<action path="/FTC/AddFTCReceivable" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddFTCReceivablesAction" name="AddFTCReceivableForm" scope="request" validate="true" input="/pages/FTC/CreateNewReceivable.jsp" >
+			<forward name="ShowReceivables" path="/pages/FTC/ShowReceivables.jsp" redirect="false" />                
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+            <forward name="CreateNewReceivable" path="/pages/FTC/CreateNewReceivable.jsp" redirect="false" />
+            <forward name="EnterAWBToFind" path="/pages/FTC/FindReceivable.jsp" redirect="false" />
+            <forward name="ShowToAssign" path="/pages/FTC/AssignReceivable.jsp" redirect="false" /><forward name="ShowError" path="/pages/FTC/ShowError.jsp" redirect="false" />
+		</action>				
+		<action path="/ROD/CreateReports" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreateReportsAction">
+			<forward name="SelectReport" path="/pages/ReportSelector.jsp" redirect="false" />
+		</action>  
+		<action path="/COD/COD_CreateReports" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.COD_CreateReportsAction">
+			<forward name="SelectReport" path="/pages/COD_ReportSelector.jsp" redirect="false" />
+		</action>  		
+		<action path="/FTC/FTC_CreateReports" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.FTC_CreateReportsAction">
+			<forward name="SelectReport" path="/pages/FTC_ReportSelector.jsp" redirect="false" />
+		</action>  		  
+        <action path="/GCCSReport" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.GCCSReportAction">
+            <forward name="Failure" path="Failure" redirect="false" />
+        </action>
+		<action path="/DepositSlipGeneration" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.DepositSlipAction" name="DepositSlipForm" scope="request">
+			<forward name="Success" path="/pages/DepositSlipGeneration.jsp" redirect="false" />
+		</action>  
+                <action path="/DepSlipAddComment" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.DepSlipAddCommentAction" name="DepSlipAddCommentForm" scope="request" validate="true" input="/pages/DepositComments.jsp" >
+                   <forward name="ShowToEnter" path="/pages/DepositComments.jsp" redirect="false" />
+                   <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+                </action>                                             
+		<action path="/CreditCardPymt" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreditCardPymtAction" name="CreditCardPymtForm" scope="request">
+			<forward name="Success" path="/pages/CreditCardPymtGeneration.jsp" redirect="false" />
+		</action>  
+		<action path="/Prepaid/Discrepancies" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PrepaidDiscrepanciesAction" name="PrepaidDiscrepanciesForm" scope="request" validate="true" input="/pages/Prepaid/PrepaidDiscrepancies.jsp" >
+			<forward name="Success" path="/pages/Prepaid/PrepaidDiscrepancies.jsp" redirect="false" />
+		</action>                
+                <action path="/CreditCardPymtComm" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreditCardPymtCommAction" name="CreditCardPymtCommForm" scope="request" validate="true" input="/pages/CreditCardPymtComments.jsp" >
+                   <forward name="ShowToEnter" path="/pages/CreditCardPymtComments.jsp" redirect="false" />
+                   <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+                </action>                
+        <action path="/ShowChkAgtCashRecap" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CheckInAgentCashRecapAction" name="CheckInAgentCashRecapForm" scope="request">
+			<forward name="Success" path="/pages/ExpressCheckin.jsp" redirect="false" />
+			<forward name="ROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+			<forward name="PREPAID" path="/Prepaid/PrepaidDetails.do" redirect="false" />
+			<forward name="POA" path="/Poa/PoaSummary.do" redirect="false" />
+			<forward name="COD" path="/COD/COD_CourierCashRecap.do" redirect="false" />
+			<forward name="FTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />
+            <forward name="MultiInvoices" path="/pages/ROD/MultiInvoicePayment.jsp" redirect="false" />
+            <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+            <forward name="MorePayments" path="/pages/SecondExpressCheckin.jsp" redirect="false" />
+		</action>
+		<action path="/ChangeLocation" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.ChangeLocationAction" name="LoginForm" scope="request" />
+		<action path="/ROD/ViewRodFileImportingStatus" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RodFileImpStatusAction">
+			<forward name="Success" path="/pages/ROD/RodFilesImpStatus.jsp" redirect="false" />
+			<forward name="Details" path="/pages/ROD/RodFilesImpDetails.jsp" redirect="false" />			
+		</action>		
+        <action path="/Prepaid/AddPrepaidAwbs" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddPrepaidAwbsAction" name="AddPrepaidAwbsForm" scope="request">
+            <forward name="ShowToEnter" path="/pages/Prepaid/AddPrepaidAwbs.jsp" redirect="false" />
+            <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+        </action>
+         <action path="/Ground/AddGrndTrakNbrs" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddGrndTrakNbrsAction" name="AddGrndTrakNbrsForm" scope="request">
+                        <forward name="ShowToEnter" path="/pages/Ground/AddGrndTrakNbrs.jsp" redirect="false" />
+                        <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+         </action>
+                <action path="/Poa/PoaAddPayment" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PoaAddPaymentAction" name="PoaAddPaymentForm" scope="request"  validate="true" input="/pages/Poa/PoaAddPayment.jsp">
+                        <forward name="ShowToEnter" path="/pages/Poa/PoaAddPayment.jsp" redirect="false" />
+                        <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+                        <forward name="FindInvoices" path="/pages/Poa/PoaFindInvoices.jsp" redirect="false" />
+						<forward name="FindCustomer" path="/pages/Poa/PoaFindCustomer.jsp" redirect="false" />
+						<forward name="TooMuchInvoices" path="/pages/Poa/TooMuchInvoices.jsp" redirect="false" />						
+                </action>                
+		<action path="/Poa/PoaSummary" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PoaSummaryAction" name="PoaSummaryForm" scope="session">
+			            <forward name="Success" path="/pages/Poa/PoaSummary.jsp" redirect="false" />
+                        <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />                        
+                        <forward name="toROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+                        <forward name="toPrepaid" path="/Prepaid/PrepaidDetails.do" redirect="false" />
+                        <forward name="toGround" path="/Ground/GroundDetails.do" redirect="false"/>
+                        <forward name="toCOD" path="/COD/COD_CourierCashRecap.do" redirect="false" />
+                        <forward name="toFTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />
+
+		</action>
+                <action path="/OtherPayments/AddPayment" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.OtherPaymentAddAction" name="OtherPaymentAddForm" scope="request" validate="true" input="/pages/OtherPayments/OtherPaymentAdd.jsp">
+                        <forward name="ShowToEnter" path="/pages/OtherPayments/OtherPaymentAdd.jsp" redirect="false" />
+                        <forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+                </action>                  
+        	<action path="/ROD/RODAddAwbs" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RODAddAwbsAction" name="RODAddAwbsForm" scope="request">
+        		<forward name="ShowToEnter" path="/pages/ROD/RODAddAwbs.jsp" redirect="false" />
+        		<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+        	</action> 
+        	<action path="/COD/CODAddAwbs" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CODAddAwbsAction" name="CODAddAwbsForm" scope="request">
+        		<forward name="ShowToEnter" path="/pages/COD/CODAddAwbs.jsp" redirect="false" />
+        		<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+        	</action> 
+        	<action path="/FTC/FTCAddAwbs" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.FTCAddAwbsAction" name="FTCAddAwbsForm" scope="request">
+        		<forward name="ShowToEnter" path="/pages/FTC/FTCAddAwbs.jsp" redirect="false" />
+        		<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+        	</action>         	        	
+		<action path="/Admin/AdminUserList" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminUserListAction" name="AdminUserListForm" scope="request" validate="false">
+			<forward name="Success" path="/pages/Admin/UserListByCountry.jsp" redirect="false" />
+			<forward name="EnterEmployee" path="/pages/Admin/AdminEnterEmployeeId.jsp" redirect="false" />
+			<forward name="NewUpdateUser" path="/pages/Admin/AdminNewEditUser.jsp" redirect="false" />
+			<forward name="NewLocationRole" path="/pages/Admin/AdminNewLocationRole.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/Admin/SuccessTransaction.jsp" redirect="false" />
+		</action>
+		<action path="/Admin/AdminHandler" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminHandlerAction" name="AdminUserListForm" scope="request" validate="true" input="/pages/Admin/AdminNewEditUser.jsp">
+			<forward name="SavedUser" path="/pages/Admin/AdminNewEditUser.jsp" redirect="false" />
+			<forward name="SavedLocationRole" path="/Admin/AdminUserList.do" redirect="false" />
+			<forward name="EditEmployeeRole" path="/pages/Admin/AdminEditRole.jsp" redirect="false" />
+            <forward name="Success" path="/pages/Admin/SuccessTransaction.jsp" redirect="false" />
+		</action>
+		<action path="/Admin/AdminLocation" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminLocationAction" name="AdminLocationForm" scope="request">
+			<forward name="ShowLocationData" path="/pages/Admin/AdminLocationSetup.jsp" redirect="false" />
+			<forward name="SavedLocation" path="/pages/Admin/AdminLocationSetup.jsp" redirect="false" />
+            <forward name="AddLocation" path="/pages/Admin/AddLocation.jsp" redirect="false" />
+            <forward name="SuccessTransaction" path="/pages/Admin/SuccessLocationTransaction.jsp" redirect="false" />
+		</action>
+		<action path="/Admin/PaymentTypesAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PaymentsAdminAction" name="PaymentsAdminForm" scope="request">
+			<forward name="Success" path="/pages/Admin/PaymentsAdmin.jsp" redirect="false" />
+		</action> 
+		<action path="/Admin/OtherPaymentsCategAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.OtherPaymentsCategAdminAction" name="OtherPaymentsCategAdminForm" scope="request">
+			<forward name="Success" path="/pages/Admin/OtherPaymentsCategAdmin.jsp" redirect="false" />
+		</action>  		               
+		<action path="/Admin/DepoTemplatesAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.DepoTemplatesAdminAction" name="DepoTemplatesAdminForm" scope="request">
+			<forward name="Success" path="/pages/Admin/DepoTemplatesAdmin.jsp" redirect="false" />
+		</action>    
+		<!-- Miscellaneous enhancements certification email report --> 
+		<action path="/Admin/StationsAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.StationsAdminAction" name="StationsAdminForm" scope="request">
+			<forward name="First" path="/pages/Admin/StationsAdmin.jsp" redirect="false" />
+			<forward name="Success" path="/pages/Admin/StationsAdmin.jsp" redirect="false" />
+		</action>             
+		<action path="/Admin/AdminCountryCurrency" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminCountryCurrencyAction" name="AdminCountryCurrencyForm" scope="request" validate="true" input="/pages/Admin/AdminCountryCurrency.jsp">
+			<forward name="ShowCountryCurrencyData" path="/pages/Admin/AdminCountryCurrency.jsp" redirect="false" />
+			<forward name="SavedCountryCurrency" path="/pages/Admin/AdminCountryCurrency.jsp" redirect="false" />
+		</action>
+		<action path="/Admin/AdminChangePassword" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminChangePasswordAction" name="ChangePasswordForm" scope="request" validate="true" input="/pages/Admin/AdminChangePasswordUser.jsp">
+			<forward name="ChangePassword" path="/pages/Admin/AdminChangePasswordUser.jsp" redirect="false" />
+			<forward name="SavedPassword" path="/pages/Admin/AdminChangePasswordUser.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+		</action>
+		<action path="/Import/ViewExternalFilesImportingStatus" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.ExternalFilesImportingStatusAction">
+			<forward name="Success" path="/pages/Import/ExternalFilesImportingStatus.jsp" redirect="false" />
+			<forward name="Details" path="/tiles/Import/ExternalFilesImportingDetails.jsp" redirect="false" />
+		</action>
+		<action path="/ROD/RODBreakout" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RODBreakoutAction" name="RODBreakoutForm" scope="request" validate="true">
+			<forward name="Success" path="/pages/ROD/RODBreakout.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/CloseWindow.jsp" redirect="false" />
+		</action>		
+		<action path="/Prepaid/PrepaidBreakout" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PrepaidBreakoutAction" name="PrepaidBreakoutForm" scope="request" validate="true" >
+			<forward name="Success" path="/pages/Prepaid/PrepaidBreakout.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/CloseWindow.jsp" redirect="false" />
+		</action>	
+		<action path="/Poa/PoaBreakout" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.PoaBreakoutAction" name="PoaBreakoutForm" scope="request" validate="true">
+			<forward name="Success" path="/pages/Poa/PoaBreakout.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/CloseWindow.jsp" redirect="false" />
+		</action>					
+		<action path="/Admin/AdminForgotPassword" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminForgotPasswordAction" name="AdminUserListForm" scope="request" validate="true" input="/pages/Admin/AdminForgotPasswordUser.jsp">
+			<forward name="ForgotPassword" path="/pages/Admin/AdminForgotPasswordUser.jsp" redirect="false" />
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false" />
+		</action>
+		<action path="/Admin/AdminBankAccount" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminBankAccountAction" name="AdminBankAccountForm" scope="request" input="/pages/Admin/AdminBankAccountList.jsp">
+			<forward name="showWindow" path="/pages/Admin/AdminBankAccountList.jsp" redirect="false"/>
+			<forward name="addAccount" path="/pages/Admin/AdminBankAccount.jsp" redirect="false"/>
+		</action>
+		<action path="/Admin/AdminBank" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminBankAction" name="AdminBankForm" scope="request" validate="true" input="/pages/Admin/AdminBank.jsp">
+			<forward name="ShowWindow"  path="/pages/Admin/AdminBank.jsp" redirect="false"/>
+			<forward name="CloseWindow" path="/pages/CloseAndRefresh.jsp" redirect="false"/>
+		</action>
+		<action path="/Admin/AdminAccount" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminAccountAction" name="AdminAccountForm" scope="request">
+			<forward name="ShowWindow"  path="/pages/Admin/AdminBankAccount.jsp" redirect="false"/>
+			<forward name="showAccounts" path="/Admin/AdminBankAccount.do" redirect="false"/>
+		</action>
+        <action path="/Admin/AdminMainTables" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminMainTablesAction" name="AdminMainTablesForm" scope="request" validate="true" input="/Admin/AdminMainTables2.do?action=table" >
+            <forward name="ShowWindow" path="/pages/Admin/AdminMainTables.jsp" redirect="false"/>
+            <forward name="ShowUpdate" path="/pages/Admin/AdminTablesUpdate.jsp" redirect="false" />
+            <forward name="TableSaved" path="/pages/CloseAndRefresh.jsp" redirect="false"/>
+        </action>
+
+        <action path="/Admin/AdminMainTables2" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminMainTablesAction" name="AdminMainTablesForm" scope="request" validate="false" >
+            <forward name="ShowWindow" path="/pages/Admin/AdminMainTables.jsp" redirect="false"/>
+            <forward name="ShowUpdate" path="/pages/Admin/AdminTablesUpdate.jsp" redirect="false" />
+            <forward name="TableSaved" path="/pages/CloseAndRefresh.jsp" redirect="false"/>
+        </action>
+
+        <action path="/Admin/BatchPaymentsAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.BatchPaymentsAdminAction" name="BatchPaymentsAdminForm" scope="request">
+			<forward name="Success"  path="/pages/Admin/BatchPaymentsAdmin.jsp" redirect="false"/>
+		</action>
+		<action path="/Admin/EntitiesAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.EntitiesAdminAction" name="EntitiesAdminForm" scope="request">
+			<forward name="Entities"  path="/pages/Admin/EntitiesAdmin.jsp" redirect="false"/>
+            <forward name="EntitiesAcct"  path="/Admin/EntitiesAcctAdmin.do" redirect="false"/>
+		</action>
+		<action path="/Admin/EntitiesAcctAdmin" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.EntitiesAcctAdminAction" name="EntitiesAcctAdminForm" scope="request">
+			<forward name="Entities"  path="/pages/Admin/EntitiesAdmin.do" redirect="false"/>
+            <forward name="EntitiesAcct"  path="/pages/Admin/EntitiesAcctAdmin.jsp" redirect="false"/>
+		</action>
+        <action path="/Ground/GroundDetails" type="com.fedex.lacitd.cashcontrol.prestier.struts.action.GroundCashRecapAction" name="GroundCashRecapForm" scope="session">
+			<forward name="Success" path="/pages/Ground/GroundDetails.jsp" redirect="false" />
+            <forward name="Summary" path="/ShowChkAgtCashRecap.do" redirect="false" />
+            <forward name="toROD" path="/ROD/CourierCashRecap.do" redirect="false" />
+            <forward name="toPrepaid" path="/Prepaid/PrepaidDetails.do" redirect="false"/>
+            <forward name="toPOA" path="/Poa/PoaSummary.do" redirect="false" />
+            <forward name="toCOD" path="/COD/COD_CourierCashRecap.do" redirect="false" />
+            <forward name="toFTC" path="/FTC/FTC_CourierCashRecap.do" redirect="false" />
+		</action>
+        <!--+
+            | AdminTables Manager flow
+            |
+            |
+            +-->
+        <action path="/Admin/AdminTablesManagerDispatcher"
+            type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminTablesManagerDispatcherAction"
+            name="AdminTablesManagerForm"
+            parameter="method"
+            scope="request"
+            validate="false">
+            <forward name="CreateAdminTable" path="/Admin/CreateAdminTable.do"/>
+            <forward name="UpdateAdminTable" path="/Admin/UpdateAdminTable.do"/>
+            <forward name="RemoveAdminTable" path="/Admin/RemoveAdminTable.do"/>
+            <forward name="AddColumn" path="/Admin/AddAdminTableColumn.do"/>
+            <forward name="CreateColumn" path="/Admin/CreateAdminTableColumn.do"/>
+            <forward name="RemoveColumn" path="/Admin/RemoveAdminTableColumns.do"/>
+        </action>
+        <action path="/Admin/AdminTablesManager"
+            type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminTablesManagerAction"
+            name="AdminTablesManagerForm"
+            scope="request"
+            validate="false">
+            <forward name="Success" path="/pages/Admin/AdminTablesManager.jsp"/>
+        </action>
+        <action path="/Admin/AddAdminTable"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddAdminTableAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="false">
+            <forward name="Success" path="/pages/Admin/AddAdminTable.jsp"/>
+		</action>
+        <action path="/Admin/CreateAdminTable"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreateAdminTableAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="true"
+            input="/Admin/AddAdminTable.do">
+            <forward name="Success" path="/pages/Admin/SuccessAdminTableTransaction.jsp"/>
+		</action>
+        <action path="/Admin/UpdateAdminTable"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.UpdateAdminTableAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="true"
+            input="/Admin/AdminTablesManager.do">
+            <forward name="Success" path="/Admin/AdminTablesManager.do"/>
+		</action>
+        <action path="/Admin/RemoveAdminTable"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RemoveAdminTableAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="true"
+            input="/Admin/AdminTablesManager.do">
+            <forward name="Success" path="/Admin/AdminTablesManager.do"/>
+		</action>
+        <action path="/Admin/RemoveAdminTableColumns"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.RemoveAdminTableColumnsAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="true"
+            input="/Admin/AdminTablesManager.do">
+            <forward name="Success" path="/Admin/AdminTablesManager.do"/>
+		</action>
+        <action path="/Admin/AddAdminTableColumn"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddAdminTableColumnAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="false">
+		    <forward name="Success" path="/pages/Admin/AddAdminTableColumn.jsp"/>
+        </action>
+        <action path="/Admin/CreateAdminTableColumn"
+			type="com.fedex.lacitd.cashcontrol.prestier.struts.action.CreateAdminTableColumnAction"
+			name="AdminTablesManagerForm"
+			scope="request"
+			validate="true"
+            input="/Admin/AddAdminTableColumn.do">
+		    <forward name="Success" path="/pages/Admin/SuccessAdminTableTransaction.jsp"/>
+        </action>
+        <action path="/Admin/AdminTasks"
+            type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AdminTasksAction"
+            name="AdminTasksForm"
+            scope="request"
+            validate="true"
+            input="/tiles/Admin/AdminTasksTimer.jsp">
+			<forward name="ShowWindow"  path="/tiles/Admin/AdminTasksTimer.jsp" redirect="false"/>
+            <forward name="SaveTask"  path="/tiles/Admin/AdminTasksTimer.jsp" redirect="false"/>
+		</action>
+        <action path="/OAC/AddOAC"
+            type="com.fedex.lacitd.cashcontrol.prestier.struts.action.AddOACAction"
+            name="AddOACForm"
+            scope="request"
+            validate="true"
+            input="/tiles/OAC/add_oac.jsp">
+            <forward name="ShowWindow"  path="/pages/OAC/add_oac.jsp" redirect="false"/>
+            <forward name="Success" path="/pages/OAC/SuccessOacTransaction.jsp" redirect="false"/>
+		</action>
+		
+		
+		
+      </action-mappings>
+	<controller processorClass="org.apache.struts.tiles.TilesRequestProcessor" debug="5" />
+	<message-resources key="org.apache.struts.action.MESSAGE" parameter="ApplicationResources" null="yes" />
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="definitions-parser-validate" value="false" />
+	</plug-in>
+
+</struts-config>

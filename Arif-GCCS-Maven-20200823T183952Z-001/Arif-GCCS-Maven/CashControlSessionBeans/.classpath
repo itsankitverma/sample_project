@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry kind="src" path="SessionSrc"/>
+	<classpathentry kind="lib" path="/CCS/CCS/WEB-INF/lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="/CCS/CCS/WEB-INF/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/weblogic.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/wlclient.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CashControlEJBX"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

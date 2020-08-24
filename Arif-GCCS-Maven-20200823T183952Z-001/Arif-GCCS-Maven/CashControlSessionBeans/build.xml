@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="CashControlSessionBeans">
+    <property environment="env"/>
+    <property name="CCS.location" value="../CCS"/>
+    <property name="APP-INF.location" value="../APP-INF"/>
+    <property name="Daemon.location" value="../Daemon"/>
+    <property name="GCCS.location" value="../GCCS"/>
+    <property name="ECLIPSE_HOME" value="../../eclipseLUNA"/>
+    <property name="CashControlEJBX.location" value="../CashControlEJBX"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Oracle920.userclasspath"/>
+    <path id="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CashControlSessionBeans]].libraryclasspath"/>
+    <path id="CashControlEJBX.classpath">
+        <pathelement location="${CashControlEJBX.location}/build/classes"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Oracle920.userclasspath"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+        <pathelement location="${APP-INF.location}/lib/wlclient.jar"/>
+        <pathelement location="${APP-INF.location}/lib/junit.jar"/>
+        <pathelement location="${APP-INF.location}/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="CashControlSessionBeans.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Oracle920.userclasspath"/>
+        <pathelement location="${CCS.location}/CCS/WEB-INF/lib/ojdbc8.jar"/>
+        <path refid="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CashControlSessionBeans]].libraryclasspath"/>
+        <pathelement location="${CCS.location}/CCS/WEB-INF/lib/log4j.jar"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+        <pathelement location="${APP-INF.location}/lib/wlclient.jar"/>
+        <path refid="CashControlEJBX.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="ejbModule">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="SessionSrc">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${CashControlEJBX.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${CashControlEJBX.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="ejbModule"/>
+            <src path="SessionSrc"/>
+            <classpath refid="CashControlSessionBeans.classpath"/>
+        </javac>
+		
+		<jar destfile="target/CashControlSessionBeans.jar">
+            <fileset dir="build/classes" />
+            <fileset dir="SessionSrc">
+                <exclude name="**/com/**"/>
+            </fileset>
+        </jar>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="build.xml" dir="${CCS.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${CCS.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${Daemon.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${Daemon.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${GCCS.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${GCCS.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

@@ -1,0 +1,1234 @@
+errors.messages.AwbNoExist=The awb '{0}' doesn't exist.<br>
+errors.messages.AwbStatusshouldNotBeClear=The awb {0} is already Closed in GCCS. Please, enter transaction as a new receivable using the ‘Create New Receivable’ button.
+
+app.messages.js.PoaAmountsNotMatch=Error: Invoice Total does not equal Payment Amount. Please Press OK and Correct.
+app.message.AdminMenu=Menu Administrator
+
+app.messages.unexpectedError=An unexpected application error has happened.<BR><BR> If the problem persists please contact to your local GCCS Administrator. <BR><BR> Thanks.
+
+app.messages.js.HigherThanExpected=Warning: The amount entered is substantially higher than the expected amount.
+app.messages.js.AmountEqualAwb=Error: The amount entered is equal to the AWB #.
+app.messages.js.AmountEqualTrkNumber=Error: The amount entered is equal to the Tracking Number.
+
+app.dateWrong.Message=Date should not be greater than 3 days in the future.
+app.PagesTitles.AccessDenied=Access Denied
+app.messages.ErrorInsertingGrndTrk=There was an error trying to insert TRK number {0}
+app.GCCSReportingMessage=GCCS Report
+app.operationalReportingMessage=Operational Reports
+
+app.DisabledStatusExplanation=This flag is checked if user was automatically disabled due to 90 days inactivity. 
+app.DisabledStatus=User Disabled?
+errors.UserDisabled=This employee id was disabled due to inactivity. The System Administrator has been notified and will respond via email/phone.
+
+app.PagesTitles.LogoutPage=Logout Page
+app.messages.logout=You are now logged out.\nYou have been logged out of all applications secured by Single Sign On.
+app.PagesTitles.FailurePage=Failure Page
+app.title.AwbsFromPrepaid=Select AWBs from Prepaid:
+app.title.LinkAwbToOac=Link one or more AWB to OAC details
+app.title.NewAwbToOac=Or enter new AWB number:
+app.title.OacList=Outbound Ancillary Charges List
+app.title.OacDetails=OAC Details
+app.title.ReceiptDate=Receipt Date
+app.message.AddOaclist=Add to OAC List
+app.message.SaveOacList=Save List Back
+ app.messages.LimitedShow=  Payment Types CASH, CHECK, CREDIT CARD, COUPON AND DEPOSIT are default values for all entities and do not need to be added for each location.
+ 
+app.messages.GroundPickupsCashCollectedbyCourier=Ground Pickups Cash Collected by Courier:
+app.messages.AddAccountNumber=Please add Bill to Account number to comment field
+app.title.AddOAC=Add OAC
+app.messages.entityCd=Entity CD
+app.title.OACPayments=OAC Payments
+app.title.PropietaryAndconfidential=Proprietary and Confidential Information
+app.title.GroundPayments=Ground Payments
+app.title.OtherPayments=Other Payments
+app.title.POAPayments=POA Payments
+app.title.PrepaidPayments=Prepaid Payments
+app.title.RODPayments=ROD Payments
+app.messages.BatchID=Batch ID
+app.messages.CloseDate=Close Date
+app.messages.PaymentAmount=Payment Amount
+app.messages.PaymentType=Payment Type
+app.messages.OtherNumber=Other Number
+app.messages.CreditCardNumber=Credit Card Number
+app.messages.ExpirationDate=Expiration Date
+app.messages.StatusId=Status ID
+app.messages.Comment=Comment
+app.messages.GroundTkNbr=Ground Tracking Number
+
+
+app.title.CreditCardPymtReport=Credit Card Payments Report
+app.messages.CreditCardPymtReport=Credit Card Payments Report
+app.messages.OutboundAncillaryCharges=OUTBOUND ANCILLARY CHARGES
+
+app.messages.ViewFreightValues=View Freight Values
+app.messages.ViewOACValues=View Outbound Ancillary Charges Values
+
+app.messages.TRKNumber=Track Number
+
+app.location.parentLocation=Parent Location code
+app.messages.js.DepositBankDatesProblem=Bank Date must be >= Deposit Date
+app.messages.js.DepositDatesProblem=Deposit Date must not be in the future.
+
+app.messages.cosmosScansEnabled=Process COSMOS scans?
+app.messages.ReopenDeposits=REOPEN PREVIOUS DEPOSITS
+app.messages.ConfirmReopen=START NEW DEPOSITS
+app.messages.ReopenDay=Reopen Day
+
+errors.messages.InvAwbNotFound=The Invoice/AWB number {0} was not found.<br>
+app.title.EntitiesAdmin=Entities Admin
+app.messages.label.Table=Table
+app.messages.label.Column=Column
+errors.messages.select.required=Select {0} is required
+app.messages.removeTable=Remove Table
+app.messages.createTable=Insert Table
+app.messages.createColumn=Insert Column
+app.messages.saveTable=Save Table
+app.messages.removeColumn=Remove Column
+app.messages.save=Save
+app.messages.cancel=Cancel
+app.messages.addTable=Add Table
+app.messages.addColumn=Add Column
+app.messages.selectTable=Select Table
+app.location.rih=RIH Process
+app.title.AdminTablesManager=Admin Tables Manager
+app.message.Time=Time
+errors.messages.CouldNotSaveTask=Could not save the task timer.
+errors.messages.CouldNotGetTask=Could no get data of task timer.
+app.location.InCageExceptions=In-Cage Process
+
+errors.messages.LocationIsRequired=Location is required
+errors.messages.CouldNotSaveLocation=Could not save Location
+app.messages.baseLocationCode=Base code
+app.messages.locationName=Name
+app.messages.addLocation=Add Location
+
+app.messages.AmountToChange=Amount to Change Currency
+app.title.MultiInvoicePayment=Payment for Multiple Invoices
+app.messages.MustSelectSplitCurrency=Must select at least one AWB before split currency.
+app.location.DualCurrency=Dual Currency
+app.messages.ReceivablesReport=Missing Invoice Report
+app.message.orderByColumn=Order by column:
+app.messages.selectColumn=Select column
+app.title.PSUpload=People Soft Upload
+app.title.MustBeFINContAdmin=Must be a Finance Controller or and Admin to do this operation.
+app.title.PSCashInBankUpload=People Soft Cash in Bank Upload.
+app.title.PSWoffUpload=People Soft Write-Off Upload.
+app.messages.PSCashInBankSuccessful=People Soft Cash in Bank Upload was successful.
+app.messages.PSWOffSuccessful=People Soft Write Off Upload was successful.
+
+app.location.HoldLocation=Hold Location
+app.messages.js.CannotSetBillAccountStatus=User cannot select Bill Account unless AWB was VISA Inserted.
+app.title.UpdateMainTablesAdmin=Update Table
+errors.messages.CouldNotGetTableInformation = Could not get Information of the Table.
+errors.messages.CouldNotGetDataInformation  = Could not get Data information for this Table.
+errors.messages.CouldNotSaveDataInformation  = Could not save Data. Please, check the data format.
+
+app.message.js.WantToReopenEOD=Are you sure to reopen selected EOD?
+app.message.StartDate=Start Date:
+app.message.EndDate=End Date:
+app.message.Get=Get
+app.message.js.EnterNewEODDate=Enter new date for End of Day number
+app.message.js.EnterNewDepDate=Enter new date for batch number
+errors.messages.EnteredDateInvalid=The entered date is invalid
+app.title.BatchPaymentsAdmin=Payment Batches Admin
+
+app.title.MainTablesAdmin = Main Tables Admin
+app.messages.UserCannotBeCountryAdmin=An Administrator cannot have Country Admin role.
+app.messages.editRole=Edit Role
+
+app.message.ExternalCustomer=External Customer?
+app.messages.MustConfigureCurrency=Must configure the currency for the country.
+
+
+app.messages.AWBCount=AWB Count
+app.messages.ExchRate=Exch. Rate
+app.messages.MustSelectAPaymentType=Must select a payment type.
+app.messages.New=New
+app.title.OtherPaymentsCategAdmin=Other Payments Categories Admin
+app.messages.Categories=Categories
+app.messages.MustSelectACategory=Must Select a Category
+app.messages.CouldNotDeleteCategory=Could not delete the category. It may have payments associated.
+
+app.messages.LocationsOfThisCountryOnly=Locations written on + Locs field must belong to a country assignated to you.
+app.messages.js.WantDeleteBank=Are you sure you want to delete this bank?
+app.messages.js.DeleteBankOnlyAdmin=To delete a bank you need Administrator Role.
+app.mesagge.js.SelectUserForRevoke=To revoke users you must select at least one of them.
+app.mesagge.js.SelectRoleForLocation=To delete roles you must select at least a role for the location {0} and user {1}.
+app.mesagge.js.SelectLocationForUser=To delete locations you must select at least a location for the user {0}.
+errrors.messages.CouldNotRevokeUser=Could not revoke the user.
+app.messages.Revoke=Revoke
+app.message.js.QuestionRevokeUser=Do you want to revoke this user from GCCS? 
+app.messages.CorrectLocation=The locations in the 'Others Locs' field must be fomed from 4 to 6 letters only.
+app.quicklyLocations=Other Locs
+
+app.messages.ReassignPayments=Reassign Payments
+app.messages.MustSelectSource=-Must select at least one payment source (ROD, Prepaid, POA).
+app.messages.MustSelectCourierReassign=-Must select at least a Courier to reassign Payments
+app.messages.MustSelectPaymentReassign=-Must select at least a payment to reassign
+app.messages.CourierDoesNotExist=Specified courier does not exist in GCCS
+
+errors.messages.CouldNotDeleteAccount=Cannot delete the Bank Account.<br>
+app.js.messages.EnterCountry=Must select a country first.
+errors.messages.CouldNotShowAccountBank=Cannot show the Bank Account.<br>
+errors.messages.CouldNotSaveAccountBank=Cannot save the Bank Account.<br>
+app.messages.SetLocations=Assign Locations
+app.messages.brach Branch
+app.messages.accountNbr= Account Number
+app.messages.AccountConf=Account Configuration
+errors.messages.BankNameNotEntered=Bank Name must be entered.<br>
+errors.messages.CouldNotDeleteBank=Cannot delete bank.<br>
+errors.messages.CouldNotSaveBank= Cannot save bank.<br>
+errors.messages.CouldNotGetBank= Cannot get bank from Data Base.<br>
+app.message.BankCode= Bank Code
+app.message.ShortDesc= Short Description
+app.message.BankNm= Bank Name
+app.title.AdminBank=Admin Bank
+app.messages.addAccount= Add Account
+app.messages.addBank= Add Bank
+app.messages.showAccount= Show Accounts
+app.all= All
+app.bank Bank
+app.country Country
+app.messages.BankAccountList=Bank Accounts List
+app.title.AdminBankAccount=Bank Accounts Admin
+
+app.messages.NoEODForToday=Today, there is no end of day operation to re-open it.
+app.messages.RefreshStopped=The refresh was stopped. To restart it run COSMOS Scans again.
+app.messages.RefreshEnabled=Refresh Enabled
+app.messages.RefreshInterval=Refresh Interval (minutes)\:
+app.messages.ExchRateOutRange=The exchange rate entered for this payment exceeds the tolerance limit for this country. Please adjust exchange rate or contact System Administrator for further details.
+app.messages.PageWillRefresh=This page will refresh in minutes\:
+
+app.messages.js.ConfirmReopen=Are you sure you want to undo last end of day operation?
+app.messages.CouldNotReopenLastEOD=The user trying to re-open last end of day process is not the user who executed the "Process End of Day". You must be that user or the Operation Manager to re-open the current end of day process.
+app.messages.ScanType=Scan Type
+app.messages.Location=Location
+app.messages.Details=Details
+app.messages.ShowScans=Scans Details
+errors.GeneratingPassword=Error when generating the new password.<br>
+app.message.CouldChangePassword=A new password has been sent to your email address. Please change it as soon as possible.<br>
+app.message.RecoverPassword=You will receive your password in this email address.
+errors.WrongPassword=Incorrect password for this employee id. Remember you have only three attempts to login.
+errors.UserLocked=This employee id locked from the system. The System Administrator has been notified and will respond via email/phone.
+app.ForgotPassword=Recover your forgotten password from this menu item.
+app.title.ForgotPassword=Forgot your password?
+app.passwordExpired=Your password has expired\! <br> Please, change it now. <br>
+app.messages.FreightAmt=Freight Amount
+errors.UserNotFound=&\#3594;&\#3639;&\#3656;&\#3629;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;/&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+errors.NotLocationTaskDefined=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3591;&\#3634;&\#3609;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;
+
+errors.NotColumnMappingsDefinedForTask=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3585;&\#3634;&\#3619;&\#3592;&\#3633;&\#3610;&\#3588;&\#3641;&\#3656;&\#3588;&\#3629;&\#3621;&\#3633;&\#3617;&\#3609;&\#3660;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3604;&\#3635;&\#3648;&\#3609;&\#3636;&\#3609;&\#3585;&\#3634;&\#3619;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;
+
+errors.CouldNotImportInvoices=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3652;&\#3604;&\#3657;
+
+app.title=&\#3619;&\#3632;&\#3610;&\#3610;&\#3588;&\#3623;&\#3610;&\#3588;&\#3640;&\#3617;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3649;&\#3618;&\#3585;&\#3605;&\#3634;&\#3617;&\#3626;&\#3656;&\#3623;&\#3609;
+
+app.title.ProcessLastCosmosScans=&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609; Cosmos
+
+app.PagesTitles.LoginPage=&\#3627;&\#3609;&\#3657;&\#3634;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3648;&\#3586;&\#3657;&\#3634;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.LoginScreen=&\#3627;&\#3609;&\#3657;&\#3634;&\#3592;&\#3629;&\#3648;&\#3586;&\#3657;&\#3634;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.EmployeeNumber=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609;
+
+app.Password=&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;
+
+app.userName=&\#3594;&\#3639;&\#3656;&\#3629;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;
+
+app.location=&\#3605;&\#3635;&\#3649;&\#3627;&\#3609;&\#3656;&\#3591;
+
+app.date=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.submit=&\#3626;&\#3656;&\#3591;
+
+app.checkinAgentMenu=&\#3648;&\#3617;&\#3609;&\#3641;&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;&\#3648;&\#3629;&\#3648;&\#3592;&\#3609;&\#3605;&\#3660;
+
+app.receiveValidate=&\#3619;&\#3633;&\#3610; &amp; &\#3605;&\#3619;&\#3623;&\#3592;&\#3626;&\#3629;&\#3610;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3648;&\#3585;&\#3655;&\#3610;&\#3652;&\#3604;&\#3657;
+
+app.reporting=&\#3585;&\#3634;&\#3619;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.processCosmosScans=&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609; Cosmos
+
+app.RODFileImportStatus=&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3585;&\#3634;&\#3619;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3615;&\#3621;&\#3660; ROD
+
+app.opsManagerMenu=&\#3648;&\#3617;&\#3609;&\#3641;&\#3650;&\#3611;&\#3619;&\#3649;&\#3585;&\#3619;&\#3617;&\#3592;&\#3633;&\#3604;&\#3585;&\#3634;&\#3619; Ops
+
+app.openDepositSlip=&\#3648;&\#3611;&\#3636;&\#3604;&\#3626;&\#3621;&\#3636;&\#3611;&\#3609;&\#3635;&\#3613;&\#3634;&\#3585;
+
+app.mainMenu=&\#3648;&\#3617;&\#3609;&\#3641;&\#3627;&\#3621;&\#3633;&\#3585;
+
+app.logout=&\#3629;&\#3629;&\#3585;&\#3592;&\#3634;&\#3585;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.messages.CannotFindShipmentProfile=&\#3652;&\#3617;&\#3656;&\#3614;&\#3610;&\#3650;&\#3611;&\#3619;&\#3652;&\#3615;&\#3621;&\#3660;&\#3585;&\#3634;&\#3619;&\#3609;&\#3635;&\#3626;&\#3656;&\#3591;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB &\#3609;&\#3637;&\#3657;
+
+app.messages.CannotFindDetailedScans=&\#3652;&\#3617;&\#3656;&\#3614;&\#3610;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB &\#3609;&\#3637;&\#3657;
+
+app.messages.UnknownError1=&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3607;&\#3637;&\#3656;&\#3652;&\#3617;&\#3656;&\#3619;&\#3641;&\#3657;&\#3592;&\#3633;&\#3585;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3641;&\#3657;&\#3588;&\#3639;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3592;&\#3634;&\#3585; COSMOS\: {0}.  &\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3652;&\#3619;&\#3585;&\#3655;&\#3605;&\#3634;&\#3617; &\#3619;&\#3632;&\#3610;&\#3610;&\#3592;&\#3632;&\#3614;&\#3618;&\#3634;&\#3618;&\#3634;&\#3617;&\#3651;&\#3626;&\#3656;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3611;<br>
+
+app.messages.DecodingError=&\#3585;&\#3634;&\#3619;&\#3606;&\#3629;&\#3604;&\#3619;&\#3627;&\#3633;&\#3626;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; Cosmos &\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604; &\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3611;&\#3604;&\#3657;&\#3623;&\#3618;&\#3605;&\#3633;&\#3623;&\#3648;&\#3629;&\#3591;
+
+errors.messages.EmployeeNonExist=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609; {0} &\#3649;&\#3621;&\#3632;&\#3606;&\#3641;&\#3585;&\#3651;&\#3626;&\#3656;&\#3621;&\#3591;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;
+app.messages.RetrieveScansFromCOSMOS=&\#3604;&\#3638;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609;&\#3592;&\#3634;&\#3585; COSMOS
+
+app.messages.AWBNumber=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; AWB 
+
+app.messages.NotProcessedYet=&\#3618;&\#3633;&\#3591;&\#3652;&\#3617;&\#3656;&\#3652;&\#3604;&\#3657;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609;
+
+app.messages.NotErrorsProcessingScans=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3638;&\#3657;&\#3609;&\#3619;&\#3632;&\#3627;&\#3623;&\#3656;&\#3634;&\#3591;&\#3585;&\#3634;&\#3619;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609;
+
+errors.messages.CouldNotGetDataFromDB=&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3604;&\#3638;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3592;&\#3634;&\#3585;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;
+
+app.title.CheckingAgentCashRecap=&\#3627;&\#3609;&\#3657;&\#3634;&\#3592;&\#3629;&\#3626;&\#3619;&\#3640;&\#3611;&\#3585;&\#3634;&\#3619;&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;&\#3648;&\#3629;&\#3648;&\#3592;&\#3609;&\#3605;&\#3660;
+
+app.format.NumberFormat=\#\#\#,\#\#\#,\#\#\#,\#\#0.00
+
+errors.messages.MustSelectCourierToClose=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3609;&\#3657;&\#3629;&\#3618;&\#3627;&\#3609;&\#3638;&\#3656;&\#3591;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3611;&\#3636;&\#3604;
+
+app.messages.ProcessEndDay=&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3626;&\#3636;&\#3657;&\#3609;&\#3623;&\#3633;&\#3609;
+
+app.messages.CloseCourier=&\#3611;&\#3636;&\#3604;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+errors.messages.CouldNotCloseCourier=&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3610;&\#3634;&\#3591;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3611;&\#3636;&\#3604;&\#3652;&\#3604;&\#3657; &\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;&\#3607;&\#3633;&\#3657;&\#3591;&\#3627;&\#3617;&\#3604;&\#3605;&\#3657;&\#3629;&\#3591;&\#3617;&\#3637;&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3611;&\#3636;&\#3604;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+errors.messages.MustSelectCourierToClose1=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3609;&\#3657;&\#3629;&\#3618;&\#3627;&\#3609;&\#3638;&\#3656;&\#3591;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3611;&\#3636;&\#3604;
+
+app.title.CourierCashRecap=&\#3626;&\#3619;&\#3640;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3607;&\#3637;&\#3656;&\#3626;&\#3656;&\#3591;
+
+app.messages.CourierEmployeeID=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609;&\#3626;&\#3656;&\#3591;
+
+app.messages.ExpectedAmountLocalCurrency=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3588;&\#3634;&\#3604;&\#3627;&\#3617;&\#3634;&\#3618; (&\#3651;&\#3609;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3657;&\#3629;&\#3591;&\#3606;&\#3636;&\#3656;&\#3609;)
+
+app.messages.AppliedPaymentsLocalCurrency=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3651;&\#3594;&\#3657; (&\#3651;&\#3609;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3657;&\#3629;&\#3591;&\#3606;&\#3636;&\#3656;&\#3609;)
+
+app.messages.ExpectedAmountUSD=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3588;&\#3634;&\#3604;&\#3627;&\#3617;&\#3634;&\#3618; (&\#3651;&\#3609;&\#3627;&\#3609;&\#3656;&\#3623;&\#3618;&\#3604;&\#3629;&\#3621;&\#3621;&\#3656;&\#3634;&\#3619;&\#3660;&\#3626;&\#3627;&\#3619;&\#3633;&\#3600;)
+
+app.messages.AppliedPaymentsUSD=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3651;&\#3594;&\#3657; (&\#3651;&\#3609;&\#3627;&\#3609;&\#3656;&\#3623;&\#3618;&\#3604;&\#3629;&\#3621;&\#3621;&\#3656;&\#3634;&\#3619;&\#3660;&\#3626;&\#3627;&\#3619;&\#3633;&\#3600;)
+
+app.messages.Close=&\#3611;&\#3636;&\#3604;?
+
+app.messages.Amount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.InvoiceShipment=&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;/&\#3585;&\#3634;&\#3619;&\#3626;&\#3656;&\#3591;&\#3617;&\#3629;&\#3610; \#
+
+app.messages.GreenDeliveredAndCash=&\#3626;&\#3637;&\#3648;&\#3586;&\#3637;&\#3618;&\#3623; - &\#3614;&\#3633;&\#3626;&\#3604;&\#3640; &\#3626;&\#3656;&\#3591;&\#3617;&\#3629;&\#3610;&\#3649;&\#3621;&\#3657;&\#3623; &\#3649;&\#3621;&\#3632;&\#3651;&\#3594;&\#3657;&\#3585;&\#3634;&\#3619;&\#3626;&\#3649;&\#3585;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.RedDeliveredWithoutCash=&\#3626;&\#3637;&\#3649;&\#3604;&\#3591; - &\#3614;&\#3633;&\#3626;&\#3604;&\#3640; &\#3626;&\#3656;&\#3591;&\#3617;&\#3629;&\#3610;&\#3649;&\#3621;&\#3657;&\#3623; &\#3649;&\#3621;&\#3632;&\#3652;&\#3617;&\#3656;&\#3651;&\#3594;&\#3657;&\#3585;&\#3634;&\#3619;&\#3626;&\#3649;&\#3585;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.BlueOnVan=&\#3626;&\#3637;&\#3609;&\#3657;&\#3635;&\#3648;&\#3591;&\#3636;&\#3609; - &\#3614;&\#3633;&\#3626;&\#3604;&\#3640;&\#3629;&\#3618;&\#3641;&\#3656;&\#3610;&\#3609;&\#3619;&\#3606;&\#3605;&\#3641;&\#3657;
+
+app.messages.AWBDetailsForEmployee=&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604; AWB &\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609;\:
+
+app.messages.CustomerInvoice=&\#3621;&\#3641;&\#3585;&\#3588;&\#3657;&\#3634;/ &\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657; \#
+
+app.messages.ExpectedAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3588;&\#3634;&\#3604;&\#3627;&\#3617;&\#3634;&\#3618;
+
+app.messages.SuperTrackerAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3595;&\#3640;&\#3648;&\#3611;&\#3629;&\#3619;&\#3660;&\#3649;&\#3607;&\#3619;&\#3585;&\#3648;&\#3585;&\#3629;&\#3619;&\#3660; 
+
+app.messages.CheckInCash=&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3607;&\#3637;&\#3656;&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;
+
+app.messages.CheckInCheck=&\#3648;&\#3594;&\#3655;&\#3588;&\#3607;&\#3637;&\#3656;&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;
+
+app.messages.CheckNumber=&\#3648;&\#3594;&\#3655;&\#3588; \#
+
+app.messages.Comments=&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;
+
+app.messages.Status=&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;
+
+app.messages.AddReceivable=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+app.messages.CreateNewReceivable=&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;&\#3651;&\#3627;&\#3617;&\#3656;
+
+None=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;
+
+Clear=&\#3621;&\#3610;
+
+Collect\ Late=&#3648;&#3585;&#3655;&#3610;&#3594;&#3657;&#3634;
+
+Credit=&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+In\ Cage=&#3651;&#3609;&#3585;&#3621;&#3656;&#3629;&#3591;
+
+CA/GSP=CA/GSP
+
+app.format.Date=MM/dd/yyyy
+
+app.format.EditableNumberFormat=\#\#\#\#\#\#\#\#\#\#\#\#\#\#0.00
+
+app.messages.CashTotal=&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.CheckTotal=&\#3648;&\#3594;&\#3655;&\#3588;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.TotalPayments=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.CloseEmployee=&\#3611;&\#3636;&\#3604;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609;
+
+app.messages.UpdateReceivableInformation=&\#3611;&\#3619;&\#3633;&\#3610;&\#3611;&\#3619;&\#3640;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+app.messages.ReturnSummaryRecap=&\#3585;&\#3621;&\#3633;&\#3610;&\#3652;&\#3611;&\#3618;&\#3633;&\#3591;&\#3626;&\#3619;&\#3640;&\#3611;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.messages.TryToChangeRecPaymentCurrency=&\#3588;&\#3640;&\#3603;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3649;&\#3611;&\#3621;&\#3591;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609; &\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.TryToChangeRecCurrency=&\#3588;&\#3640;&\#3603;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3649;&\#3611;&\#3621;&\#3591;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610; &\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.UpdateInformation=&\#3588;&\#3640;&\#3603;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3611;&\#3619;&\#3633;&\#3610;&\#3611;&\#3619;&\#3640;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3592;&\#3634;&\#3585;&\#3627;&\#3609;&\#3657;&\#3634;&\#3592;&\#3629; &\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.ConfirmCloseCourier=&\#3588;&\#3640;&\#3603;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3611;&\#3636;&\#3604;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591; &\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+errors.messages.AllInvoicesStateToClose=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3611;&\#3636;&\#3604;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591; &\#3592;&\#3609;&\#3585;&\#3623;&\#3656;&\#3634;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3607;&\#3640;&\#3585;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3592;&\#3632;&\#3617;&\#3637;&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;
+
+errors.header=<b><font color\="red" face\="Arial">
+
+errors.footer=</font></b>
+
+app.messages.BadMontos=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3611;&\#3657;&\#3629;&\#3609;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.messages.CommentsNotEntered=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609; &\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3652;&\#3617;&\#3656;&\#3605;&\#3619;&\#3591;&\#3585;&\#3633;&\#3609;
+
+app.messages.DocNumberNotEntered=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3648;&\#3629;&\#3585;&\#3626;&\#3634;&\#3619;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+errors.messages.ThereAreNotClosedCouriers=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3626;&\#3636;&\#3657;&\#3609;&\#3623;&\#3633;&\#3609;&\#3652;&\#3604;&\#3657; &\#3617;&\#3637;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3607;&\#3637;&\#3656;&\#3618;&\#3633;&\#3591;&\#3652;&\#3617;&\#3656;&\#3652;&\#3604;&\#3657;&\#3611;&\#3636;&\#3604;
+
+app.messages.EmptyBecauseClosedDay=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3649;&\#3626;&\#3604;&\#3591; &\#3626;&\#3636;&\#3656;&\#3591;&\#3609;&\#3637;&\#3657;&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3638;&\#3657;&\#3609;&\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3651;&\#3604;&\#3654; &\#3588;&\#3657;&\#3634;&\#3591;&\#3629;&\#3618;&\#3641;&\#3656; &\#3627;&\#3619;&\#3639;&\#3629;&\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3617;&\#3637;&\#3585;&\#3634;&\#3619;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3648;&\#3617;&\#3639;&\#3656;&\#3629;&\#3626;&\#3636;&\#3657;&\#3609;&\#3623;&\#3633;&\#3609;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3623;&\#3633;&\#3609;&\#3611;&\#3633;&\#3592;&\#3592;&\#3640;&\#3610;&\#3633;&\#3609;
+
+errors.messages.ThereWereErrors=&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;\:
+
+app.messages.CustomerName=&\#3594;&\#3639;&\#3656;&\#3629;&\#3621;&\#3641;&\#3585;&\#3588;&\#3657;&\#3634;
+
+app.messages.InvoiceNumber=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;
+
+app.messages.InvoiceDate=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3586;&\#3629;&\#3591;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;
+
+app.messages.InvoiceAmt=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3651;&\#3609;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;
+
+app.messages.ListOfReceivables=&\#3610;&\#3633;&\#3597;&\#3594;&\#3637;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+app.messages.FindReceivable=&\#3588;&\#3657;&\#3609;&\#3627;&\#3634;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+errors.messages.CouldNotReassingReceivableToCourier=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3585;&\#3635;&\#3627;&\#3609;&\#3604;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;&\#3651;&\#3627;&\#3657;&\#3585;&\#3633;&\#3610;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3652;&\#3604;&\#3657;
+
+errors.messages.CouldNotCreateInvoice=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;  &\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3629;&\#3634;&\#3592;&\#3629;&\#3618;&\#3641;&\#3656;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3629;&\#3618;&\#3641;&\#3656;&\#3649;&\#3621;&\#3657;&\#3623;
+
+app.messages.ExchangeRate=&\#3629;&\#3633;&\#3605;&\#3619;&\#3634;&\#3585;&\#3634;&\#3619;&\#3649;&\#3621;&\#3585;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;
+
+errors.messages.AWBRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3617;&\#3637;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3605;&\#3636;&\#3604;&\#3605;&\#3634;&\#3617;&\#3627;&\#3621;&\#3633;&\#3585;
+
+errors.messages.AWBInvalid=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3605;&\#3636;&\#3604;&\#3605;&\#3634;&\#3617;&\#3627;&\#3621;&\#3633;&\#3585;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+errors.messages.RecAmountRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;
+
+errors.messages.RecAmountInvalid=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+errors.messages.CustomerNameRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3594;&\#3639;&\#3656;&\#3629;&\#3621;&\#3641;&\#3585;&\#3588;&\#3657;&\#3634;
+
+errors.messages.ExchangeRateUsedRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3629;&\#3633;&\#3605;&\#3619;&\#3634;&\#3649;&\#3621;&\#3585;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;
+
+errors.messages.ExchangeRateUsedInvalid=&\#3629;&\#3633;&\#3605;&\#3619;&\#3634;&\#3649;&\#3621;&\#3585;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.messages.PODNoPaymentReport=POD/&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3585;&\#3634;&\#3619;&\#3626;&\#3649;&\#3585;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.DailyExceptionReport=&\#3588;&\#3623;&\#3634;&\#3617;&\#3612;&\#3636;&\#3604;&\#3611;&\#3585;&\#3605;&\#3636;&\#3611;&\#3619;&\#3632;&\#3592;&\#3635;&\#3623;&\#3633;&\#3609;
+
+app.messages.DailyCashRecapReport=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3626;&\#3619;&\#3640;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3611;&\#3619;&\#3632;&\#3592;&\#3635;&\#3623;&\#3633;&\#3609; 
+
+app.messages.BillAccountReport=&\#3610;&\#3633;&\#3597;&\#3594;&\#3637;&\#3651;&\#3610;&\#3648;&\#3626;&\#3619;&\#3655;&\#3592;
+
+app.messages.CreateReport=&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.messages.SelectReport=&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.title.CashRecapReport=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3626;&\#3619;&\#3640;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.title.CreditPaymentsReport=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+app.title.DepositSlipGeneration=&\#3585;&\#3634;&\#3619;&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;&\#3626;&\#3621;&\#3636;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3613;&\#3634;&\#3585;
+
+app.title.ExceptionReceivablesReport=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3588;&\#3623;&\#3634;&\#3617;&\#3612;&\#3636;&\#3604;&\#3611;&\#3585;&\#3605;&\#3636;&\#3611;&\#3619;&\#3632;&\#3592;&\#3635;&\#3623;&\#3633;&\#3609;
+
+app.title.PODNoPaymentReport=POD/&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.title.ReportSelector=&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.title.ViewReceivableDetails=&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+
+app.message.MustSelectAReport=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;
+
+app.message.MustEnterAValidDate=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;<br>
+
+app.messages.AvailableReports=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3651;&\#3594;&\#3657;&\#3652;&\#3604;&\#3657;
+
+errors.messages.CouldNotSaveDepositsNumber=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3585;&\#3634;&\#3619;&\#3613;&\#3634;&\#3585;
+
+app.messages.ExceptionClosedReceivablesReport=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3588;&\#3623;&\#3634;&\#3617;&\#3612;&\#3636;&\#3604;&\#3611;&\#3585;&\#3605;&\#3636;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3611;&\#3636;&\#3604;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610; 
+
+app.messages.PODNoCashScanRODReport=POD &\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3626;&\#3649;&\#3585;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604; ROD
+
+app.messages.CollectionStatus=&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3585;&\#3634;&\#3619;&\#3648;&\#3585;&\#3655;&\#3610;
+
+app.messages.CheckInAgent=&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;&\#3605;&\#3633;&\#3623;&\#3649;&\#3607;&\#3609;
+
+app.messages.ClearDate=&\#3621;&\#3610;&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.ScanAmount=&\#3626;&\#3649;&\#3585;&\#3609;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.Currency=&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.CreditPaymentsFor=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;
+
+app.messages.CashRecapDate=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3626;&\#3619;&\#3640;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.CheckInAgentId=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3605;&\#3633;&\#3623;&\#3649;&\#3607;&\#3609;&\#3648;&\#3594;&\#3655;&\#3588;&\#3629;&\#3636;&\#3609;
+
+app.messages.CashRecapAmount=&\#3626;&\#3619;&\#3640;&\#3611;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.DepositSlipNumber=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3626;&\#3621;&\#3636;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3613;&\#3634;&\#3585;
+
+app.messages.submit=&\#3626;&\#3656;&\#3591;
+
+app.messages.SubmitSelected=&\#3588;&\#3640;&\#3603;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3607;&\#3637;&\#3656;&\#3611;&\#3657;&\#3629;&\#3609; &\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.CashRecapFor=&\#3626;&\#3619;&\#3640;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;
+
+app.messages.Cash=&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;
+
+app.messages.Check=&\#3648;&\#3594;&\#3655;&\#3588;
+
+app.messages.TotalPayment=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3619;&\#3623;&\#3617;
+
+app.messages.AssignReceivable=&\#3585;&\#3635;&\#3627;&\#3609;&\#3604;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+app.messages.LocationRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.CourierRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+errors.messages.NotExistsEmployeeByLocation=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3605;&\#3635;&\#3649;&\#3627;&\#3609;&\#3656;&\#3591;&\#3607;&\#3637;&\#3656;&\#3619;&\#3632;&\#3610;&\#3640;
+
+errors.messages.InvalidDate=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+errors.messages.CouldNotShowInvoiceToAssign=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3649;&\#3626;&\#3604;&\#3591;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3585;&\#3635;&\#3627;&\#3609;&\#3604;&\#3651;&\#3627;&\#3617;&\#3656;&\#3652;&\#3604;&\#3657;
+
+app.messages.NoDataToShow=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3649;&\#3626;&\#3604;&\#3591;
+
+app.messages.PendentReceivables=&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;&\#3605;&\#3634;&\#3617;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+app.PagesTitles.SelectLocation=&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.ChangeLocation=&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.Select=&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;
+
+app.messages.MustSelectALocation=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656; <br>
+
+app.messages.EmployeeName=&\#3594;&\#3639;&\#3656;&\#3629;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+app.messages.Name\:=&#3594;&#3639;&#3656;&#3629;:
+
+app.urls.processing=ProcessingEnglish.gif
+
+app.message.ScansAreProcessing=&\#3626;&\#3649;&\#3585;&\#3609;&\#3585;&\#3635;&\#3621;&\#3633;&\#3591;&\#3606;&\#3641;&\#3585;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;
+
+app.messages.InCageExceptions=&\#3588;&\#3623;&\#3634;&\#3617;&\#3612;&\#3636;&\#3604;&\#3611;&\#3585;&\#3605;&\#3636;&\#3651;&\#3609;&\#3648;&\#3588;&\#3592;
+
+app.title.RodFilesImpStatus=&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3585;&\#3634;&\#3619;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3615;&\#3621;&\#3660; ROD
+
+app.messages.ExternalRODFilesImport=&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3585;&\#3634;&\#3619;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3615;&\#3621;&\#3660; ROD &\#3616;&\#3634;&\#3618;&\#3609;&\#3629;&\#3585;
+
+app.messages.FileName=&\#3594;&\#3639;&\#3656;&\#3629;&\#3652;&\#3615;&\#3621;&\#3660;
+
+app.messages.DateProcessed=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;
+
+app.messages.Message=&\#3586;&\#3657;&\#3629;&\#3588;&\#3623;&\#3634;&\#3617;
+
+app.format.DatePrecise=MM/dd/yyyy HH\:mm\:ss z
+
+app.messages.ImportStatusOk=&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3649;&\#3621;&\#3657;&\#3623;
+
+app.messages.ImportStatusErrors=&\#3652;&\#3617;&\#3656;&\#3652;&\#3604;&\#3657;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;
+
+app.messages.PaymentDocument=&\#3648;&\#3629;&\#3585;&\#3626;&\#3634;&\#3619;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.Number=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;
+
+app.messages.Type=&\#3594;&\#3609;&\#3636;&\#3604;
+
+app.messages.Totals=&\#3619;&\#3623;&\#3617;
+
+app.messages.CreditCardTotal=&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.DepositTotal=&\#3648;&\#3591;&\#3636;&\#3609;&\#3613;&\#3634;&\#3585;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.CreditCard=&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+app.messages.Deposit=&\#3613;&\#3634;&\#3585;
+
+app.messages.LocalCurrencyAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3585;&\#3640;&\#3621;&\#3607;&\#3657;&\#3629;&\#3591;&\#3606;&\#3636;&\#3656;&\#3609;
+
+app.messages.USDAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3585;&\#3640;&\#3621;&\#3604;&\#3629;&\#3621;&\#3621;&\#3656;&\#3634;&\#3619;&\#3660;&\#3626;&\#3627;&\#3619;&\#3633;&\#3600;
+
+app.messages.Expected=&\#3607;&\#3637;&\#3656;&\#3588;&\#3634;&\#3604;&\#3627;&\#3617;&\#3634;&\#3618;
+
+app.messages.Received=&\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;
+
+app.messages.AddPrepaidAwb=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617; AWB &\#3649;&\#3610;&\#3610;&\#3592;&\#3656;&\#3634;&\#3618;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634;
+
+app.receiveValidateMessage=&\#3619;&\#3633;&\#3610;, &\#3605;&\#3619;&\#3623;&\#3592;&\#3626;&\#3629;&\#3610;, &\#3648;&\#3614;&\#3636;&\#3656;&\#3617;, &\#3611;&\#3619;&\#3633;&\#3610; ROD, &\#3592;&\#3656;&\#3634;&\#3618;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634; &\#3649;&\#3621;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609; POD &\#3607;&\#3637;&\#3656;&\#3648;&\#3585;&\#3655;&\#3610;&\#3652;&\#3604;&\#3657;
+
+app.reportingMessage=&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609;&\#3627;&\#3621;&\#3634;&\#3618;&\#3649;&\#3610;&\#3610;&\#3648;&\#3585;&\#3637;&\#3656;&\#3618;&\#3623;&\#3585;&\#3633;&\#3610;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;, &\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3607;&\#3637;&\#3656;&\#3588;&\#3591;&\#3588;&\#3657;&\#3634;&\#3591;, &\#3631;&\#3621;&\#3631;
+
+app.processCosmosScansMessage=&\#3619;&\#3633;&\#3610;&\#3626;&\#3649;&\#3585;&\#3609;&\#3592;&\#3634;&\#3585; Cosmos &\#3648;&\#3585;&\#3637;&\#3656;&\#3618;&\#3623;&\#3585;&\#3633;&\#3610; AWB &\#3607;&\#3637;&\#3656;&\#3617;&\#3637;&\#3648;&\#3588;&\#3619;&\#3639;&\#3656;&\#3629;&\#3591;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3611;&\#3655;&\#3609; R.O.D. &\#3651;&\#3609;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3609;&\#3637;&\#3657;
+
+app.RODFileImportStatusMessage=&\#3607;&\#3610;&\#3607;&\#3623;&\#3609;&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3586;&\#3629;&\#3591;&\#3652;&\#3615;&\#3621;&\#3660; ROD XML &\#3607;&\#3637;&\#3656;&\#3609;&\#3635;&\#3648;&\#3586;&\#3657;&\#3634;&\#3617;&\#3634;
+
+app.openDepositSlipMessage=&\#3607;&\#3610;&\#3607;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3648;&\#3585;&\#3655;&\#3610;&\#3652;&\#3604;&\#3657; &\#3649;&\#3621;&\#3632;&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;&\#3626;&\#3621;&\#3636;&\#3611;&\#3648;&\#3591;&\#3636;&\#3609;&\#3613;&\#3634;&\#3585;
+
+app.messages.MenuWelcome=&\#3618;&\#3636;&\#3609;&\#3604;&\#3637;&\#3605;&\#3657;&\#3629;&\#3609;&\#3619;&\#3633;&\#3610;&\#3626;&\#3641;&\#3656;&\#3619;&\#3632;&\#3610;&\#3610;&\#3588;&\#3623;&\#3610;&\#3588;&\#3640;&\#3617;&\#3648;&\#3591;&\#3636;&\#3609;&\#3626;&\#3604;&\#3649;&\#3618;&\#3585;&\#3605;&\#3634;&\#3617;&\#3626;&\#3656;&\#3623;&\#3609;...
+
+app.messages.EmployeeNonExist=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3614;&\#3609;&\#3633;&\#3585;&\#3591;&\#3634;&\#3609; {0} &\#3649;&\#3621;&\#3632;&\#3606;&\#3641;&\#3585;&\#3651;&\#3626;&\#3656;&\#3621;&\#3591;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;
+
+errors.messages.LocationNonExist=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3607;&\#3637;&\#3656;&\#3619;&\#3632;&\#3610;&\#3640;
+
+app.messages.ScanAmount1=&\#3626;&\#3649;&\#3585;&\#3609;<br>&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.Coupon=&\#3588;&\#3641;&\#3611;&\#3629;&\#3591;
+
+app.messages.CouponTotal=&\#3588;&\#3641;&\#3611;&\#3629;&\#3591;&\#3619;&\#3623;&\#3617; ({0})
+
+app.messages.PUX16CourierDoesNotMatch=&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;&\#3607;&\#3637;&\#3656;&\#3607;&\#3635;&\#3585;&\#3634;&\#3619;&\#3626;&\#3649;&\#3585;&\#3609; PUP/PUX16 &\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB {0}  ({1}) &\#3652;&\#3617;&\#3656;&\#3605;&\#3619;&\#3591;&\#3585;&\#3633;&\#3610; ({2}) &\#3611;&\#3633;&\#3592;&\#3592;&\#3640;&\#3610;&\#3633;&\#3609;<br>
+
+app.messages.PickupsCashCollectedbyCourier\:=&#3648;&#3585;&#3655;&#3610;&#3648;&#3591;&#3636;&#3609;&#3607;&#3637;&#3656;&#3619;&#3623;&#3610;&#3619;&#3623;&#3617;&#3650;&#3604;&#3618;&#3612;&#3641;&#3657;&#3626;&#3656;&#3591;:
+
+app.messages.UseGun=&\#3651;&\#3594;&\#3657;&\#3611;&\#3639;&\#3609;&\#3626;&\#3649;&\#3585;&\#3609;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; AWB<br>&nbsp;&\#3606;&\#3657;&\#3634;&\#3588;&\#3640;&\#3603;&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3617;&\#3634;&\#3585;&\#3585;&\#3623;&\#3656;&\#3634; 25 AWB, &\#3651;&\#3627;&\#3657;&\#3626;&\#3656;&\#3591;&\#3615;&\#3629;&\#3619;&\#3660;&\#3617;&\#3609;&\#3637;&\#3657; &\#3649;&\#3621;&\#3632;&\#3648;&\#3619;&\#3636;&\#3656;&\#3617;&\#3585;&\#3619;&\#3632;&\#3610;&\#3623;&\#3609;&\#3585;&\#3634;&\#3619;&\#3651;&\#3627;&\#3617;&\#3656;&\#3629;&\#3637;&\#3585;&\#3588;&\#3619;&\#3633;&\#3657;&\#3591;
+
+app.messages.CannotFindDetailedScans1=&\#3652;&\#3617;&\#3656;&\#3614;&\#3610;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB {0} &\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3652;&\#3619;&\#3585;&\#3655;&\#3605;&\#3634;&\#3617; &\#3619;&\#3632;&\#3610;&\#3610;&\#3592;&\#3632;&\#3614;&\#3618;&\#3634;&\#3618;&\#3634;&\#3617;&\#3651;&\#3626;&\#3656;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3611; <br>
+
+app.messages.CannotFindShipmentProfile1=&\#3652;&\#3617;&\#3656;&\#3614;&\#3610;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3650;&\#3611;&\#3619;&\#3652;&\#3615;&\#3621;&\#3660;&\#3585;&\#3634;&\#3619;&\#3626;&\#3656;&\#3591;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB {0} &\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3652;&\#3619;&\#3585;&\#3655;&\#3605;&\#3634;&\#3617; &\#3619;&\#3632;&\#3610;&\#3610;&\#3592;&\#3632;&\#3614;&\#3618;&\#3634;&\#3618;&\#3634;&\#3617;&\#3651;&\#3626;&\#3656;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3611; <br>
+
+app.messages.DecodingError1=&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3606;&\#3629;&\#3604;&\#3619;&\#3627;&\#3633;&\#3626;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; Cosmos &\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; AWB {0} &\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3652;&\#3619;&\#3585;&\#3655;&\#3605;&\#3634;&\#3617; &\#3619;&\#3632;&\#3610;&\#3610;&\#3592;&\#3632;&\#3614;&\#3618;&\#3634;&\#3618;&\#3634;&\#3617;&\#3651;&\#3626;&\#3656;&\#3648;&\#3586;&\#3657;&\#3634;&\#3652;&\#3611; <br>
+
+errors.ScansProcessingError=&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3611;&\#3619;&\#3632;&\#3617;&\#3623;&\#3621;&\#3612;&\#3621;&\#3626;&\#3649;&\#3585;&\#3609;
+
+app.messages.UnknownError=&\#3648;&\#3585;&\#3636;&\#3604;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3607;&\#3637;&\#3656;&\#3652;&\#3617;&\#3656;&\#3619;&\#3641;&\#3657;&\#3592;&\#3633;&\#3585;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3648;&\#3619;&\#3637;&\#3618;&\#3585;&\#3588;&\#3639;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3592;&\#3634;&\#3585; COSMOS\: {0}
+
+app.messages.ErrorInsertingAwb=&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3614;&\#3618;&\#3634;&\#3618;&\#3634;&\#3617;&\#3651;&\#3626;&\#3656; AWB {0}
+
+app.messages.AWBExists=&\#3617;&\#3637; AWB {0} &\#3629;&\#3618;&\#3641;&\#3656;&\#3649;&\#3621;&\#3657;&\#3623;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;<br>
+
+app.messages.MustEnterAtLeastOneAwb=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; AWB &\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3609;&\#3657;&\#3629;&\#3618;&\#3627;&\#3609;&\#3638;&\#3656;&\#3591;&\#3605;&\#3633;&\#3623;
+
+app.messages.MustSelectOtherPaymentType=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3594;&\#3609;&\#3636;&\#3604;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.MustEnterOtherPayment=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3648;&\#3611;&\#3655;&\#3609;&\#3648;&\#3629;&\#3585;&\#3626;&\#3634;&\#3619; &\#3606;&\#3657;&\#3634;&\#3617;&\#3637;&\#3585;&\#3634;&\#3619;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3594;&\#3609;&\#3636;&\#3604;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.ControllerMenu=&\#3648;&\#3617;&\#3609;&\#3641;&\#3605;&\#3633;&\#3623;&\#3588;&\#3623;&\#3610;&\#3588;&\#3640;&\#3617;
+
+app.messages.AcrobatReader=&\#3604;&\#3634;&\#3623;&\#3609;&\#3660;&\#3650;&\#3627;&\#3621;&\#3604; Acrobat Reader &\#3607;&\#3637;&\#3656;&\#3609;&\#3637;&\#3656;
+
+app.Language=En
+
+app.messages.PoaSummaryTitle=&\#3627;&\#3609;&\#3657;&\#3634;&\#3592;&\#3629;&\#3626;&\#3619;&\#3640;&\#3611; POA 
+
+app.messages.PoaAddPayment=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609; POA 
+
+app.messages.PaymentReception=&\#3585;&\#3634;&\#3619;&\#3619;&\#3633;&\#3610;&\#3648;&\#3591;&\#3636;&\#3609;&\#3594;&\#3635;&\#3619;&\#3632;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591; 
+
+app.messages.Payment=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.FedExAccount=&\#3610;&\#3633;&\#3597;&\#3594;&\#3637; FedEx 
+
+app.messages.Customer=&\#3621;&\#3641;&\#3585;&\#3588;&\#3657;&\#3634;
+
+app.messages.Name=&\#3594;&\#3639;&\#3656;&\#3629;
+
+app.messages.Detail=&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;
+
+app.messages.InvoicesReceivingPayment=&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.Action=&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;
+
+app.messages.Delete=&\#3621;&\#3610;
+
+app.messages.CloseSave=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3585;&\#3634;&\#3619;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3649;&\#3611;&\#3621;&\#3591;&\#3585;&\#3656;&\#3629;&\#3609;&\#3607;&\#3637;&\#3656;&\#3592;&\#3632;&\#3611;&\#3636;&\#3604;&\#3627;&\#3609;&\#3657;&\#3634;&\#3605;&\#3656;&\#3634;&\#3591;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.MustEnterInvoiceNumber=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591; (9 &\#3627;&\#3621;&\#3633;&\#3585;)
+
+app.messages.MustEnterAnAmount=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.MustEnterAValidAccountNbr=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3610;&\#3633;&\#3597;&\#3594;&\#3637;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;<br>
+
+app.messages.MustEnterCustomerName=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3594;&\#3639;&\#3656;&\#3629;&\#3621;&\#3641;&\#3585;&\#3588;&\#3657;&\#3634;
+
+app.messages.MustSelectCurrency=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.MustEnterAtLeastOneInvoice=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3629;&\#3618;&\#3656;&\#3634;&\#3591;&\#3609;&\#3657;&\#3629;&\#3618;&\#3627;&\#3609;&\#3638;&\#3656;&\#3591;&\#3651;&\#3610;
+
+app.messages.PaymentDeletionConfirmation=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3621;&\#3610;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609; &\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3618;&\#3639;&\#3609;&\#3618;&\#3633;&\#3609;&\#3585;&\#3634;&\#3619;&\#3585;&\#3619;&\#3632;&\#3607;&\#3635;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.messages.OpenReceivables=&\#3648;&\#3611;&\#3636;&\#3604;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;
+
+errors.messages.ErrorGeneratingXML=&\#3617;&\#3637;&\#3586;&\#3657;&\#3629;&\#3612;&\#3636;&\#3604;&\#3614;&\#3621;&\#3634;&\#3604;&\#3651;&\#3609;&\#3585;&\#3634;&\#3619;&\#3626;&\#3619;&\#3657;&\#3634;&\#3591; XML &\#3648;&\#3629;&\#3634;&\#3605;&\#3660;&\#3614;&\#3640;&\#3605;
+
+app.AddRODAwbs=&\#3651;&\#3626;&\#3656;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; ROD AWB &\#3604;&\#3657;&\#3623;&\#3618;&\#3605;&\#3633;&\#3623;&\#3648;&\#3629;&\#3591;
+
+app.AddRODAwbsMessage=&\#3611;&\#3657;&\#3629;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; AWB &\#3649;&\#3621;&\#3632;&\#3586;&\#3629;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3652;&\#3611;&\#3618;&\#3633;&\#3591; Cosmos
+
+app.messages.RodAddAwb=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617; AWB
+
+app.messages.AwbsReceived=AWB &\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;
+
+app.messages.MustEnterAwbNumber=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; AWB 
+
+errors.messages.AwbInvalid=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; Awb &\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.messages.BadMonto=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3611;&\#3657;&\#3629;&\#3609;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.messages.ValidExchRate=&\#3629;&\#3633;&\#3605;&\#3619;&\#3634;&\#3649;&\#3621;&\#3585;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3617;&\#3634;&\#3585;&\#3585;&\#3623;&\#3656;&\#3634; 0 
+
+app.messages.DuplicateAWB=\# &\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3588;&\#3657;&\#3634;&\#3591;&\#3619;&\#3633;&\#3610;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610; {0} AWB &\#3617;&\#3637;&\#3629;&\#3618;&\#3641;&\#3656;&\#3649;&\#3621;&\#3657;&\#3623;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; <br>
+
+app.messages.Account=&\#3610;&\#3633;&\#3597;&\#3594;&\#3637;
+
+app.messages.ExternalId=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3616;&\#3634;&\#3618;&\#3609;&\#3629;&\#3585;
+
+app.messages.Source=&\#3605;&\#3657;&\#3609;&\#3607;&\#3634;&\#3591;
+
+app.messages.ActualAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3649;&\#3607;&\#3657;&\#3592;&\#3619;&\#3636;&\#3591;
+
+app.messages.BankAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3651;&\#3609;&\#3608;&\#3609;&\#3634;&\#3588;&\#3634;&\#3619;
+
+app.messages.ancillaryChargeAmount=&\#3588;&\#3656;&\#3634;&\#3610;&\#3619;&\#3636;&\#3585;&\#3634;&\#3619;&\#3648;&\#3626;&\#3619;&\#3636;&\#3617;
+
+app.messages.rodAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609; ROD 
+
+app.messages.BadRODAmt=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609; ROD &\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.messages.BadAncChargeAmt=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3588;&\#3656;&\#3634;&\#3610;&\#3619;&\#3636;&\#3585;&\#3634;&\#3619;&\#3648;&\#3626;&\#3619;&\#3636;&\#3617;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;
+
+app.title.UserListByCountry=&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657; &\#3612;&\#3641;&\#3657;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.messages.UserListByCountry=&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3605;&\#3634;&\#3617;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;
+
+app.title.AdminUserListByCountry=&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657; &\#3612;&\#3641;&\#3657;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.title.AdminUserListByCountryMessage=&\#3585;&\#3634;&\#3619;&\#3592;&\#3633;&\#3604;&\#3585;&\#3634;&\#3619;&\#3650;&\#3611;&\#3619;&\#3652;&\#3615;&\#3621;&\#3660;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3605;&\#3634;&\#3617;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;
+
+app.RolByLocation=Rol &\#3605;&\#3634;&\#3617;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.addUser=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;
+
+app.messages.addLocationRole=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;/&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;
+
+app.messages.deleteUser=&\#3621;&\#3610;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;
+
+app.messages.deleteLocation=&\#3621;&\#3610;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.messages.deleteRole=&\#3621;&\#3610;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;
+
+app.messages.PreviousComments=&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;&\#3585;&\#3656;&\#3629;&\#3609;&\#3627;&\#3609;&\#3657;&\#3634;
+
+app.messages.MustEnterAComment=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;
+
+errors.messages.CouldNotSaveComment=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;<br>
+
+app.messages.ViewAdd=&\#3648;&\#3619;&\#3637;&\#3618;&\#3585;&\#3604;&\#3641;/&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;
+
+app.messages.ViewAddComment=&\#3648;&\#3619;&\#3637;&\#3618;&\#3585;&\#3604;&\#3641;/&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3586;&\#3657;&\#3629;&\#3648;&\#3626;&\#3609;&\#3629;&\#3649;&\#3609;&\#3632;
+
+app.messages.MustEnterAmounts=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3605;&\#3633;&\#3657;&\#3591;&\#3588;&\#3656;&\#3634;&\#3626;&\#3606;&\#3634;&\#3609;&\#3632;&\#3586;&\#3629;&\#3591;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3613;&\#3634;&\#3585;
+
+app.message.MustSelectACountry=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;<br>
+
+app.title.CreditCardPymtGeneration=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3604;&\#3657;&\#3623;&\#3618;&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+app.openCreditCard=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3604;&\#3657;&\#3623;&\#3618;&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+app.openCreditCardMessage=&\#3607;&\#3610;&\#3607;&\#3623;&\#3609;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3604;&\#3657;&\#3623;&\#3618;&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+errros.messages.CouldNotDeleteData=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3621;&\#3610;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3648;&\#3627;&\#3621;&\#3656;&\#3634;&\#3609;&\#3637;&\#3657;&\#3592;&\#3634;&\#3585;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3652;&\#3604;&\#3657;
+
+app.title.AdminNewEditUser=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617; / &\#3611;&\#3619;&\#3633;&\#3610;&\#3611;&\#3619;&\#3640;&\#3591;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;
+
+app.message.description=&\#3588;&\#3635;&\#3629;&\#3608;&\#3636;&\#3610;&\#3634;&\#3618;
+
+app.message.FedexId=&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; Fedex 
+
+app.message.AdminUser=&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657; ({0})
+
+app.Role=&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;
+
+errors.messages.CouldNotSaveCCInformation=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3594;&\#3640;&\#3604;&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;&\#3652;&\#3604;&\#3657;
+
+app.messages.ReimbursedAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3651;&\#3594;&\#3657;&\#3588;&\#3639;&\#3609;
+
+errors.messages.CouldNotGetLocationsFromDB=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3604;&\#3638;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3592;&\#3634;&\#3585;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;
+
+errors.messages.CouldNotGetRolesFromDB=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3604;&\#3638;&\#3591;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3592;&\#3634;&\#3585;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;
+
+error.messages.NotValidUser=&\#3652;&\#3617;&\#3656;&\#3651;&\#3594;&\#3656;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;, {0}
+
+app.messages.NotValidPassword=&\#3585;&\#3634;&\#3619;&\#3605;&\#3619;&\#3623;&\#3592;&\#3626;&\#3629;&\#3610;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3621;&\#3657;&\#3617;&\#3648;&\#3627;&\#3621;&\#3623; <br>
+
+app.messages.MustSelectARole=&\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3621;&\#3639;&\#3629;&\#3585;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607; <br>
+
+app.messages.MustEnterFedexId=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; FedEx <br>
+
+errors.messages.CouldNotGetUser=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3651;&\#3609;&\#3600;&\#3634;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621; &\#3648;&\#3611;&\#3655;&\#3609;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3651;&\#3627;&\#3617;&\#3656;
+
+app.title.AdminNewLocationRole=&\#3648;&\#3614;&\#3636;&\#3656;&\#3617;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;/&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;
+
+app.message.AdminLocationRole=&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3649;&\#3621;&\#3632;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3586;&\#3629;&\#3591;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657; ({0})
+
+errors.messages.CouldNotSaveLocationRole=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656; &\#3649;&\#3621;&\#3632;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3652;&\#3604;&\#3657;
+
+app.title.AdminEnterEmployeeId=&\#3611;&\#3657;&\#3629;&\#3609;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; Fedex 
+
+app.messages.UserHasLocationRoleDefault=&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3617;&\#3637;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3649;&\#3621;&\#3632;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3617;&\#3634;&\#3605;&\#3619;&\#3600;&\#3634;&\#3609;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3652;&\#3623;&\#3657;&\#3629;&\#3618;&\#3641;&\#3656;&\#3649;&\#3621;&\#3657;&\#3623;
+
+app.title.PrepaidDiscrepancies=&\#3588;&\#3623;&\#3634;&\#3617;&\#3649;&\#3605;&\#3585;&\#3605;&\#3656;&\#3634;&\#3591;&\#3586;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634;
+
+app.messages.PrepaidDiscrepanciesMessage=&\#3629;&\#3609;&\#3640;&\#3597;&\#3634;&\#3605;&\#3651;&\#3627;&\#3657;&\#3648;&\#3627;&\#3655;&\#3609;&\#3588;&\#3623;&\#3634;&\#3617;&\#3649;&\#3605;&\#3585;&\#3605;&\#3656;&\#3634;&\#3591;&\#3586;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634; AWB
+
+app.messages.PrepaidDiscrepancies=&\#3588;&\#3623;&\#3634;&\#3617;&\#3649;&\#3605;&\#3585;&\#3605;&\#3656;&\#3634;&\#3591;&\#3586;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634;
+
+app.messages.Reason=&\#3648;&\#3627;&\#3605;&\#3640;&\#3612;&\#3621;
+
+app.messages.PUX16Amount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609; PUX16 
+
+app.messages.CouponAmount=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3588;&\#3641;&\#3611;&\#3629;&\#3591;
+
+app.messages.Discrepancy=&\#3588;&\#3623;&\#3634;&\#3617;&\#3649;&\#3605;&\#3585;&\#3605;&\#3656;&\#3634;&\#3591;
+
+app.messages.MustEnterCommentsToClose=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3611;&\#3636;&\#3604;&\#3588;&\#3623;&\#3634;&\#3617;&\#3649;&\#3605;&\#3585;&\#3605;&\#3656;&\#3634;&\#3591;
+
+app.messages.SavedUser=&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;
+
+app_messages.MustEnterOnlyNumbers=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3648;&\#3593;&\#3614;&\#3634;&\#3632;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586; Fedex &\#3648;&\#3607;&\#3656;&\#3634;&\#3609;&\#3633;&\#3657;&\#3609; <br>
+
+app.Password2=&\#3611;&\#3657;&\#3629;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3651;&\#3627;&\#3617;&\#3656;
+
+app.messages.MustEnterUserName=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3594;&\#3639;&\#3656;&\#3629;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657; <br>
+
+app.messages.MustEnterPassword=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609; <br>
+
+app.messages.EmailInvalid=&\#3619;&\#3641;&\#3611;&\#3649;&\#3610;&\#3610;&\#3629;&\#3637;&\#3648;&\#3617;&\#3621;&\#3660;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591; <br>
+
+app.title.Administration=&\#3585;&\#3634;&\#3619;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;
+
+app.Email=&\#3629;&\#3637;&\#3648;&\#3617;&\#3621;&\#3660;
+
+app.messages.PoaDetailBadMontos=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3651;&\#3610;&\#3649;&\#3592;&\#3657;&\#3591;&\#3627;&\#3609;&\#3637;&\#3657;&\#3607;&\#3637;&\#3656;&\#3611;&\#3657;&\#3629;&\#3609;&\#3648;&\#3586;&\#3657;&\#3634;&\#3617;&\#3634;
+
+app.message.QuestionDeleteUser=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3621;&\#3610;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3609;&\#3637;&\#3657;&\#3629;&\#3629;&\#3585;&\#3592;&\#3634;&\#3585;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;&\#3609;&\#3637;&\#3657;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.message.QuestionDeleteLocation=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3621;&\#3610;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3649;&\#3621;&\#3632;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3626;&\#3635;&\#3627;&\#3619;&\#3633;&\#3610;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3609;&\#3637;&\#3657;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.message.QuestionDeleteRole=&\#3588;&\#3640;&\#3603;&\#3605;&\#3657;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3621;&\#3610;&\#3610;&\#3607;&\#3610;&\#3634;&\#3607;&\#3586;&\#3629;&\#3591;&\#3612;&\#3641;&\#3657;&\#3651;&\#3594;&\#3657;&\#3609;&\#3637;&\#3657;&\#3627;&\#3619;&\#3639;&\#3629;&\#3652;&\#3617;&\#3656;?
+
+app.AdminMenu=&\#3648;&\#3617;&\#3609;&\#3641;&\#3585;&\#3634;&\#3619;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.title.AdminLocation=&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656; &\#3612;&\#3641;&\#3657;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;  
+
+errors.messages.CouldNotSave\ =&#3652;&#3617;&#3656;&#3626;&#3634;&#3617;&#3634;&#3619;&#3606;&#3610;&#3633;&#3609;&#3607;&#3638;&#3585;&#3626;&#3606;&#3634;&#3609;&#3607;&#3637;&#3656;&#3652;&#3604;&#3657; <br>
+
+errors.messages.CouldNotGetLocation=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3604;&\#3638;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;
+
+app.title.LocationSetupElements=&\#3629;&\#3591;&\#3588;&\#3660;&\#3611;&\#3619;&\#3632;&\#3585;&\#3629;&\#3610;&\#3586;&\#3629;&\#3591;&\#3585;&\#3634;&\#3619;&\#3605;&\#3633;&\#3657;&\#3591;&\#3588;&\#3656;&\#3634;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.tittle.ElementsDetails=&\#3619;&\#3634;&\#3618;&\#3621;&\#3632;&\#3648;&\#3629;&\#3637;&\#3618;&\#3604;&\#3586;&\#3629;&\#3591;&\#3629;&\#3591;&\#3588;&\#3660;&\#3611;&\#3619;&\#3632;&\#3585;&\#3629;&\#3610;
+
+app.message.GeneralInformation=&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3607;&\#3633;&\#3656;&\#3623;&\#3652;&\#3611;
+
+app.CountryConfig=Country Setup
+
+app.BankAccount=&\#3610;&\#3633;&\#3597;&\#3594;&\#3637;&\#3608;&\#3609;&\#3634;&\#3588;&\#3634;&\#3619;
+
+app.Code=&\#3619;&\#3627;&\#3633;&\#3626;
+
+app.location.VISAActive=Activate VISA Feed 
+
+app.message.TimeZone=&\#3648;&\#3586;&\#3605;&\#3648;&\#3623;&\#3621;&\#3634;
+
+app.title.AdminLocationSetup=&\#3585;&\#3634;&\#3619;&\#3605;&\#3633;&\#3657;&\#3591;&\#3588;&\#3656;&\#3634;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;  &\#3612;&\#3641;&\#3657;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;
+
+app.messages.Symbol=&\#3626;&\#3633;&\#3597;&\#3621;&\#3633;&\#3585;&\#3625;&\#3603;&\#3660;
+
+app.Warning=&\#3588;&\#3635;&\#3648;&\#3605;&\#3639;&\#3629;&\#3609;
+
+app.messages.currencyWarning=&\#3585;&\#3634;&\#3619;&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3649;&\#3611;&\#3621;&\#3591;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624; , &\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3586;&\#3629;&\#3591;\u00A0<br>&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;&\#3607;&\#3633;&\#3657;&\#3591;&\#3627;&\#3617;&\#3604;&\#3592;&\#3632;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;&\#3612;&\#3621;&\#3585;&\#3619;&\#3632;&\#3607;&\#3610; 
+
+app.title.AdminCountryCurrency=&\#3612;&\#3641;&\#3657;&\#3610;&\#3619;&\#3636;&\#3627;&\#3634;&\#3619;&\#3619;&\#3632;&\#3610;&\#3610;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624; 
+
+errors.messages.CouldNotSaveCountryCurrency=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3610;&\#3633;&\#3609;&\#3607;&\#3638;&\#3585;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;
+
+errors.messages.CouldNotGetCountryCurrency=&\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3604;&\#3638;&\#3591;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3586;&\#3629;&\#3591;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;
+
+app.messages.CurrencyCdInvalid=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;<br>
+
+app.messages.CurrecyNmInvalid=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3594;&\#3639;&\#3656;&\#3629;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;<br>
+
+app.messages.CurrencySymbolInvalid=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3626;&\#3633;&\#3597;&\#3621;&\#3633;&\#3585;&\#3625;&\#3603;&\#3660;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591;<br>
+
+app.DepositsSplitting=&\#3585;&\#3634;&\#3619;&\#3649;&\#3618;&\#3585;&\#3585;&\#3634;&\#3619;&\#3613;&\#3634;&\#3585;
+
+app.splitting.BySource=&\#3605;&\#3634;&\#3617;&\#3605;&\#3657;&\#3609;&\#3607;&\#3634;&\#3591;
+
+app.splitting.ByCurrency=&\#3605;&\#3634;&\#3617;&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.splitting.ByPaymentType=&\#3605;&\#3634;&\#3617;&\#3594;&\#3609;&\#3636;&\#3604;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.Prepaid=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3621;&\#3656;&\#3623;&\#3591;&\#3627;&\#3609;&\#3657;&\#3634;
+
+app.prepaid.DelayDays=&\#3592;&\#3635;&\#3609;&\#3623;&\#3609;&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3629;&\#3609;&\#3640;&\#3597;&\#3634;&\#3605;&\#3651;&\#3627;&\#3657;&\#3594;&\#3657;&\#3634;&\#3652;&\#3604;&\#3657;
+
+app.creditCard.ControlledGCCS=&\#3588;&\#3623;&\#3610;&\#3588;&\#3640;&\#3617;&\#3650;&\#3604;&\#3618; GCCS
+
+app.creditCard.PaymentType=&\#3594;&\#3609;&\#3636;&\#3604;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.adminLocationSpecific=(&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3648;&\#3593;&\#3614;&\#3634;&\#3632;)
+
+app.messages.adminLocationAllCountry=(&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3586;&\#3629;&\#3591;&\#3611;&\#3619;&\#3632;&\#3648;&\#3607;&\#3624;&\#3607;&\#3633;&\#3657;&\#3591;&\#3627;&\#3617;&\#3604;)
+
+app.title.OtherPaymentsReceived=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;&\#3629;&\#3639;&\#3656;&\#3609;
+
+app.messages.OtherPaymentsDataEntering=&\#3585;&\#3634;&\#3619;&\#3611;&\#3657;&\#3629;&\#3609;&\#3586;&\#3657;&\#3629;&\#3617;&\#3641;&\#3621;&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3629;&\#3639;&\#3656;&\#3609;
+
+app.messages.Description=&\#3588;&\#3635;&\#3629;&\#3608;&\#3636;&\#3610;&\#3634;&\#3618;
+
+app.messages.LocalCurrency=&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;&\#3607;&\#3657;&\#3629;&\#3591;&\#3606;&\#3636;&\#3656;&\#3609;
+
+app.messages.TodayOthersPaymentsReceived=&\#3585;&\#3634;&\#3619;&\#3594;&\#3635;&\#3619;&\#3632;&\#3648;&\#3591;&\#3636;&\#3609;&\#3629;&\#3639;&\#3656;&\#3609;&\#3654; &\#3607;&\#3637;&\#3656;&\#3652;&\#3604;&\#3657;&\#3619;&\#3633;&\#3610;&\#3651;&\#3609;&\#3623;&\#3633;&\#3609;&\#3609;&\#3637;&\#3657;
+
+app.messages.CreditCardNumberDigits=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3648;&\#3593;&\#3614;&\#3634;&\#3632;&\#3605;&\#3633;&\#3623;&\#3648;&\#3621;&\#3586; 4 &\#3627;&\#3621;&\#3633;&\#3585;&\#3626;&\#3640;&\#3604;&\#3607;&\#3657;&\#3634;&\#3618;&\#3586;&\#3629;&\#3591;&\#3610;&\#3633;&\#3605;&\#3619;&\#3648;&\#3588;&\#3619;&\#3604;&\#3636;&\#3605;
+
+app.messages.DepositDatesProblem=Bank Date must be >\= &\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3613;&\#3634;&\#3585; &\#3652;&\#3617;&\#3656;&\#3626;&\#3634;&\#3617;&\#3634;&\#3619;&\#3606;&\#3648;&\#3611;&\#3655;&\#3609;&\#3623;&\#3633;&\#3609;&\#3651;&\#3609;&\#3629;&\#3609;&\#3634;&\#3588;&\#3605; &\#3649;&\#3621;&\#3632;&\#3605;&\#3657;&\#3629;&\#3591; >\= &\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3626;&\#3619;&\#3657;&\#3634;&\#3591;
+
+app.messages.MustEnterDepositDates=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3648;&\#3614;&\#3639;&\#3656;&\#3629;&\#3611;&\#3636;&\#3604;&\#3585;&\#3634;&\#3619;&\#3613;&\#3634;&\#3585;
+
+app.messages.DepositDate=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3613;&\#3634;&\#3585;
+
+app.messages.BankDate=&\#3623;&\#3633;&\#3609;&\#3607;&\#3637;&\#3656;&\#3613;&\#3634;&\#3585;&\#3608;&\#3609;&\#3634;&\#3588;&\#3634;&\#3619;
+
+app.messages.CurrencyAbbrv=&\#3626;&\#3585;&\#3640;&\#3621;&\#3648;&\#3591;&\#3636;&\#3609;
+
+app.messages.CommentsAbbrv=&\#3586;&\#3657;&\#3629;&\#3588;&\#3636;&\#3604;&\#3648;&\#3627;&\#3655;&\#3609;
+
+app.messages.SourceAbbrv=&\#3605;&\#3657;&\#3609;&\#3607;&\#3634;&\#3591;
+
+app.title.AdminSQLStatement=&\#3607;&\#3619;&\#3636;&\#3585;&\#3648;&\#3585;&\#3629;&\#3619;&\#3660;&\#3619;&\#3634;&\#3618;&\#3591;&\#3634;&\#3609; SQL
+
+app.messages.LocationNonExist=&\#3652;&\#3617;&\#3656;&\#3617;&\#3637;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+app.title.ChangePassword=&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;
+
+app.ChangePassword=&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3586;&\#3629;&\#3591;&\#3588;&\#3640;&\#3603;&\#3592;&\#3634;&\#3585;&\#3619;&\#3634;&\#3618;&\#3585;&\#3634;&\#3619;&\#3648;&\#3617;&\#3609;&\#3641;&\#3609;&\#3637;&\#3657;
+
+app.NewPassword=&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3651;&\#3627;&\#3617;&\#3656;
+
+app.OldPassword=&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3648;&\#3604;&\#3636;&\#3617;
+
+errors.messages.OldPasswordInvalid=&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3648;&\#3604;&\#3636;&\#3617;&\#3652;&\#3617;&\#3656;&\#3606;&\#3641;&\#3585;&\#3605;&\#3657;&\#3629;&\#3591; <br>
+
+app.messages.PasswordChanged=&\#3648;&\#3611;&\#3621;&\#3637;&\#3656;&\#3618;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3648;&\#3611;&\#3655;&\#3609;&\#3612;&\#3621;&\#3626;&\#3635;&\#3648;&\#3619;&\#3655;&\#3592;
+
+app.messages.MustEnterNewInvalid=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3651;&\#3627;&\#3617;&\#3656; <br>
+
+app.messages.MustEnterNewAgainInvalid=&\#3605;&\#3657;&\#3629;&\#3591;&\#3611;&\#3657;&\#3629;&\#3609;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3651;&\#3627;&\#3617;&\#3656;&\#3629;&\#3637;&\#3585;&\#3588;&\#3619;&\#3633;&\#3657;&\#3591; <br>
+
+app.messages.NewPasswordsEquals=&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3651;&\#3627;&\#3617;&\#3656; &\#3649;&\#3621;&\#3632;&\#3619;&\#3627;&\#3633;&\#3626;&\#3612;&\#3656;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;&\#3611;&\#3657;&\#3629;&\#3609;&\#3629;&\#3637;&\#3585;&\#3588;&\#3619;&\#3633;&\#3657;&\#3591; &\#3605;&\#3657;&\#3629;&\#3591;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3633;&\#3623;&\#3648;&\#3604;&\#3637;&\#3618;&\#3623;&\#3585;&\#3633;&\#3609; <br>
+
+errors.messages.CourierRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3627;&\#3617;&\#3634;&\#3618;&\#3648;&\#3621;&\#3586;&\#3612;&\#3641;&\#3657;&\#3626;&\#3656;&\#3591;
+
+errors.messages.js.CourierRequired=\u0E08\u0E33\u0E40\u0E1B\u0E47\u0E19\u0E15\u0E49\u0E2D\u0E07\u0E43\u0E0A\u0E49\u0E2B\u0E21\u0E32\u0E22\u0E40\u0E25\u0E02\u0E1C\u0E39\u0E49\u0E2A\u0E48\u0E07
+
+errors.messages.LocationRequired=&\#3592;&\#3635;&\#3648;&\#3611;&\#3655;&\#3609;&\#3605;&\#3657;&\#3629;&\#3591;&\#3651;&\#3594;&\#3657;&\#3626;&\#3606;&\#3634;&\#3609;&\#3607;&\#3637;&\#3656;
+
+errors.messages.js.LocationRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E43\\u0E0A\\u0E49\\u0E2A\\u0E16\\u0E32\\u0E19\\u0E17\\u0E35\\u0E48
+errors.messages.js.CustomerNameRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E43\\u0E0A\\u0E49\\u0E0A\\u0E37\\u0E48\\u0E2D\\u0E25\\u0E39\\u0E01\\u0E04\\u0E49\\u0E32
+errors.messages.js.ExchangeRateUsedInvalid=\\u0E2D\\u0E31\\u0E15\\u0E23\\u0E32\\u0E41\\u0E25\\u0E01\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+errors.messages.js.ExchangeRateUsedRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E43\\u0E0A\\u0E49\\u0E2D\\u0E31\\u0E15\\u0E23\\u0E32\\u0E41\\u0E25\\u0E01\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19
+errors.messages.js.MustSelectCourierToClose1=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E1C\\u0E39\\u0E49\\u0E2A\\u0E48\\u0E07\\u0E2D\\u0E22\\u0E48\\u0E32\\u0E07\\u0E19\\u0E49\\u0E2D\\u0E22\\u0E2B\\u0E19\\u0E36\\u0E48\\u0E07\\u0E23\\u0E32\\u0E22\\u0E01\\u0E32\\u0E23\\u0E40\\u0E1E\\u0E37\\u0E48\\u0E2D\\u0E1B\\u0E34\\u0E14
+errors.messages.js.MustSelectNewCourierToClose=Must check New Courier before closing
+errors.messages.js.AllCouriersAreClosed=All the couriers are closed already!
+errors.messages.js.RecAmountInvalid=\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+errors.messages.js.RecAmountRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E43\\u0E0A\\u0E49\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19
+errors.messages.js.ThereAreNotClosedCouriers=\\u0E44\\u0E21\\u0E48\\u0E2A\\u0E32\\u0E21\\u0E32\\u0E23\\u0E16\\u0E1B\\u0E23\\u0E30\\u0E21\\u0E27\\u0E25\\u0E1C\\u0E25\\u0E40\\u0E21\\u0E37\\u0E48\\u0E2D\\u0E2A\\u0E34\\u0E49\\u0E19\\u0E27\\u0E31\\u0E19\\u0E44\\u0E14\\u0E49 \\u0E21\\u0E35\\u0E1C\\u0E39\\u0E49\\u0E2A\\u0E48\\u0E07\\u0E17\\u0E35\\u0E48\\u0E22\\u0E31\\u0E07\\u0E44\\u0E21\\u0E48\\u0E44\\u0E14\\u0E49\\u0E1B\\u0E34\\u0E14
+errors.messages.js.ThereWereErrors=\\u0E21\\u0E35\\u0E02\\u0E49\\u0E2D\\u0E1C\\u0E34\\u0E14\\u0E1E\\u0E25\\u0E32\\u0E14\:
+app.message.js.MustEnterAValidDate=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E27\\u0E31\\u0E19\\u0E17\\u0E35\\u0E48\\u0E17\\u0E35\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+app.message.js.MustSelectACountry=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E1B\\u0E23\\u0E30\\u0E40\\u0E17\\u0E28<br>
+app.messages.js.MustEnterAValidAccountNbr=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E1A\\u0E31\\u0E0D\\u0E0A\\u0E35\\u0E17\\u0E35\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07<br>
+app.messages.js.MustSelectALocation=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E2A\\u0E16\\u0E32\\u0E19\\u0E17\\u0E35\\u0E48
+app.message.js.MustSelectAReport=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E23\\u0E32\\u0E22\\u0E07\\u0E32\\u0E19
+app.message.js.QuestionDeleteLocation=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E25\\u0E1A\\u0E2A\\u0E16\\u0E32\\u0E19\\u0E17\\u0E35\\u0E48\\u0E41\\u0E25\\u0E30\\u0E1A\\u0E17\\u0E1A\\u0E32\\u0E17\\u0E2A\\u0E33\\u0E2B\\u0E23\\u0E31\\u0E1A\\u0E1C\\u0E39\\u0E49\\u0E43\\u0E0A\\u0E49\\u0E19\\u0E35\\u0E49\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.message.js.QuestionDeleteRole=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E25\\u0E1A\\u0E1A\\u0E17\\u0E1A\\u0E32\\u0E17\\u0E02\\u0E2D\\u0E07\\u0E1C\\u0E39\\u0E49\\u0E43\\u0E0A\\u0E49\\u0E19\\u0E35\\u0E49\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.message.js.QuestionDeleteUser=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E25\\u0E1A\\u0E1C\\u0E39\\u0E49\\u0E43\\u0E0A\\u0E49\\u0E19\\u0E35\\u0E49\\u0E2D\\u0E2D\\u0E01\\u0E08\\u0E32\\u0E01\\u0E1B\\u0E23\\u0E30\\u0E40\\u0E17\\u0E28\\u0E19\\u0E35\\u0E49\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.BadAncChargeAmt=\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E04\\u0E48\\u0E32\\u0E1A\\u0E23\\u0E34\\u0E01\\u0E32\\u0E23\\u0E40\\u0E2A\\u0E23\\u0E34\\u0E21\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+app.messages.js.BadMonto=\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E17\\u0E35\\u0E48\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+app.messages.js.BadMontos=\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E17\\u0E35\\u0E48\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+app.messages.js.BadRODAmt=\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19 ROD \\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+app.messages.js.CloseSave=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E1A\\u0E31\\u0E19\\u0E17\\u0E36\\u0E01\\u0E01\\u0E32\\u0E23\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19\\u0E41\\u0E1B\\u0E25\\u0E07\\u0E01\\u0E48\\u0E2D\\u0E19\\u0E17\\u0E35\\u0E48\\u0E08\\u0E30\\u0E1B\\u0E34\\u0E14\\u0E2B\\u0E19\\u0E49\\u0E32\\u0E15\\u0E48\\u0E32\\u0E07\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.CommentsNotEntered=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E02\\u0E49\\u0E2D\\u0E04\\u0E34\\u0E14\\u0E40\\u0E2B\\u0E47\\u0E19 \\u0E40\\u0E21\\u0E37\\u0E48\\u0E2D\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E44\\u0E21\\u0E48\\u0E15\\u0E23\\u0E07\\u0E01\\u0E31\\u0E19
+app.messages.js.ConfirmCloseCourier=\\u0E04\\u0E38\\u0E13\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E17\\u0E35\\u0E48\\u0E08\\u0E30\\u0E1B\\u0E34\\u0E14\\u0E1C\\u0E39\\u0E49\\u0E2A\\u0E48\\u0E07 \\u0E22\\u0E37\\u0E19\\u0E22\\u0E31\\u0E19\\u0E01\\u0E32\\u0E23\\u0E01\\u0E23\\u0E30\\u0E17\\u0E33\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.CourierRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E43\\u0E0A\\u0E49\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E1C\\u0E39\\u0E49\\u0E2A\\u0E48\\u0E07
+app.messages.js.CreditCardNumberDigits=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E40\\u0E09\\u0E1E\\u0E32\\u0E30\\u0E15\\u0E31\\u0E27\\u0E40\\u0E25\\u0E02 4 \\u0E2B\\u0E25\\u0E31\\u0E01\\u0E2A\\u0E38\\u0E14\\u0E17\\u0E49\\u0E32\\u0E22\\u0E02\\u0E2D\\u0E07\\u0E1A\\u0E31\\u0E15\\u0E23\\u0E40\\u0E04\\u0E23\\u0E14\\u0E34\\u0E15
+app.messages.js.DocNumberNotEntered=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E40\\u0E2D\\u0E01\\u0E2A\\u0E32\\u0E23\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19
+app.messages.js.TryToChangeRecCurrency=\\u0E04\\u0E38\\u0E13\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E17\\u0E35\\u0E48\\u0E08\\u0E30\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19\\u0E41\\u0E1B\\u0E25\\u0E07\\u0E2A\\u0E01\\u0E38\\u0E25\\u0E40\\u0E07\\u0E34\\u0E19\\u0E02\\u0E2D\\u0E07\\u0E23\\u0E32\\u0E22\\u0E01\\u0E32\\u0E23\\u0E04\\u0E49\\u0E32\\u0E07\\u0E23\\u0E31\\u0E1A \\u0E22\\u0E37\\u0E19\\u0E22\\u0E31\\u0E19\\u0E01\\u0E32\\u0E23\\u0E01\\u0E23\\u0E30\\u0E17\\u0E33\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.MustEnterAComment=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E02\\u0E49\\u0E2D\\u0E04\\u0E34\\u0E14\\u0E40\\u0E2B\\u0E47\\u0E19
+app.messages.js.MustEnterAmounts=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E40\\u0E1E\\u0E37\\u0E48\\u0E2D\\u0E15\\u0E31\\u0E49\\u0E07\\u0E04\\u0E48\\u0E32\\u0E2A\\u0E16\\u0E32\\u0E19\\u0E30\\u0E02\\u0E2D\\u0E07\\u0E40\\u0E07\\u0E34\\u0E19\\u0E17\\u0E35\\u0E48\\u0E1D\\u0E32\\u0E01
+app.messages.js.MustEnterAnAmount=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19
+app.messages.js.MustEnterAtLeastOneAwb=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02 AWB \\u0E2D\\u0E22\\u0E48\\u0E32\\u0E07\\u0E19\\u0E49\\u0E2D\\u0E22\\u0E2B\\u0E19\\u0E36\\u0E48\\u0E07\\u0E15\\u0E31\\u0E27
+app.messages.js.MustEnterAtLeastOneInvoice=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E43\\u0E1A\\u0E41\\u0E08\\u0E49\\u0E07\\u0E2B\\u0E19\\u0E35\\u0E49\\u0E2D\\u0E22\\u0E48\\u0E32\\u0E07\\u0E19\\u0E49\\u0E2D\\u0E22\\u0E2B\\u0E19\\u0E36\\u0E48\\u0E07\\u0E43\\u0E1A
+app.messages.js.MustEnterAwbNumber=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02 AWB 
+app.messages.js.MustEnterCommentsToClose=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E02\\u0E49\\u0E2D\\u0E04\\u0E34\\u0E14\\u0E40\\u0E2B\\u0E47\\u0E19\\u0E40\\u0E1E\\u0E37\\u0E48\\u0E2D\\u0E1B\\u0E34\\u0E14\\u0E04\\u0E27\\u0E32\\u0E21\\u0E41\\u0E15\\u0E01\\u0E15\\u0E48\\u0E32\\u0E07
+app.messages.js.MustEnterDepositDates=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E27\\u0E31\\u0E19\\u0E17\\u0E35\\u0E48\\u0E40\\u0E1E\\u0E37\\u0E48\\u0E2D\\u0E1B\\u0E34\\u0E14\\u0E01\\u0E32\\u0E23\\u0E1D\\u0E32\\u0E01
+app.messages.js.MustEnterFedexId=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02 FedEx 
+app.messages.js.MustEnterInvoiceNumber=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E43\\u0E1A\\u0E41\\u0E08\\u0E49\\u0E07\\u0E2B\\u0E19\\u0E35\\u0E49\\u0E17\\u0E35\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07 (9 \\u0E2B\\u0E25\\u0E31\\u0E01)
+app.messages.js.MustEnterOtherPayment=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19\\u0E17\\u0E35\\u0E48\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E40\\u0E2D\\u0E01\\u0E2A\\u0E32\\u0E23 \\u0E16\\u0E49\\u0E32\\u0E21\\u0E35\\u0E01\\u0E32\\u0E23\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E0A\\u0E19\\u0E34\\u0E14\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19
+app.messages.js.MustSelectCurrency=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E2A\\u0E01\\u0E38\\u0E25\\u0E40\\u0E07\\u0E34\\u0E19
+app.messages.js.MustSelectOtherPaymentType=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E0A\\u0E19\\u0E34\\u0E14\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19
+app.messages.js.PaymentDeletionConfirmation=\\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E40\\u0E1E\\u0E37\\u0E48\\u0E2D\\u0E25\\u0E1A\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19 \\u0E04\\u0E38\\u0E13\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E22\\u0E37\\u0E19\\u0E22\\u0E31\\u0E19\\u0E01\\u0E32\\u0E23\\u0E01\\u0E23\\u0E30\\u0E17\\u0E33\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.PoaDetailBadMontos=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E08\\u0E33\\u0E19\\u0E27\\u0E19\\u0E40\\u0E07\\u0E34\\u0E19\\u0E17\\u0E35\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E2A\\u0E33\\u0E2B\\u0E23\\u0E31\\u0E1A\\u0E43\\u0E1A\\u0E41\\u0E08\\u0E49\\u0E07\\u0E2B\\u0E19\\u0E35\\u0E49\\u0E17\\u0E35\\u0E48\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E40\\u0E02\\u0E49\\u0E32\\u0E21\\u0E32
+app.messages.js.TryToChangeRecPaymentCurrency=\\u0E04\\u0E38\\u0E13\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E17\\u0E35\\u0E48\\u0E08\\u0E30\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19\\u0E41\\u0E1B\\u0E25\\u0E07\\u0E2A\\u0E01\\u0E38\\u0E25\\u0E40\\u0E07\\u0E34\\u0E19\\u0E02\\u0E2D\\u0E07\\u0E01\\u0E32\\u0E23\\u0E0A\\u0E33\\u0E23\\u0E30\\u0E40\\u0E07\\u0E34\\u0E19 \\u0E22\\u0E37\\u0E19\\u0E22\\u0E31\\u0E19\\u0E01\\u0E32\\u0E23\\u0E01\\u0E23\\u0E30\\u0E17\\u0E33\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.UpdateInformation=\\u0E04\\u0E38\\u0E13\\u0E40\\u0E25\\u0E37\\u0E2D\\u0E01\\u0E17\\u0E35\\u0E48\\u0E08\\u0E30\\u0E1B\\u0E23\\u0E31\\u0E1A\\u0E1B\\u0E23\\u0E38\\u0E07\\u0E02\\u0E49\\u0E2D\\u0E21\\u0E39\\u0E25\\u0E08\\u0E32\\u0E01\\u0E2B\\u0E19\\u0E49\\u0E32\\u0E08\\u0E2D \\u0E22\\u0E37\\u0E19\\u0E22\\u0E31\\u0E19\\u0E01\\u0E32\\u0E23\\u0E01\\u0E23\\u0E30\\u0E17\\u0E33\\u0E2B\\u0E23\\u0E37\\u0E2D\\u0E44\\u0E21\\u0E48?
+app.messages.js.ValidExchRate=\\u0E2D\\u0E31\\u0E15\\u0E23\\u0E32\\u0E41\\u0E25\\u0E01\\u0E40\\u0E1B\\u0E25\\u0E35\\u0E48\\u0E22\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E21\\u0E32\\u0E01\\u0E01\\u0E27\\u0E48\\u0E32 0 
+app_messages.js.MustEnterOnlyNumbers=\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E1B\\u0E49\\u0E2D\\u0E19\\u0E40\\u0E09\\u0E1E\\u0E32\\u0E30\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E2A\\u0E33\\u0E2B\\u0E23\\u0E31\\u0E1A\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02 Fedex \\u0E40\\u0E17\\u0E48\\u0E32\\u0E19\\u0E31\\u0E49\\u0E19
+errors.messages.js.AllInvoicesStateToClose=\\u0E44\\u0E21\\u0E48\\u0E2A\\u0E32\\u0E21\\u0E32\\u0E23\\u0E16\\u0E1B\\u0E34\\u0E14\\u0E1C\\u0E39\\u0E49\\u0E2A\\u0E48\\u0E07 \\u0E08\\u0E19\\u0E01\\u0E27\\u0E48\\u0E32\\u0E43\\u0E1A\\u0E41\\u0E08\\u0E49\\u0E07\\u0E2B\\u0E19\\u0E35\\u0E49\\u0E17\\u0E38\\u0E01\\u0E23\\u0E32\\u0E22\\u0E01\\u0E32\\u0E23\\u0E08\\u0E30\\u0E21\\u0E35\\u0E2A\\u0E16\\u0E32\\u0E19\\u0E30
+errors.messages.js.AwbInvalid=\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02 Awb \\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+errors.messages.js.AWBInvalid=\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E15\\u0E34\\u0E14\\u0E15\\u0E32\\u0E21\\u0E2B\\u0E25\\u0E31\\u0E01\\u0E44\\u0E21\\u0E48\\u0E16\\u0E39\\u0E01\\u0E15\\u0E49\\u0E2D\\u0E07
+errors.messages.js.AWBRequired=\\u0E08\\u0E33\\u0E40\\u0E1B\\u0E47\\u0E19\\u0E15\\u0E49\\u0E2D\\u0E07\\u0E21\\u0E35\\u0E2B\\u0E21\\u0E32\\u0E22\\u0E40\\u0E25\\u0E02\\u0E15\\u0E34\\u0E14\\u0E15\\u0E32\\u0E21\\u0E2B\\u0E25\\u0E31\\u0E01
+
+app.newLocation=New Location
+
+app.newRole=New Role
+
+app.locationDefault=Location Default
+
+app.roleDefault=Role Default
+
+errors.UserFoundWithException=Your password will expire in {0} days. Please change it asap.
+
+
+
+errors.LoginError=System error at login. Please try again later.
+
+app.title.PaymentTypesAdmin=Payment Types Admin
+
+app.messages.ShortDescription=Short Description
+
+app.messages.PaymentCategory=Payment Category
+
+app.messages.Code=Code
+
+app.title.LockedUser=User Locked
+
+app.messages.js.UnSavedChanges=Some changes were not saved. Do you wish to continue and loss this changes?
+
+app.messages.js.MustEnterAllField=All the payment type fields are mandatory.
+
+app.messages.CouldNotSavePaymentType=Could not save Payment Type. Check the payment code to be unique.
+
+app.messages.CouldNotDeletePaymentType=Could not delete the payment Type
+
+errors.messages.CouldNotSendMessage=Could not send email.
+
+app.message.Yes=Yes
+
+app.message.No=No 
+
+app.messages.js.AddAllLocations=Are you sure you want to add all the Locations?
+
+app.messages.js.RemoveAllLocations=Are you sure to remove all the locations?
+
+app.title.DepoTemplatesAdmin=Deposit Templates Admin
+
+app.messages.ROD=ROD
+
+app.messages.PREPAID=PREPAID
+
+app.messages.POA=POA
+
+app.messages.OTHER=OTHER
+
+app.messages.Stations=Stations
+
+app.messages.Payments=Payments
+
+app.SendEmail=Notify to user
+
+app.messages.CouldNotSaveTemplate=Could not save template
+
+app.messages.CouldNotDeleteTemplate=Could not delete template
+
+app.messages.CreditCardReimbType=Credit Card Reimb. Type
+
+app.messages.PaymentTypes=Payment Types
+
+app.messages.Edit=Edit
+
+app.messages.js.AddAllPaymentTypes=Are you sure you want to add all the payment types?
+
+app.messages.js.RemoveAllPaymentTypes=Are you sure to remove all the payment types?
+
+app.messages.js.TemplatePaymentCtgRules=The payments cannot be added.\\n Remember that the only payment types that can be mixed\\n in the same template are cash and check. 
+
+app.ExternalFilesImportStatus=External Files Importing Status
+
+app.messages.TemplOverlapError=There were the following overlapping errors on the template\:<br>{0}
+
+app.messages.CouldNotSaveTheChanges=The system could not save the changes<br>
+
+app.ExternalFilesImportStatusMessage=Revisar estado de importaci\u00F3n de archivos externos.
+
+app.messages.js.MustSelectASource=Must select at least one source for the template
+
+app.messages.js.MustSelectACurrency=Must select a currency type for the template
+
+app.title.PymtImportStatus=External Files Importing Status
+
+app.messages.ExternalFilesImport=External Files Imports Status
+
+app.messages.ExternalFilesImportDetails=Error Details of External Importing
+
+app.messages.UserMustBeAdded=The user is no added to the system. Contact to the Administrator.
+
+app.title.RODBreakout=ROD Payment Breakout
+
+app.title.PrepaidBreakout=Prepaid Breakout
+
+app.title.PoaBreakout=POA Breakout
+
+app.messages.InvoicePaymentBreakout=Invoice Payment Breakout
+
+app.messages.Charge=Charge
+
+app.messages.CollectedAmt=Collected Amt.
+
+app.messages.Done=Done
+
+app.messages.FreightPaymentBreakout=Freight Payment Breakout
+
+app.messages.TotalSurchNotMatch=Breakouts total does not match payment total. Do you want to proceed anyway?
+
+app.messages.FindBy=Find By
+
+app.messages.Invoice#=Invoice #
+
+app.messages.Account#=Account #
+
+app.messages.TooManyInvoices=The query returned to many invoices.<br>You should search by invoice number.
+
+app.title.PoaFindInvoices=Find Invoices
+
+app.messages.Save=Save
+
+app.messages.DuplicateInvoices= already exist. You cannot select it again.
+
+app.messages.USDAmount1=USD Amount
+
+errors.messages.CouldNotSaveTheData=There was an error saving data to the database.
+
+app.messages.CannotSetStatusVISA-Inserted=Status VISA-Inserted cannot be selected by the user.
+
+app.messages.DefaultPage=Default Page
+
+app.messages.NoPUXForAWB=There is no PUP/PUX16 for AWB {0}. Courier ID must be provided for that AWB.
+
+app.messages.js.CannotSetStatusVISA-Inserted=Status VISA-Inserted cannot be selected by the user. 
+
+app.messages.js.DuplicateInvoices= already exist. You cannot select it again.
+
+app.messages.js.TotalSurchNotMatch=Breakouts total does not match payment total. Do you want to proceed anyway?
+
+app.messages.js.Invoice#=Invoice #
+
+app.messages.js.ViewAddComment=View/Add Comment
+
+app.messages.js.PrepyRecAmount=Enter a Receivable Prepayment Amount.
+
+app.messages.js.PrepyRecWindow=Receivable Prepayment.
+
+app.messages.js.PrepyNumberNotZero=This is not a number > 0\! Enter a number > 0
+app.messages.ReceiptNbr=Rcpt Nbr
+
+app.messages.js.EnterNewCust=Enter a new Customer Name
+app.messages.js.ReEnterNewCust=Enter a valid Customer Name. It must have a value until 50 characters long.
+
+app.messages.js.EnterNewAmount=Enter a new Invoice Amount
+app.messages.js.ReEnterNewAmount=Enter a valid Invoice Amount. It must be a number greater than 0.
+
+app.messages.js.EnterNewReceipt=Enter a new Receipt Number
+app.messages.js.ReEnterNewReceipt=Enter a valid Receipt Number. It must have a letter, a number or any of the following\: -  / \\\\
+app.js.messages.ViewAddComment=View/Add Comment
+app.js.PagesTitles.LoginPage=Login Page
+app.js.PagesTitles.SelectLocation=Select Location
+app.js.title.AdminCountryCurrency=Admin Country/Currency
+app.js.title.AdminEnterEmployeeId=Enter Fedex ID
+app.js.title.Administration=Administration
+app.js.title.AdminLocationSetup=Locations Admin
+app.js.title.AdminNewEditUser=Add/Update User
+app.js.title.AdminNewLocationRole=Add Location/Role
+app.js.title.AdminUserListByCountry=Users Administration
+app.js.title.CashRecapReport=Courier Cash Recap
+app.js.title.ChangePassword=Change Password
+app.js.title.CheckingAgentCashRecap=Check-in Agent Summary Screen
+app.js.title.CourierCashRecap=Courier Cash Recap
+app.js.title.CreditCardPymtGeneration=Credit Card Payments
+app.js.title.CreditPaymentsReport=Credit Card Payments Report
+app.js.title.DepositSlipGeneration=app.js.title.DepositSlipGeneration
+app.js.title.DepoTemplatesAdmin=Deposit Templates Admin
+app.js.title.ExceptionReceivablesReport=Daily Exception Report<br>
+app.js.title.ForgotPassword=Forgot your password?
+app.js.title.LockedUser=User Locked
+app.js.title.OtherPaymentsReceived=Other Payments Received<br>
+app.js.title.PaymentTypesAdmin=Payment Types Admin
+app.js.title.PoaBreakout=POA Breakout
+app.js.title.PoaFindInvoices=Find Invoices
+app.js.title.PODNoPaymentReport=POD/No Payments Report<br>
+app.js.title.PrepaidBreakout=Prepaid Breakout
+app.js.title.PrepaidDiscrepancies=Prepaid Discrepancies<br>
+app.js.title.ProcessLastCosmosScans=Processar Scans de Cosmos
+app.js.title.PymtImportStatus=External Files Importing Status
+app.js.title.ReportSelector=Select a Report<br>
+app.js.title.RODBreakout=ROD Payment Breakout
+app.js.title.RodFilesImpStatus=ROD Files Importing Status<br>
+app.messages.Balance=Balance
+app.js.title.ViewReceivableDetails=Receivable Details<br>
+?app.messages.baseLocationCode=Base code
+?app.location.InCageExceptions=In-Cage Process
+app.messages.js.BankDateProblem=Bank Date must be >= deposit generation date and <= one year after deposit generation date
+app.messages.js.DepositDateProblem=Deposit Date must be >= deposit generation date - 1 and <= one year after deposit generation date
+app.js.mainMenu=Main Menu
+app.js.message.EnterNewDepDate=Enter new date for batch number
+app.js.message.EnterNewEODDate=Enter new date for End of Day number
+app.js.message.WantToReopenEOD=Are you sure to reopen selected EOD?
+app.js.messages.AddPrepaidAwb=Agregar AWBs de Prepaid
+app.js.messages.AddReceivable=Add Invoice
+app.js.messages.AssignReceivable=Assign Receivable
+app.messages.AddGrndTrakNbr=Add Ground Tracking Numbers
+app.messages.js.MustEnterAtLeastOneTrakNbr=Must enter at least one Tracking Number.
+app.messages.js.MustEnterAValidGroundTrakingNumber=Must enter a valid Ground Tracking Number
+app.role=Rol Predeterminado
+app.title.RecoverPassword=Recover new password
+app.js.messages.FindReceivable=Find Receivable
+app.js.messages.ListOfReceivables=List Of Receivables
+app.js.messages.PoaAddPayment=POA Add Payment
+app.js.messages.PoaSummaryTitle=POA Summary
+app.js.messages.RodAddAwb=Add AWBs
+
+errors.messages.InvalidInvoice= Warning: '{0}' is not an outstanding Invoice for the indicated Fedex Account number.
+
+app.messages.ChequeOrigin=Cheque Origin
+app.messages.ChequeDt=Cheque Date
+app.messages.CustomerBankName=Customer Bank Name
+
+
+app.messages.RODUploadActivation=ROD Upload Activation
+app.messages.PRPUploadActivation=PRP Upload Activation
+app.messages.GRDUploadActivation=GRD Upload Activation
+app.messages.OTHUploadActivation=OTH Upload Activation
+app.messages.FTCUploadActivation=FTC Upload Activation
+app.messages.paymentAccountNumber=GCCS Payment Account Number
+
+app.messages.OriginationNumber=Origination Number
+
+app.message.ControlerFinMenu=Menu Controller - Fin
+app.AdminMenuOPSManager = Administration Menu Ops Manager

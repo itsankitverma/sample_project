@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="CCS">
+    <property environment="env"/>
+    <property name="APP-INF.location" value="../APP-INF"/>
+    <property name="CCS.location" value="../CCS"/>
+    <property name="GCCS.location" value="../GCCS"/>
+    <property name="ECLIPSE_HOME" value="../../eclipseLUNA"/>
+    <property name="CashControlEJBX.location" value="../CashControlEJBX"/>
+    <property name="CashControlSessionBeans.location" value="../CashControlSessionBeans"/>
+    <property name="Daemon.location" value="../Daemon"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <tstamp prefix="build-info">
+                <format property="current-date" pattern="d-MMMM-yyyy" locale="en" />
+                <format property="current-time" pattern="hh:mm:ss a z" locale="en" />
+    </tstamp>
+	
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="CCS/WEB-INF/lib/ant.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/avalon-framework-4.1.4.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/avalon-framework-cvs-20020806.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/batik.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-beanutils.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-collections.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-digester.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-fileupload.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-lang.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-logging-api.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-logging.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-validator.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ese.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/fop.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ftp.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/gccs-xmlbeans-1.0.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/gccsftp.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jakarta-oro.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-api.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-impl.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-libs.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-namespace.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-relaxngDatatype.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-xjc.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-xsdlib.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jstl.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/log4j.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/maverick-all.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/mcd-1.14.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ojdbc8.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/oss.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/pager-taglib.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/poi-2.5.1-final.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-api-2.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-impl-2.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-ri-1.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/standard.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts-el.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts-legacy.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/stylebook.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/weblogic-xbean-9.2.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xalan-2.4.1.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xbean-2.0.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xercesImpl-2.2.1.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xml-apis.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xmlbeans-1.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xmlbeans-jsr173-api-2.0.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Oracle920.userclasspath"/>
+    <path id="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CCS]].libraryclasspath"/>
+    <path id="CashControlEJBX.classpath">
+        <pathelement location="${CashControlEJBX.location}/build/classes"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Oracle920.userclasspath"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+        <pathelement location="${APP-INF.location}/lib/wlclient.jar"/>
+        <pathelement location="${APP-INF.location}/lib/junit.jar"/>
+        <pathelement location="${APP-INF.location}/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CashControlSessionBeans]].libraryclasspath"/>
+    <path id="CashControlSessionBeans.classpath">
+        <pathelement location="${CashControlSessionBeans.location}/build/classes"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Oracle920.userclasspath"/>
+        <pathelement location="${CCS.location}/CCS/WEB-INF/lib/ojdbc8.jar"/>
+        <path refid="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CashControlSessionBeans]].libraryclasspath"/>
+        <pathelement location="${CCS.location}/CCS/WEB-INF/lib/log4j.jar"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+        <pathelement location="${APP-INF.location}/lib/wlclient.jar"/>
+        <path refid="CashControlEJBX.classpath"/>
+    </path>
+    <path id="Daemon.classpath">
+        <pathelement location="${Daemon.location}/build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="CashControlEJBX.classpath"/>
+        <path refid="CashControlSessionBeans.classpath"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+    </path>
+    <path id="CCS.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="CCS/WEB-INF/lib/ant.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/avalon-framework-4.1.4.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/avalon-framework-cvs-20020806.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/batik.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-beanutils.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-collections.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-digester.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-fileupload.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-lang.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-logging-api.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-logging.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/commons-validator.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/fop.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ftp.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/gccsftp.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jakarta-oro.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-api.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-impl.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-libs.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-namespace.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-relaxngDatatype.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-xjc.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jaxb-xsdlib.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/jstl.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/log4j.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/maverick-all.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/oss.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/pager-taglib.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/poi-2.5.1-final.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/standard.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts-el.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts-legacy.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/struts.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/stylebook.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xalan-2.4.1.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xercesImpl-2.2.1.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xml-apis.jar"/>
+        <path refid="Oracle920.userclasspath"/>
+        <pathelement location="CCS/WEB-INF/lib/gccs-xmlbeans-1.0.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ese.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-api-2.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-impl-2.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xmlbeans-jsr173-api-2.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/saaj-ri-1.0.jar"/>
+        <path refid="Persisted container [oracle.eclipse.tools.weblogic.lib.application/GCCS for project [CCS]].libraryclasspath"/>
+        <pathelement location="CCS/WEB-INF/lib/xbean-2.0.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/xmlbeans-1.0.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/mcd-1.14.jar"/>
+        <pathelement location="${APP-INF.location}/lib/weblogic.jar"/>
+        <pathelement location="${APP-INF.location}/lib/webservices.jar"/>
+        <pathelement location="${APP-INF.location}/lib/wlclient.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/ojdbc8.jar"/>
+        <pathelement location="CCS/WEB-INF/lib/weblogic-xbean-9.2.jar"/>
+        <path refid="CashControlEJBX.classpath"/>
+        <path refid="CashControlSessionBeans.classpath"/>
+        <path refid="Daemon.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="CCS/WEB-INF/classes">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${CashControlEJBX.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${CashControlSessionBeans.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${Daemon.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${CashControlEJBX.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${CashControlSessionBeans.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${Daemon.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="CCS/WEB-INF/classes"/>
+            <classpath refid="CCS.classpath"/>
+        </javac>
+		
+		<delete file="build/CCS.war" />
+        <war warfile="build/CCS.war" webxml="CCS/WEB-INF/web.xml">
+            <classes dir="build/classes" />
+            <fileset dir="CCS">
+                <!-- Need to exclude it since webxml is an attribute of the war tag above -->
+                <exclude name="WEB-INF/web.xml" />
+            </fileset>
+            <manifest>
+                <attribute name="Built-By" value="${builder}" />
+                <attribute name="Built-On" value="${build-info.current-date}" />
+                <attribute name="Built-At" value="${build-info.current-time}" />
+            </manifest>
+        </war>
+
+		
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects">
+        <ant antfile="build.xml" dir="${GCCS.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${GCCS.location}" inheritAll="false" target="build">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

@@ -1,0 +1,28 @@
+/**
+ * @(#)BusinessDelegateException.java			Tue Jul 09 11:23:08 VET 2002
+ * 
+ * FedEx
+ * Cash Control
+ * 
+ * FedEx
+ * Santiago, Chile
+ * 
+ * Copyright (c) 2001 FedEx, All rights reserved.
+ * 
+ * This software is the confidential and proprietary information
+ * of FedEx. ("Confidential Information").
+ * 
+ * Visit our website at http://www.fedex.com for more information
+ * 
+ * @author Cristian C?enas
+ * @version 1.0
+ */
+package com.fedex.lacitd.cashcontrol.biztier.exception;
+
+
+public class FacadeException extends com.fedex.lacitd.cashcontrol.datatier.exception.NestedException {
+
+    public FacadeException(String message, Exception originatingException) {
+        super(message, originatingException);
+    }
+}

@@ -1,0 +1,455 @@
+<MDEResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="L:\user_projects\ccs-R2\applications\CashControl\CCS\schema\RIHResults.xsd">
+	<Shipment>
+		<awbNbr>40064678633</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>SEL</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>KR</destCountry>
+		<freightChargeAmt>2785200</freightChargeAmt>
+		<shipperNm>PATRICIO SALINERO ARRIGORRIAGA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>822992216154</awbNbr>
+		<origLocation>SCL</origLocation>		
+		<destLocation>DHN</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.83</freightChargeAmt>
+		<shipperNm>GERMAN SELMAN</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>827553694680</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>IRC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.83</freightChargeAmt>
+		<shipperNm>VERONICA SEGALL</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>829000144334</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BHM</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>106</freightChargeAmt>
+		<shipperCompany>P. UNIVERSIDAD CATOLICA HOSPITAL</shipperCompany>
+		<shipperNm>PAUL HARRIS MD</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>829892091237</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>LWM</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.8</freightChargeAmt>
+		<shipperNm>VERONICA SEGALL</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>831007351807</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>SAO</destLocation>
+		<shipDt>5/12/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>BR</destCountry>
+		<shipperCompany>VINEDOS LONTUE .S.A.</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>836484760376</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>VLC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>ES</destCountry>
+		<freightChargeAmt>97.26</freightChargeAmt>
+		<shipperCompany>SANTA TERESA S.A.</shipperCompany>
+		<shipperNm>SONIA ALBORNOZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>841722955831</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>WHH</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<shipperCompany>HARRISON WESTERN CORPORATION</shipperCompany>
+		<shipperNm>LUIS A. ARAYA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>841723953835</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BCT</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<shipperCompany>IMPORTADORA ORRICO S.A.</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>843692889903</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>MVD</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>UY</destCountry>
+		<freightChargeAmt>147.87</freightChargeAmt>
+		<shipperCompany>SEDERIAS SANTIAGO S.A.</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>843695775465</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>CVR</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<shipperCompany>FEDEX CHILE</shipperCompany>
+		<shipperNm>CUSTOMS</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>843695775476</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BWC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>6.76</freightChargeAmt>
+		<shipperCompany>LAN CHILE S.A.</shipperCompany>
+		<shipperNm>DANIEL FLORES F.</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310294098</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>NYC</destLocation>
+		<shipDt>5/12/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.84</freightChargeAmt>
+		<shipperCompany>G.GARDEWEG.S.A.</shipperCompany>
+		<shipperNm>SOLEDAD OPAZO</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310294157</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>JDM</destLocation>
+		<shipDt>5/12/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.83</freightChargeAmt>
+		<shipperNm>MARISOL SANCHEZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310382763</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>LPB</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>BO</destCountry>
+		<freightChargeAmt>21.73</freightChargeAmt>
+		<shipperNm>CESAR /ILEGIBLE</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310383196</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BDF</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>24.65</freightChargeAmt>
+		<shipperNm>CHRISTIAN GOMEZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310383233</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>LPB</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>BO</destCountry>
+		<freightChargeAmt>6.18</freightChargeAmt>
+		<shipperCompany>LUEFTHANSA</shipperCompany>
+		<shipperNm>MARIA P.</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310383244</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>LKZ</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>GB</destCountry>
+		<freightChargeAmt>40.81</freightChargeAmt>
+		<shipperNm>JOSE LUIS VIDAL</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310383255</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>VLC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>ES</destCountry>
+		<freightChargeAmt>40.81</freightChargeAmt>
+		<shipperNm>CARLOS MONTECINOS</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310383266</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>WHP</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>31.27</freightChargeAmt>
+		<shipperNm>OSCAR LEIGTHON</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844310923635</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BUE</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>AR</destCountry>
+		<freightChargeAmt>23.32</freightChargeAmt>
+		<shipperNm>DR. HAROLD MIX</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844311999588</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>ROC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>72.88</freightChargeAmt>
+		<shipperCompany>PROGOS LTDA.</shipperCompany>
+		<shipperNm>IVAN TAPIA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844311999875</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>ZFE</destLocation>
+		<shipDt>5/12/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>30.21</freightChargeAmt>
+		<shipperNm>CECILIA BERNARD SHAND</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844312061108</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BUE</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>AR</destCountry>
+		<freightChargeAmt>29.15</freightChargeAmt>
+		<shipperNm>JOSE AGUAYO</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844312062402</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>UIO</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>EC</destCountry>
+		<freightChargeAmt>9.6</freightChargeAmt>
+		<shipperCompany>VISIT USA COMMITTEE CHILE</shipperCompany>
+		<shipperNm>ANA MA. FONTANA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844312358614</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>NLU</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>MX</destCountry>
+		<freightChargeAmt>27.83</freightChargeAmt>
+		<shipperCompany>BLANCO PUBLICIDAD Y MARKETING</shipperCompany>
+		<shipperNm>IVAN FERNANDEZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844313133530</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>VLL</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>ES</destCountry>
+		<freightChargeAmt>41.18</freightChargeAmt>
+		<shipperCompany>INTRALATINA S.A.</shipperCompany>
+		<shipperNm>SERGIO ZUNIGA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844313144700</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>HNC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>27.83</freightChargeAmt>
+		<shipperNm>GUIDO HERRERA G.</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844313162560</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BUE</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>AR</destCountry>
+		<shipperCompany>LASER DISC CHILE S.A.</shipperCompany>
+		<shipperNm>SUSANA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844313792000</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>JRE</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>44.52</freightChargeAmt>
+		<shipperCompany>CRISTIAN VALDES Y CIA LTDA</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844314797740</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>QLS</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>CH</destCountry>
+		<freightChargeAmt>41.18</freightChargeAmt>
+		<shipperCompany>DOLPHIN GROUP S.A.</shipperCompany>
+		<shipperNm>LUIS FABINI W.</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844314817963</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>AEP</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>AR</destCountry>
+		<freightChargeAmt>23.43</freightChargeAmt>
+		<shipperCompany>ARTES ISABEL MARTINEZ GIL LTDA.</shipperCompany>
+		<shipperNm>ISABEL MARTINEZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844314818948</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>PAO</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>30.2</freightChargeAmt>
+		<shipperCompany>ACORP</shipperCompany>
+		<shipperNm>M. ELENA CAMUS</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844586879874</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>SEA</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>24.94</freightChargeAmt>
+		<shipperNm>DAVID MEARS</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844586879944</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>RTD</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>24.94</freightChargeAmt>
+		<shipperCompany>DELUXE LTDA.</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844586879966</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>WAS</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>24.94</freightChargeAmt>
+		<shipperNm>MARK HERSHKOVITZ</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844586879988</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>YDT</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>CA</destCountry>
+		<freightChargeAmt>23.65</freightChargeAmt>
+		<shipperNm>FRANCIS OKELLY</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844586880000</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>PKC</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>US</destCountry>
+		<freightChargeAmt>41.52</freightChargeAmt>
+		<shipperNm>INGRID HELLBERG</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844589342243</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>NKG</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>CN</destCountry>
+		<freightChargeAmt>44.17</freightChargeAmt>
+		<shipperCompany>SOCCA GROUP</shipperCompany>
+		<shipperNm>RICARDO CAMBRA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844589342287</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>CAN</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>CN</destCountry>
+		<freightChargeAmt>77</freightChargeAmt>
+		<shipperCompany>SOCCAGROUP</shipperCompany>
+		<shipperNm>RICARDO CAMBRA</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844590905396</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BUE</destLocation>
+		<shipDt>5/12/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>AR</destCountry>
+		<shipperCompany>TRANSPORTES FRONTIER CUATRO SA</shipperCompany>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844590985603</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BIO</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>ES</destCountry>
+		<freightChargeAmt>8.24</freightChargeAmt>
+		<shipperCompany>CEPAL  NACIONES  UNIDAS</shipperCompany>
+		<shipperNm>NICOLAS FRANCO</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>844590985614</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>BOG</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>CO</destCountry>
+		<freightChargeAmt>8.86</freightChargeAmt>
+		<shipperCompany>CEPAL  NACIONES  UNIDAS</shipperCompany>
+		<shipperNm>HELENA MARIA GALLO</shipperNm>
+	</Shipment>
+	<Shipment>
+		<awbNbr>846916942384</awbNbr>
+		<origLocation>SCL</origLocation>
+		<destLocation>TLV</destLocation>
+		<shipDt>5/11/2004 0:0:0</shipDt>
+		<origCountry>CL</origCountry>
+		<destCountry>IL</destCountry>
+		<freightChargeAmt>53.53</freightChargeAmt>
+		<shipperNm>CAROLINA DIMONTE</shipperNm>
+	</Shipment>
+</MDEResponse>

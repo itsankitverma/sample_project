@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="PaymentsReceived">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rod_payments" minOccurs="0"/>
+				<xs:element ref="prepaid_payments" minOccurs="0"/>
+				<xs:element ref="poa_payments" minOccurs="0"/>
+				<xs:element ref="other_payments" minOccurs="0"/>
+				<xs:element ref="oac_payments" minOccurs="0"/>
+				<xs:element ref="ground_payments" minOccurs="0"/>				
+			</xs:sequence>
+			<xs:attribute name="date" type="xs:date" use="optional"/>
+			<xs:attribute name="location" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="oac_dt" type="xs:date"/>
+	<xs:element name="ship_dt" type="xs:date"/>	
+	<xs:element name="awb" type="xs:string"/>
+	<xs:element name="description" type="xs:string"/>
+	<xs:element name="awb_dt" type="xs:date"/>
+	<xs:element name="chk_agent_id" type="xs:int"/>
+	<xs:element name="courier_id" type="xs:int"/>
+	<xs:element name="cust_name" type="xs:string"/>
+	<xs:element name="exch_rate" type="xs:decimal"/>
+	<xs:element name="pymt_cash_amt" type="xs:decimal"/>
+	<xs:element name="pymt_curr_cd" type="xs:string"/>
+	<xs:element name="pymt_date" type="xs:date"/>
+	<xs:element name="pymt_doc_amt" type="xs:decimal"/>
+	<xs:element name="pymt_doc_nbr" type="xs:string"/>
+	<xs:element name="pymt_doc_type" type="xs:int"/>
+	<xs:element name="pymt_dt" type="xs:date"/>
+	<xs:element name="pymt_tot_amt" type="xs:decimal"/>
+	<xs:element name="pymt_total_amt" type="xs:decimal"/>
+	<xs:element name="rec_anc_chrg_amt" type="xs:decimal"/>
+	<xs:element name="rec_curr_cd" type="xs:string"/>
+	<xs:element name="rec_date" type="xs:date"/>
+	<xs:element name="rec_nbr" type="xs:string"/>
+	<xs:element name="pymt_type" type="xs:int"/>
+	<xs:element name="rec_rod_amt" type="xs:decimal"/>
+	<xs:element name="rec_tot_amt" type="xs:decimal"/>
+	<xs:element name="fedex_acc_nbr" type="xs:string"/>
+	<xs:element name="inv_nbr" type="xs:string"/>
+	<xs:element name="inv_amt" type="xs:decimal"/>
+	<xs:element name="inv_coupon_amt" type="xs:decimal"/>
+	<xs:element name="grnd_trak_nbr" type="xs:string"/>	
+	<xs:element name="rod_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rod_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rod_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="awb" minOccurs="0"/>
+				<xs:element ref="rec_nbr" minOccurs="0"/>
+				<xs:element ref="rec_date" minOccurs="0"/>
+				<xs:element ref="cust_name" minOccurs="0"/>
+				<xs:element ref="rec_curr_cd" minOccurs="0"/>
+				<xs:element ref="exch_rate" minOccurs="0"/>
+				<xs:element ref="rec_tot_amt" minOccurs="0"/>
+				<xs:element ref="rec_rod_amt" minOccurs="0"/>
+				<xs:element ref="rec_anc_chrg_amt" minOccurs="0"/>
+				<xs:element ref="courier_id" minOccurs="0"/>
+				<xs:element ref="chk_agent_id" minOccurs="0"/>
+				<xs:element ref="pymt_date" minOccurs="0"/>
+				<xs:element ref="pymt_total_amt" minOccurs="0"/>
+				<xs:element ref="pymt_cash_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_nbr" minOccurs="0"/>
+				<xs:element ref="pymt_doc_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:int" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prepaid_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="prepaid_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prepaid_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="awb" minOccurs="0"/>
+				<xs:element ref="awb_dt" minOccurs="0"/>
+				<xs:element ref="courier_id" minOccurs="0"/>
+				<xs:element ref="cust_name" minOccurs="0"/>
+				<xs:element ref="chk_agent_id" minOccurs="0"/>
+				<xs:element ref="pymt_dt" minOccurs="0"/>
+				<xs:element ref="pymt_tot_amt" minOccurs="0"/>
+				<xs:element ref="pymt_cash_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_nbr" minOccurs="0"/>
+				<xs:element ref="pymt_doc_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+				<xs:element ref="exch_rate" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:int" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="oac_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="oac_dt" minOccurs="0"/>
+				<xs:element ref="courier_id" minOccurs="0"/>
+				<xs:element ref="pymt_dt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_nbr" minOccurs="0"/>
+				<xs:element ref="pymt_doc_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="oac_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="oac_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ground_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="grnd_trak_nbr" minOccurs="0"/>
+				<xs:element ref="ship_dt" minOccurs="0"/>
+				<xs:element ref="courier_id" minOccurs="0"/>
+				<xs:element ref="chk_agent_id" minOccurs="0"/>
+				<xs:element ref="pymt_dt" minOccurs="0"/>
+				<xs:element ref="pymt_tot_amt" minOccurs="0"/>
+				<xs:element ref="pymt_cash_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ground_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ground_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	
+	<xs:element name="poa_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="poa_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="poa_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fedex_acc_nbr" minOccurs="0"/>
+				<xs:element ref="cust_name" minOccurs="0"/>
+				<xs:element ref="courier_id" minOccurs="0"/>
+				<xs:element ref="chk_agent_id" minOccurs="0"/>
+				<xs:element ref="pymt_tot_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_nbr" minOccurs="0"/>
+				<xs:element ref="pymt_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+				<xs:element ref="exch_rate" minOccurs="0"/>
+				<xs:element ref="applied_to" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:int" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="applied_to">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="poa_detail" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="poa_detail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="inv_nbr" minOccurs="0"/>
+				<xs:element ref="inv_amt" minOccurs="0"/>
+				<xs:element ref="inv_coupon_amt" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:int" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="other_payments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="other_payment" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="other_payment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description" minOccurs="0"/>
+				<xs:element ref="chk_agent_id" minOccurs="0"/>
+				<xs:element ref="pymt_dt" minOccurs="0"/>
+				<xs:element ref="pymt_tot_amt" minOccurs="0"/>
+				<xs:element ref="pymt_doc_nbr" minOccurs="0"/>
+				<xs:element ref="pymt_type" minOccurs="0"/>
+				<xs:element ref="pymt_curr_cd" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="num" type="xs:int" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<wb-module deploy-name="CCS">
+<wb-resource deploy-path="/" source-path="/CCS"/>
+<wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+<wb-resource deploy-path="/WEB-INF/classes" source-path="/build/classes"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/CCS/WEB-INF/classes"/>
+<property name="java-output-path"/>
+        <property name="context-root" value="CCS"/>
+</wb-module>
+</project-modules>

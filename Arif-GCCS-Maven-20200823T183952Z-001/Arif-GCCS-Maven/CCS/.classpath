@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="CCS/WEB-INF/classes"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/ant.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/avalon-framework-4.1.4.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/avalon-framework-cvs-20020806.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/batik.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/fop.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/ftp.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/gccsftp.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-api.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-impl.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-libs.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-namespace.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-relaxngDatatype.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-xjc.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jaxb-xsdlib.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/maverick-all.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/oss.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/pager-taglib.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/poi-2.5.1-final.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/struts-el.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/struts-legacy.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/struts.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/stylebook.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xalan-2.4.1.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xercesImpl-2.2.1.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/gccs-xmlbeans-1.0.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/ese.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/saaj-api-2.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/saaj-impl-2.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xmlbeans-jsr173-api-2.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/saaj-ri-1.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xbean-2.0.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/xmlbeans-1.0.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/mcd-1.14.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/weblogic.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/webservices.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/wlclient.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/weblogic-xbean-9.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CashControlEJBX"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CashControlSessionBeans"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Daemon"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="CCS/WEB-INF/lib/commons-fileupload-1.3.3.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

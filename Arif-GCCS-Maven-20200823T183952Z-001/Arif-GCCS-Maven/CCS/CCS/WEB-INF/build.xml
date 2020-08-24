@@ -1,0 +1,47 @@
+<!-- Copyright (c) 2002 by ObjectLearn. All Rights Reserved. -->
+<project name="GCCS CCSModulebuilder"  default="deploy"  basedir=".">
+
+ <!-- Set global properties for this build -->
+ <property file="build.properties"/>
+ <property name="dist" value="../../dist" />
+ <property name="web" value="../" />
+  
+ <target name="init">
+    <!-- Create the dist directory structure used by compile
+         and copy the deployment descriptors into it-->
+    <mkdir dir="${dist}"/>
+    <mkdir dir="${dist}/WEB-INF"/>
+    <mkdir dir="${dist}/WEB-INF/classes"/>
+    <mkdir dir="${dist}/WEB-INF/lib"/>
+ 	<delete dir="${dist}/WEB-INF/classes"/>
+    <copy todir="${dist}/WEB-INF/classes">
+ 	  <fileset dir="${build.dir}">
+ 	      <include name="**/*.*"/>
+ 	  </fileset>
+ 	</copy>
+ 	<copy todir="${dist}">
+      <fileset dir="${web}">
+        <include name="**/*.*"/>
+        <exclude name="**/*.java"/>
+        <exclude name="**/jsp_servlet/*.class"/>
+        <exclude name="**/build.xml"/>
+        <exclude name="**/deploy.xml"/>
+        <exclude name="**/build.properties"/>
+        <exclude name="**/servers.xml"/>
+        <exclude name="**/targets.xml"/>
+        <exclude name="**/*.war"/>
+      </fileset>
+    </copy>
+ </target>
+
+<target name="deploy" depends="init" >
+    <!-- Create the distribution directory -->
+    <delete file="${war}.war"/>
+	<jar jarfile="${war}.war" basedir="${dist}"/>    
+  	<copy file="${war}.war" todir="."/>
+	<!-- copy file="${war}.war" todir="${deploy.dir}"/>
+    <delete file="${war}.war"/>
+    <delete dir="${dist}"/-->
+ </target>
+ 
+</project>

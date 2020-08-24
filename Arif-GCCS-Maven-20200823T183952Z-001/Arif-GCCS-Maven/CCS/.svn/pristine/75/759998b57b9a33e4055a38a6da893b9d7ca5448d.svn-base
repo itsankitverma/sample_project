@@ -1,0 +1,58 @@
+body { background-color: #FFFFFF }
+
+/* Table colors */
+.TableHeadingColor     { background: #CCCCFF } /* Dark mauve */
+.TableSubHeadingColor  { background: #EEEEFF } /* Light mauve */
+.TableRowColor         { background: #FFFFFF } /* White */
+
+.RegularSelect{width:300px;height:20px;padding:0px;margin:0px;}
+/* Font used in left-hand frame lists */
+
+.ArialBold14 { font-size: 14pts; font-family: Helvetica, Arial, san-serif; font-weight: bold;}
+.ArialBold14Center { font-size: 14pts; font-family: Helvetica, Arial, san-serif; font-weight: bold; text-align: center; }
+.ArialBold14Right { font-size: 14pts; font-family: Helvetica, Arial, san-serif; font-weight: bold; text-align: right; }
+.Arial14 { font-size: 14pts; font-family: Helvetica, Arial, san-serif; font-weight: bold;}
+.Arial14Center { font-size: 14pts; font-family: Helvetica, Arial, san-serif; text-align: center; }
+.Arial14Right { font-size: 14pts; font-family: Helvetica, Arial, san-serif; text-align: right; }
+
+.ArialBold18 { font-size: 18pts; font-family: Helvetica, Arial, san-serif; font-weight: bold; }
+.ArialBold18Center { font-size: 18pts; font-family: Helvetica, Arial, san-serif; font-weight: bold; text-align: center; }
+.ArialBold18Right { font-size: 18pts; font-family: Helvetica, Arial, san-serif; font-weight: bold; text-align: right; }
+.Arial18 { font-size: 18pts; font-family: Helvetica, Arial, san-serif; }
+.Arial18Center { font-size: 18pts; font-family: Helvetica, Arial, san-serif; text-align: center; }
+.Arial18Right { font-size: 18pts; font-family: Helvetica, Arial, san-serif; text-align: right; }
+
+
+/* Example of smaller, sans-serif font in frames */
+/* .FrameItemFont  { font-size: 10pt; font-family: Helvetica, Arial, sans-serif } */
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#EEEEFF;}/* Light mauve */
+.NavBarCell1Rev { background-color:#00008B;}/* Dark Blue */
+.NavBarFont1    { font-family: Arial, Helvetica, sans-serif; color:#000000;}
+.NavBarFont1Rev { font-family: Arial, Helvetica, sans-serif; color:#FFFFFF;}
+
+.NavBarCell2    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+.NavBarCell3    { font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF;}
+
+.BorderOn  { width:300px;
+             margin-left:10px;
+             border:1px solid #456789 }
+.BorderOff { width:300px;
+             margin-left:0px;
+             border:1px solid #444444 }
+             
+A.mBlue:link      {color:#73148C; text-decoration:none;}
+A.mBlue:visited   {color:#73148C; text-decoration:none;}
+A.mBlue:active    {color:#73148C; text-decoration:none;}
+A.mBlue:hover     {color:#FF0000; text-decoration:underline;}        
+
+A.mGreen:link     {color:#00FF80; text-decoration:none;}
+A.mGreen:visited  {color:#00FF80; text-decoration:none;}
+A.mGreen:active   {color:#00FF80; text-decoration:none;}
+A.mGreen:hover    {color:#FF0000; text-decoration:underline;} 
+
+A.mYellow:link    {color:#FFFF00; text-decoration:none;}
+A.mYellow:visited {color:#FFFF00; text-decoration:none;}
+A.mYellow:active  {color:#FFFF00; text-decoration:none;}
+A.mYellow:hover   {color:#FF0000; text-decoration:underline;}  

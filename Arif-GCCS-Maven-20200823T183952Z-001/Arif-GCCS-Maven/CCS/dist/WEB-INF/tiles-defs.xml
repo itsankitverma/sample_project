@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+<tiles-definitions>
+    <definition name="header-body" path="/layouts/HeaderBodyLayout.jsp">
+        <put name="title" value="title"/>
+        <put name="header" value="/tiles/LoggedUserDataTile.jsp"/>
+        <put name="body" value=""/>
+    </definition>
+    <definition name="column" path="/layouts/ColumnLayout.jsp"/>
+    <definition name="Logout" extends="header-body">
+        <put name="title" value="app.PagesTitles.LogoutPage"/>
+        <put name="body" value="/tiles/Logout.jsp"/>
+    </definition>
+    <definition name="Failure" extends="header-body">
+        <put name="title" value="app.PagesTitles.FailurePage"/>
+        <put name="body" value="/tiles/Failure.jsp"/>
+    </definition>
+    <definition name="SelectLocation" extends="header-body">
+        <put name="title" value="app.PagesTitles.SelectLocation"/>
+        <put name="body" value="/tiles/SelectLocation.jsp"/>
+    </definition>
+    <definition name="Menu" extends="header-body">
+        <put name="body" value="/tiles/Menu.jsp"/>
+        <put name="title" value="app.mainMenu"/>
+    </definition>
+    <definition name="ProcessScans" extends="header-body">
+        <put name="body" value="/tiles/ROD/ProcessScans.jsp"/>
+        <put name="title" value="app.title.ProcessLastCosmosScans"/>
+    </definition>
+    <definition name="ExpressCheckin" extends="header-body">
+        <put name="title" value="app.title.CheckingAgentCashRecap"/>
+        <put name="body" value="/tiles/ExpressCheckin.jsp"/>
+    </definition>
+    <definition name="FindReceivable" extends="header-body">
+        <put name="title" value="app.messages.FindReceivable"/>
+        <put name="body" value="/tiles/ROD/FindReceivable.jsp"/>
+    </definition>
+    <definition name="COD_FindReceivable" extends="header-body">
+        <put name="title" value="app.messages.FindReceivable"/>
+        <put name="body" value="/tiles/COD/FindReceivable.jsp"/>
+    </definition>   
+    <definition name="FTC_FindReceivable" extends="header-body">
+        <put name="title" value="app.messages.FindReceivable"/>
+        <put name="body" value="/tiles/FTC/FindReceivable.jsp"/>
+    </definition>        
+    <definition name="AssignReceivable" extends="header-body">
+        <put name="title" value="app.messages.AssignReceivable"/>
+        <put name="body" value="/tiles/ROD/AssignReceivable.jsp"/>
+    </definition>
+    <definition name="COD_AssignReceivable" extends="header-body">
+        <put name="title" value="app.messages.AssignReceivable"/>
+        <put name="body" value="/tiles/COD/AssignReceivable.jsp"/>
+    </definition>  
+    <definition name="FTC_AssignReceivable" extends="header-body">
+        <put name="title" value="app.messages.AssignReceivable"/>
+        <put name="body" value="/tiles/FTC/AssignReceivable.jsp"/>
+    </definition>        
+    <definition name="ShowReceivables" extends="header-body">
+        <put name="title" value="app.messages.ListOfReceivables"/>
+        <put name="body" value="/tiles/ROD/ShowReceivables.jsp"/>
+    </definition>
+    <definition name="COD_ShowReceivables" extends="header-body">
+        <put name="title" value="app.messages.ListOfReceivables"/>
+        <put name="body" value="/tiles/COD/ShowReceivables.jsp"/>
+    </definition> 
+    <definition name="FTC_ShowReceivables" extends="header-body">
+        <put name="title" value="app.messages.ListOfReceivables"/>
+        <put name="body" value="/tiles/FTC/ShowReceivables.jsp"/>
+    </definition>        
+    <definition name="CreateNewReceivable" extends="header-body">
+        <put name="title" value="app.messages.AddReceivable"/>
+        <put name="body" value="/tiles/ROD/CreateNewReceivable.jsp"/>
+    </definition>
+    <definition name="COD_CreateNewReceivable" extends="header-body">
+        <put name="title" value="app.messages.AddReceivable"/>
+        <put name="body" value="/tiles/COD/CreateNewReceivable.jsp"/>
+    </definition>  
+    <definition name="FTC_CreateNewReceivable" extends="header-body">
+        <put name="title" value="app.messages.AddReceivable"/>
+        <put name="body" value="/tiles/FTC/CreateNewReceivable.jsp"/>
+    </definition>        
+    <definition name="ScanDetails" extends="header-body">
+        <put name="title" value="app.messages.ShowScans"/>
+        <put name="body" value="/tiles/ScanDetails.jsp"/>
+    </definition>
+    <definition name="CashRecapReport" extends="header-body">
+        <put name="title" value="app.title.CashRecapReport"/>
+        <put name="body" value="/tiles/ROD/CashRecapReport.jsp"/>
+    </definition>
+    <definition name="COD_CashRecapReport" extends="header-body">
+        <put name="title" value="app.title.CashRecapReport"/>
+        <put name="body" value="/tiles/COD/CashRecapReport.jsp"/>
+    </definition>
+    <definition name="FTC_CashRecapReport" extends="header-body">
+        <put name="title" value="app.title.CashRecapReport"/>
+        <put name="body" value="/tiles/FTC/CashRecapReport.jsp"/>
+    </definition>    
+    <definition name="CreditPaymentsReport" extends="header-body">
+        <put name="title" value="app.title.CreditPaymentsReport"/>
+        <put name="body" value="/tiles/ROD/CreditPaymentsReport.jsp"/>
+    </definition>
+    <definition name="COD_CreditPaymentsReport" extends="header-body">
+        <put name="title" value="app.title.CreditPaymentsReport"/>
+        <put name="body" value="/tiles/COD/CreditPaymentsReport.jsp"/>
+    </definition>  
+    <definition name="FTC_CreditPaymentsReport" extends="header-body">
+        <put name="title" value="app.title.CreditPaymentsReport"/>
+        <put name="body" value="/tiles/FTC/CreditPaymentsReport.jsp"/>
+    </definition>        
+    <definition name="GroundPrepaidReport" extends="header-body">
+        <put name="title" value="app.title.GroundPrepaidReport"/>
+        <put name="body" value="/tiles/Ground/GroundPrepaidReport.jsp"/>
+    </definition>
+
+    <definition name="PrepaidDiscrepancies" extends="header-body">
+        <put name="title" value="app.title.PrepaidDiscrepancies"/>
+        <put name="body" value="/tiles/Prepaid/PrepaidDiscrepancies.jsp"/>
+    </definition>
+
+    <definition name="DepositSlipGeneration" extends="header-body">
+        <put name="title" value="app.title.DepositSlipGeneration"/>
+        <put name="body" value="/tiles/DepositSlipGeneration.jsp"/>
+    </definition>
+
+    <definition name="CreditCardPymtGeneration" extends="header-body">
+        <put name="title" value="app.title.CreditCardPymtGeneration"/>
+        <put name="body" value="/tiles/CreditCardPymtGeneration.jsp"/>
+    </definition>
+
+    <definition name="ExceptionReceivablesReport" extends="header-body">
+        <put name="title" value="app.title.ExceptionReceivablesReport"/>
+        <put name="body" value="/tiles/ROD/ExceptionReceivablesReport.jsp"/>
+    </definition>
+
+    <definition name="COD_ExceptionReceivablesReport" extends="header-body">
+        <put name="title" value="app.title.ExceptionReceivablesReport"/>
+        <put name="body" value="/tiles/COD/ExceptionReceivablesReport.jsp"/>
+    </definition>
+
+    <definition name="FTC_ExceptionReceivablesReport" extends="header-body">
+        <put name="title" value="app.title.ExceptionReceivablesReport"/>
+        <put name="body" value="/tiles/FTC/ExceptionReceivablesReport.jsp"/>
+    </definition>
+    
+    <definition name="PODNoPaymentReport" extends="header-body">
+        <put name="title" value="app.title.PODNoPaymentReport"/>
+        <put name="body" value="/tiles/ROD/PODNoPaymentReport.jsp"/>
+    </definition>
+
+    <definition name="COD_PODNoPaymentReport" extends="header-body">
+        <put name="title" value="app.title.PODNoPaymentReport"/>
+        <put name="body" value="/tiles/COD/PODNoPaymentReport.jsp"/>
+    </definition>
+
+    <definition name="FTC_PODNoPaymentReport" extends="header-body">
+        <put name="title" value="app.title.PODNoPaymentReport"/>
+        <put name="body" value="/tiles/FTC/PODNoPaymentReport.jsp"/>
+    </definition>
+    
+    <definition name="ReportSelector" extends="header-body">
+        <put name="title" value="app.title.ReportSelector"/>
+        <put name="body" value="/tiles/ReportSelector.jsp"/>
+    </definition>
+
+    <definition name="ViewReceivableDetails" extends="header-body">
+        <put name="title" value="app.title.ViewReceivableDetails"/>
+        <put name="body" value="/tiles/ROD/ViewReceivableDetails.jsp"/>
+    </definition>
+
+   <definition name="COD_ViewReceivableDetails" extends="header-body">
+        <put name="title" value="app.title.ViewReceivableDetails"/>
+        <put name="body" value="/tiles/COD/ViewReceivableDetails.jsp"/>
+    </definition>
+        
+   <definition name="FTC_ViewReceivableDetails" extends="header-body">
+        <put name="title" value="app.title.ViewReceivableDetails"/>
+        <put name="body" value="/tiles/FTC/ViewReceivableDetails.jsp"/>
+    </definition>
+    
+    <definition name="COD_ShowError" extends="header-body">
+        <put name="title" value="app.messages.AssignReceivable"/>
+        <put name="body" value="/tiles/COD/ShowError.jsp"/>
+    </definition>
+    
+    <definition name="FTC_ShowError" extends="header-body">
+        <put name="title" value="app.messages.AssignReceivable"/>
+        <put name="body" value="/tiles/FTC/ShowError.jsp"/>
+    </definition>
+    
+    <definition name="CourierCashRecap" extends="header-body">
+        <put name="body" value="/tiles/ROD/CourierCashRecap.jsp"/>
+        <put name="title" value="app.title.CourierCashRecap"/>
+    </definition>
+
+    <definition name="COD_CourierCashRecap" extends="header-body">
+        <put name="body" value="/tiles/COD/COD_CourierCashRecap.jsp"/>
+        <put name="title" value="app.title.CourierCashRecap"/>
+    </definition>
+
+    <definition name="FTC_CourierCashRecap" extends="header-body">
+        <put name="body" value="/tiles/FTC/FTC_CourierCashRecap.jsp"/>
+        <put name="title" value="app.title.CourierCashRecap"/>
+    </definition>
+
+    <definition name="PrepaidDetails" extends="header-body">
+        <put name="body" value="/tiles/Prepaid/PrepaidDetails.jsp"/>
+        <put name="title" value="app.title.CourierCashRecap"/>
+    </definition>
+    <definition name="AddPrepaidAwb" extends="header-body">
+        <put name="title" value="app.messages.AddPrepaidAwb"/>
+        <put name="body" value="/tiles/Prepaid/AddPrepaidAwb.jsp"/>
+    </definition>
+    <definition name="DepositComments" extends="header-body">
+        <put name="title" value="app.messages.ViewAddComment"/>
+        <put name="body" value="/tiles/DepositComments.jsp"/>
+    </definition>
+    <definition name="CreditCardPymtComments" extends="header-body">
+        <put name="title" value="app.messages.ViewAddComment"/>
+        <put name="body" value="/tiles/CreditCardPymtComments.jsp"/>
+    </definition>
+    <definition name="RodFilesImpStatus" extends="header-body">
+        <put name="title" value="app.title.RodFilesImpStatus"/>
+        <put name="body" value="/tiles/ROD/RodFilesImpStatus.jsp"/>
+    </definition>
+    <definition name="CodFilesImpStatus" extends="header-body">
+        <put name="title" value="app.title.CodFilesImpStatus"/>
+        <put name="body" value="/tiles/COD/CodFilesImpStatus.jsp"/>
+    </definition>
+    <definition name="FtcFilesImpStatus" extends="header-body">
+        <put name="title" value="app.title.FtcFilesImpStatus"/>
+        <put name="body" value="/tiles/FTC/FtcFilesImpStatus.jsp"/>
+    </definition>
+
+    <definition name="RodAddAwb" extends="header-body">
+        <put name="title" value="app.messages.RodAddAwb"/>
+        <put name="body" value="/tiles/ROD/RODAddAwbs.jsp"/>
+    </definition>
+
+    <definition name="CodAddAwb" extends="header-body">
+        <put name="title" value="app.messages.CodAddAwb"/>
+        <put name="body" value="/tiles/COD/CODAddAwbs.jsp"/>
+    </definition>
+
+    <definition name="FtcAddAwb" extends="header-body">
+        <put name="title" value="app.messages.FtcAddAwb"/>
+        <put name="body" value="/tiles/FTC/FTCAddAwbs.jsp"/>
+    </definition>
+
+    <definition name="PoaSummary" extends="header-body">
+        <put name="title" value="app.messages.PoaSummaryTitle"/>
+        <put name="body" value="/tiles/Poa/PoaSummary.jsp"/>
+    </definition>
+    <definition name="PoaAddPayment" extends="header-body">
+        <put name="title" value="app.messages.PoaAddPayment"/>
+        <put name="body" value="/tiles/Poa/PoaAddPayment.jsp"/>
+    </definition>
+    <definition name="UserListByCountry" extends="header-body">
+        <put name="title" value="app.title.AdminUserListByCountry"/>
+        <put name="body" value="/tiles/Admin/UserListByCountry.jsp"/>
+    </definition>
+    <definition name="AdminNewEditUser" extends="header-body">
+        <put name="title" value="app.title.AdminNewEditUser"/>
+        <put name="body" value="/tiles/Admin/AdminNewEditUserWSSO.jsp"/>
+    </definition>
+    <definition name="AdminNewLocationRole" extends="header-body">
+        <put name="title" value="app.title.AdminNewLocationRole"/>
+        <put name="body" value="/tiles/Admin/AdminNewLocationRole.jsp"/>
+    </definition>
+    <definition name="AdminEnterEmployeeId" extends="header-body">
+        <put name="title" value="app.title.AdminEnterEmployeeId"/>
+        <put name="body" value="/tiles/Admin/AdminEnterEmployeeId.jsp"/>
+    </definition>
+    <definition name="OtherPaymentAdd" extends="header-body">
+        <put name="title" value="app.title.OtherPaymentsReceived"/>
+        <put name="body" value="/tiles/OtherPayments/OtherPaymentAdd.jsp"/>
+    </definition>
+    <definition name="AdminLocationSetup" extends="header-body">
+        <put name="title" value="app.title.AdminLocationSetup"/>
+        <put name="body" value="/tiles/Admin/AdminLocationSetup.jsp"/>
+    </definition>
+    <definition name="AdminIndex" extends="header-body">
+        <put name="title" value="app.title.Administration"/>
+        <put name="body" value="/tiles/Admin/AdminIndex.jsp"/>
+    </definition>
+    <definition name="AdminCountryCurrency" extends="header-body">
+        <put name="title" value="app.title.AdminCountryCurrency"/>
+        <put name="body" value="/tiles/Admin/AdminCountryCurrency.jsp"/>
+    </definition>
+    <definition name="AdminChangePasswordUser" extends="header-body">
+        <put name="title" value="app.title.ChangePassword"/>
+        <put name="body" value="/tiles/Admin/AdminChangePasswordUser.jsp"/>
+    </definition>
+    <definition name="PaymentsAdmin" extends="header-body">
+        <put name="title" value="app.title.PaymentTypesAdmin"/>
+        <put name="body" value="/tiles/Admin/PaymentsAdmin.jsp"/>
+    </definition>
+    <definition name="OtherPaymentsCategAdmin" extends="header-body">
+        <put name="title" value="app.title.OtherPaymentsCategAdmin"/>
+        <put name="body" value="/tiles/Admin/OtherPaymentsCategAdmin.jsp"/>
+    </definition>
+    <definition name="DepoTemplatesAdmin" extends="header-body">
+        <put name="title" value="app.title.DepoTemplatesAdmin"/>
+        <put name="body" value="/tiles/Admin/DepoTemplatesAdmin.jsp"/>
+    </definition>
+    <definition name="LockUser" extends="header-body">
+        <put name="title" value="app.title.LockedUser"/>
+        <put name="body" value="/tiles/AlertLockUser.jsp"/>
+    </definition>
+    <definition name="ExternalFilesImpStatus" extends="header-body">
+        <put name="title" value="app.title.PymtImportStatus"/>
+        <put name="body" value="/tiles/Import/ExternalFilesImportingStatus.jsp"/>
+    </definition>
+    <definition name="ExternalFilesImpDetails" extends="column">
+        <put name="title" value="app.title.PymtImportStatus"/>
+        <put name="body" value="/tiles/Import/ExternalFilesImportingDetails.jsp"/>
+    </definition>
+    <definition name="RODBreakout" extends="header-body">
+        <put name="title" value="app.title.RODBreakout"/>
+        <put name="body" value="/tiles/ROD/RODBreakout.jsp"/>
+    </definition>
+    <definition name="PrepaidBreakout" extends="header-body">
+        <put name="title" value="app.title.PrepaidBreakout"/>
+        <put name="body" value="/tiles/Prepaid/PrepaidBreakout.jsp"/>
+    </definition>
+    <definition name="PoaBreakout" extends="header-body">
+        <put name="title" value="app.title.PoaBreakout"/>
+        <put name="body" value="/tiles/Poa/PoaBreakout.jsp"/>
+    </definition>
+    <definition name="PoaFindInvoices" extends="header-body">
+        <put name="title" value="app.title.PoaFindInvoices"/>
+        <put name="body" value="/tiles/Poa/PoaFindInvoices.jsp"/>
+    </definition>
+    <definition name="AdminForgotPasswordUser" extends="header-body">
+        <put name="title" value="app.title.ForgotPassword"/>
+        <put name="body" value="/tiles/Admin/AdminForgotPasswordUser.jsp"/>
+    </definition>
+    <definition name="AdminBankAccount" extends="header-body">
+        <put name="title" value="app.title.AdminBankAccount"/>
+        <put name="body" value="/tiles/Admin/AdminBankAccountList.jsp"/>
+    </definition>
+    <definition name="AdminBank" extends="header-body">
+        <put name="title" value="app.title.AdminBank"/>
+        <put name="body" value="/tiles/Admin/AdminBank.jsp"/>
+    </definition>
+    <definition name="AdminAccount" extends="header-body">
+        <put name="title" value="app.title.AdminBankAccount"/>
+        <put name="body" value="/tiles/Admin/AdminBankAccount.jsp"/>
+    </definition>
+    <definition name="AdminEditRole" extends="header-body">
+        <put name="title" value="app.messages.editRole"/>
+        <put name="body" value="/tiles/Admin/AdminEditRole.jsp"/>
+    </definition>
+    <definition name="AdminTables" extends="header-body">
+        <put name="title" value="app.title.MainTablesAdmin"/>
+        <put name="body" value="/tiles/Admin/AdminMainTables.jsp"/>
+    </definition>
+    <definition name="BatchPaymentsAdmin" extends="header-body">
+        <put name="title" value="app.title.BatchPaymentsAdmin"/>
+        <put name="body" value="/tiles/Admin/BatchPaymentsAdmin.jsp"/>
+    </definition>
+    <definition name="PSUpload" extends="header-body">
+        <put name="title" value="app.title.PSUpload"/>
+        <put name="body" value="/tiles/Admin/PSUpload.jsp"/>
+    </definition>
+    <definition name="AdminTablesUpdate" extends="header-body">
+        <put name="title" value="app.title.UpdateMainTablesAdmin"/>
+        <put name="body" value="/tiles/Admin/AdminTablesUpdate.jsp"/>
+    </definition>
+    <definition name="MultiInvoicePayment" extends="header-body">
+        <put name="title" value="app.title.MultiInvoicePayment"/>
+        <put name="body" value="/tiles/ROD/MultiInvoicePayment.jsp"/>
+    </definition>
+    
+    <definition name="COD_MultiInvoicePayment" extends="header-body">
+        <put name="title" value="app.title.MultiInvoicePayment"/>
+        <put name="body" value="/tiles/COD/MultiInvoicePayment.jsp"/>
+    </definition>
+
+    <definition name="FTC_MultiInvoicePayment" extends="header-body">
+        <put name="title" value="app.title.MultiInvoicePayment"/>
+        <put name="body" value="/tiles/FTC/MultiInvoicePayment.jsp"/>
+    </definition>
+    
+    <definition name="AddLocation" extends="header-body">
+        <put name="title" value="app.messages.addLocation"/>
+        <put name="body" value="/tiles/Admin/AddLocation.jsp"/>
+    </definition>
+    <definition name="AdminTablesManager" extends="header-body">
+        <put name="title" value="app.title.AdminTablesManager"/>
+        <put name="body" value="/tiles/Admin/AdminTablesManager.jsp"/>
+    </definition>
+    <definition name="AddAdminTable" extends="header-body">
+        <put name="title" value="app.messages.addTable"/>
+        <put name="body" value="/tiles/Admin/AddAdminTable.jsp"/>
+    </definition>
+    <definition name="AddAdminTableColumn" extends="header-body">
+        <put name="title" value="app.messages.addColumn"/>
+        <put name="body" value="/tiles/Admin/AddAdminTableColumn.jsp"/>
+    </definition>
+    <definition name="EntitiesAdmin" extends="header-body">
+        <put name="title" value="app.title.EntitiesAdmin"/>
+        <put name="body" value="/tiles/Admin/EntitiesAdmin.jsp"/>
+    </definition>
+    <!-- Miscellaneous enhancements  -->
+        <definition name="StationsAdmin" extends="header-body">
+        <put name="title" value="app.title.StationsAdmin"/>
+        <put name="body" value="/tiles/Admin/StationsAdmin.jsp"/>
+    </definition>
+    <definition name="EntitiesAcctAdmin" extends="header-body">
+        <put name="title" value="app.title.EntitiesAdmin"/>
+        <put name="body" value="/tiles/Admin/EntitiesAcctAdmin.jsp"/>
+    </definition>
+    <definition name="GroundDetails" extends="header-body">
+        <put name="title" value="app.title.CourierCashRecap"/>
+        <put name="body" value="/tiles/Ground/GroundDetails.jsp"/>
+    </definition>
+    <definition name="AddGrndTrakNbr" extends="header-body">
+        <put name="title" value="app.messages.AddGrndTrakNbr"/>
+        <put name="body" value="/tiles/Ground/AddGrndTrakNbr.jsp"/>
+    </definition>
+    <definition name="SecondExpressCheckin" extends="header-body">
+        <put name="title" value="app.title.CheckingAgentCashRecap"/>
+        <put name="body" value="/tiles/SecondExpressCheckin.jsp"/>
+    </definition>
+    <definition name="CreditCardPymtReport" extends="header-body">
+        <put name="title" value="app.title.CreditCardPymtReport"/>
+        <put name="body" value="/tiles/CreditCardPymtReport.jsp"/>
+    </definition>
+    <definition name="AddOAC" extends="header-body">
+        <put name="title" value="app.title.AddOAC"/>
+        <put name="body" value="/tiles/OAC/add_oac.jsp"/>
+    </definition>
+    <definition name="AccessDenied" extends="header-body">
+        <put name="body" value="/tiles/AccessDenied.jsp"/>
+        <put name="title" value="app.PagesTitles.AccessDenied"/>
+    </definition>
+    <definition name="BillToAccount" extends="header-body">
+        <put name="title" value="app.title.BillToAccount"/>
+        <put name="body" value="/ROD/BillToAccount.jsp"/>
+    </definition>
+
+    <definition name="COD_BillToAccount" extends="header-body">
+        <put name="title" value="app.title.BillToAccount"/>
+        <put name="body" value="/COD/BillToAccount.jsp"/>
+    </definition>
+
+    <definition name="FTC_BillToAccount" extends="header-body">
+        <put name="title" value="app.title.BillToAccount"/>
+        <put name="body" value="/FTC/BillToAccount.jsp"/>
+    </definition>
+
+    <definition name="Error" extends="header-body">
+        <put name="body" value="/tiles/Error.jsp"/>
+        <put name="title" value="app.mainMenu"/>
+    </definition>
+
+</tiles-definitions>

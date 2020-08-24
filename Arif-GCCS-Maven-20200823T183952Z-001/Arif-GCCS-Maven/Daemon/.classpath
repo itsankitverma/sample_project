@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CashControlEJBX"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CashControlSessionBeans"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/ant.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/edtFTPj-1.5.3.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/enhancedevent.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/ese.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/ftp.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/GCCSUtilsNew-hallow.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/GCCSUtilsNew.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/junit.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/org.apache.commons.collections.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/oss.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/struts-el.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/struts-legacy.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/struts.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/weblogic.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/webservices.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/wlclient.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/xalan-2.4.1.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/xerces.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/xercesImpl-2.2.1.jar"/>
+	<classpathentry kind="lib" path="/APP-INF/lib/xml-apis.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/APP-INF/lib/commons-fileupload-1.3.3.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
